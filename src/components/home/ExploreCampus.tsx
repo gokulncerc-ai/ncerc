@@ -9,13 +9,9 @@ const ExploreCampus = () => {
         <section
             className="
                 relative
-                -mt-8
                 overflow-hidden
                 bg-[#faf7f2]
-                pb-24
-                pt-0
-                sm:-mt-10
-                lg:-mt-12
+                py-24
             "
         >
             {/* =====================================================
@@ -78,7 +74,6 @@ const ExploreCampus = () => {
 
                 {/* =================================================
                     CAMPUS IMAGE
-                    No top margin / padding
                 ================================================== */}
                 <div className="relative m-0 p-0">
 

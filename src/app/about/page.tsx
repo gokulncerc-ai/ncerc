@@ -11,7 +11,6 @@ import {
     Star,
     Users,
 } from "lucide-react";
-
 import SiteHeader from "@/components/header/SiteHeader";
 import collegeImage from "../../../public/images/collegeone.jpg";
 import FooterSection from "@/components/home/FooterSection";
@@ -172,7 +171,7 @@ export default function About() {
                             </span>
                         </div>
 
-                        <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-navy-950 sm:text-4xl">
+                        <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-navy-950 sm:text-5xl lg:text-6xl">
                             Academic Excellence
                             <br />
                             and a Brighter Future

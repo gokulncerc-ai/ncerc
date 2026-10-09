@@ -202,7 +202,9 @@ const PlacementSection = () => {
                 m-0
                 overflow-hidden
                 bg-[#fcfbf8]
-                p-0
+                py-20
+                sm:py-24
+                lg:py-24
             "
         >
             {/* ========================================================
@@ -245,6 +247,7 @@ const PlacementSection = () => {
 
                     <div className="relative m-0">
                         {/* Section label */}
+
                         <div
                             className="
                                 m-0
@@ -260,13 +263,12 @@ const PlacementSection = () => {
                                 className="
                                     m-0
                                     inline-block
-                                    font-sans
-                                    text-[14px]
-                                    font-medium
+                                    text-xs
+                                    font-semibold
                                     uppercase
-                                    tracking-[0.15em]
-                                    text-[#b47a15]
-                                    sm:text-[15px]
+                                    tracking-[0.2em]
+                                    text-[#8F7746]
+                                    sm:text-sm
                                 "
                             >
                                 Our Students – Placement &amp; Career Success
@@ -284,17 +286,18 @@ const PlacementSection = () => {
                         </div>
 
                         {/* Main heading */}
+
                         <h2
                             className="
                                 m-0
                                 max-w-[650px]
-                                font-serif
-                                text-[48px]
-                                font-medium
-                                leading-[1.08]
+                                font-display
+                                text-4xl
+                                font-semibold
+                                leading-tight
                                 tracking-[-0.035em]
                                 text-[#10213b]
-                                sm:text-[58px]
+                                sm:text-5xl
                                 lg:text-[49px]
                                 xl:text-[61px]
                             "
@@ -305,22 +308,22 @@ const PlacementSection = () => {
                         </h2>
 
                         {/* Gold underline */}
+
                         <div className="my-6 flex items-center">
                             <span className="h-[3px] w-12 bg-[#c9932f]" />
                             <span className="h-[3px] w-8 bg-transparent" />
                         </div>
 
                         {/* Description */}
+
                         <p
                             className="
                                 m-0
                                 max-w-[580px]
-                                font-sans
-                                text-[16px]
-                                leading-[1.85]
+                                text-base
+                                leading-relaxed
                                 text-[#29415f]
-                                sm:text-[17px]
-                                xl:text-[18px]
+                                xl:text-lg
                             "
                         >
                             At NCERC, we believe in turning potential into
@@ -331,8 +334,9 @@ const PlacementSection = () => {
                         </p>
 
                         {/* CTA */}
+
                         <Link
-                            href="/placements"
+                            href="/placements/placement_status"
                             className="
                                 group
                                 mt-6
@@ -345,16 +349,17 @@ const PlacementSection = () => {
                                 bg-transparent
                                 px-6
                                 py-4
-                                font-sans
-                                text-[15px]
-                                font-medium
+                                text-sm
+                                font-semibold
+                                uppercase
+                                tracking-wide
                                 text-[#b47a15]
                                 transition-all
                                 duration-300
                                 hover:bg-[#c9932f]
                                 hover:text-white
                                 sm:px-7
-                                sm:text-[16px]
+                                sm:text-sm
                             "
                         >
                             <span>View Placement Details</span>
@@ -410,6 +415,7 @@ const PlacementSection = () => {
                                     `}
                                 >
                                     {/* Icon */}
+
                                     <div
                                         className="
                                             flex
@@ -430,12 +436,13 @@ const PlacementSection = () => {
                                     </div>
 
                                     {/* Value + label */}
+
                                     <div className="min-w-0">
                                         <div
                                             className="
-                                                font-sans
+                                                font-display
                                                 text-[29px]
-                                                font-medium
+                                                font-semibold
                                                 leading-none
                                                 tracking-[-0.02em]
                                                 text-[#10213b]
@@ -453,8 +460,7 @@ const PlacementSection = () => {
                                             className="
                                                 m-0
                                                 mt-1
-                                                font-sans
-                                                text-[15px]
+                                                text-sm
                                                 leading-tight
                                                 text-[#29415f]
                                             "
@@ -466,8 +472,7 @@ const PlacementSection = () => {
                                             className="
                                                 m-0
                                                 mt-1
-                                                font-sans
-                                                text-[12px]
+                                                text-xs
                                                 leading-tight
                                                 text-[#536783]
                                             "
@@ -486,6 +491,7 @@ const PlacementSection = () => {
 
                     <div className="relative m-0">
                         {/* Gold decorative line */}
+
                         <div
                             aria-hidden="true"
                             className="
@@ -529,6 +535,7 @@ const PlacementSection = () => {
                             />
 
                             {/* Image subtle overlay */}
+
                             <div
                                 className="
                                     absolute
@@ -541,14 +548,14 @@ const PlacementSection = () => {
                             />
 
                             {/* Handwritten-style message */}
+
                             <div
                                 className="
                                     absolute
                                     right-6
                                     top-5
                                     max-w-[100px]
-                                    text-right
-                                    font-serif
+                                    font-display
                                     text-[25px]
                                     italic
                                     leading-[0.95]
@@ -573,99 +580,63 @@ const PlacementSection = () => {
                     </div>
                 </div>
 
-                {/* ====================================================
-                    TOP RECRUITERS
-                ==================================================== */}
-
-                <div className="relative m-0 mt-8 sm:mt-10">
+                {/* Top Recruiters */}
+                <div className="relative m-0 mt-8 overflow-hidden sm:mt-10">
+                    {/* Section Heading */}
                     <div className="mb-4 flex items-center justify-between">
                         <div className="flex items-center gap-4">
                             <span className="h-[2px] w-11 bg-[#c9932f]" />
 
-                            <span
-                                className="
-                                    font-sans
-                                    text-[14px]
-                                    font-medium
-                                    uppercase
-                                    tracking-[0.15em]
-                                    text-[#b47a15]
-                                "
-                            >
+                            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8F7746]">
                                 Top Recruiters
                             </span>
                         </div>
-
-                        <span
-                            className="
-                                hidden
-                                font-sans
-                                text-[12px]
-                                font-medium
-                                uppercase
-                                tracking-[0.12em]
-                                text-[#b47a15]
-                                sm:block
-                            "
-                        >
-                            And Many More →
-                        </span>
                     </div>
 
-                    {/* Recruiter logos */}
-                    <div
-                        className="
-                            grid
-                            grid-cols-2
-                            gap-2
-                            sm:grid-cols-3
-                            md:grid-cols-5
-                            lg:grid-cols-9
-                            lg:gap-2
-                            xl:gap-3
-                        "
-                    >
-                        {recruiters.map((recruiter) => (
-                            <div
-                                key={recruiter.name}
-                                className="
-                                    flex
-                                    h-[92px]
-                                    items-center
-                                    justify-center
-                                    rounded-[9px]
-                                    border
-                                    border-[#e8e5df]
-                                    bg-white
-                                    px-4
-                                    shadow-[0_3px_12px_rgba(18,33,59,0.035)]
-                                    transition-all
-                                    duration-300
-                                    hover:-translate-y-1
-                                    hover:shadow-[0_8px_20px_rgba(18,33,59,0.08)]
-                                "
-                            >
-                                <Image
-                                    src={recruiter.logo}
-                                    alt={recruiter.name}
-                                    width={145}
-                                    height={60}
-                                    className="
-                                        max-h-[53px]
-                                        w-auto
-                                        max-w-[90%]
-                                        object-contain
-                                    "
-                                />
-                            </div>
-                        ))}
+                    {/* Scrolling Logo Track */}
+                    <div className="group relative w-full overflow-hidden">
+                        <div
+                            className="flex w-max animate-recruiter-scroll gap-3 py-2 motion-reduce:animate-none"
+                            style={{ "--scroll-duration": "35s" } as React.CSSProperties}
+                        >
+                            {/* Original Logos */}
+                            {recruiters.map((recruiter) => (
+                                <div
+                                    key={recruiter.name}
+                                    className="flex h-[92px] w-[150px] shrink-0 items-center justify-center rounded-[9px] border border-[#e8e5df] bg-white px-4 shadow-[0_3px_12px_rgba(18,33,59,0.035)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(18,33,59,0.08)] sm:w-[180px]"
+                                >
+                                    <Image
+                                        src={recruiter.logo}
+                                        alt={recruiter.name}
+                                        width={145}
+                                        height={60}
+                                        className="max-h-[53px] w-auto max-w-[90%] object-contain"
+                                    />
+                                </div>
+                            ))}
+
+                            {/* Duplicate Logos for Seamless Scrolling */}
+                            {recruiters.map((recruiter) => (
+                                <div
+                                    key={`duplicate-${recruiter.name}`}
+                                    aria-hidden="true"
+                                    className="flex h-[92px] w-[150px] shrink-0 items-center justify-center rounded-[9px] border border-[#e8e5df] bg-white px-4 shadow-[0_3px_12px_rgba(18,33,59,0.035)] sm:w-[180px]"
+                                >
+                                    <Image
+                                        src={recruiter.logo}
+                                        alt=""
+                                        width={145}
+                                        height={60}
+                                        className="max-h-[53px] w-auto max-w-[90%] object-contain"
+                                    />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-
                 {/* ====================================================
                     KEY PLACEMENT HIGHLIGHTS
                 ==================================================== */}
-
                 <div
                     className="
                         relative
@@ -684,6 +655,7 @@ const PlacementSection = () => {
                     "
                 >
                     {/* Very subtle background */}
+
                     <div
                         aria-hidden="true"
                         className="
@@ -724,6 +696,7 @@ const PlacementSection = () => {
                         "
                     >
                         {/* Heading block */}
+
                         <div
                             className="
                                 flex
@@ -763,10 +736,10 @@ const PlacementSection = () => {
                                 <h3
                                     className="
                                         m-0
-                                        font-serif
-                                        text-[28px]
-                                        font-medium
-                                        leading-[1.15]
+                                        font-display
+                                        text-3xl
+                                        font-semibold
+                                        leading-tight
                                         text-[#10213b]
                                         sm:text-[31px]
                                     "
@@ -779,6 +752,7 @@ const PlacementSection = () => {
                         </div>
 
                         {/* Highlights */}
+
                         <div
                             className="
                                 grid
@@ -794,12 +768,16 @@ const PlacementSection = () => {
                             "
                         >
                             {/* Highlight 1 */}
+
                             <div
                                 className="
                                     flex
+                                    flex-col
+                                    items-center
                                     gap-4
                                     px-0
                                     py-5
+                                    text-center
                                     sm:px-6
                                     sm:py-0
                                     lg:px-6
@@ -816,9 +794,8 @@ const PlacementSection = () => {
                                     <p
                                         className="
                                             m-0
-                                            font-sans
-                                            text-[14px]
-                                            leading-[1.55]
+                                            text-sm
+                                            leading-relaxed
                                             text-[#10213b]
                                         "
                                     >
@@ -832,12 +809,16 @@ const PlacementSection = () => {
                             </div>
 
                             {/* Highlight 2 */}
+
                             <div
                                 className="
                                     flex
+                                    flex-col
+                                    items-center
                                     gap-4
                                     px-0
                                     py-5
+                                    text-center
                                     sm:px-6
                                     sm:py-0
                                     lg:px-6
@@ -854,9 +835,8 @@ const PlacementSection = () => {
                                     <p
                                         className="
                                             m-0
-                                            font-sans
-                                            text-[14px]
-                                            leading-[1.55]
+                                            text-sm
+                                            leading-relaxed
                                             text-[#10213b]
                                         "
                                     >
@@ -870,12 +850,16 @@ const PlacementSection = () => {
                             </div>
 
                             {/* Highlight 3 */}
+
                             <div
                                 className="
                                     flex
+                                    flex-col
+                                    items-center
                                     gap-4
                                     px-0
                                     py-5
+                                    text-center
                                     sm:px-6
                                     sm:py-0
                                     lg:px-6
@@ -892,9 +876,8 @@ const PlacementSection = () => {
                                     <p
                                         className="
                                             m-0
-                                            font-sans
-                                            text-[14px]
-                                            leading-[1.55]
+                                            text-sm
+                                            leading-relaxed
                                             text-[#10213b]
                                         "
                                     >
@@ -908,12 +891,16 @@ const PlacementSection = () => {
                             </div>
 
                             {/* Highlight 4 */}
+
                             <div
                                 className="
                                     flex
+                                    flex-col
+                                    items-center
                                     gap-4
                                     px-0
                                     py-5
+                                    text-center
                                     sm:px-6
                                     sm:py-0
                                     lg:px-6
@@ -930,9 +917,8 @@ const PlacementSection = () => {
                                     <p
                                         className="
                                             m-0
-                                            font-sans
-                                            text-[14px]
-                                            leading-[1.55]
+                                            text-sm
+                                            leading-relaxed
                                             text-[#10213b]
                                         "
                                     >

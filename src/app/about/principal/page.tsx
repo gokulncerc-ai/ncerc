@@ -52,7 +52,7 @@ export default function Principal() {
 
                                     <div>
                                         <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-[#d8b45a]">
-                                            Academic Leadership
+                                            Dr. Anoop K J
                                         </p>
                                         <p className="mt-0.5 font-display text-lg text-white">
                                             Principal

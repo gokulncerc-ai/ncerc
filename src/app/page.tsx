@@ -1,12 +1,13 @@
 "use client";
-import Image from "next/image";
 
 import {
-  Award,
   ArrowRight,
+  BookOpen,
   GraduationCap,
-  MailCheck,
+  Play,
   Users,
+  Headphones,
+  Rotate3D,
 } from "lucide-react";
 
 import SiteHeader from "@/components/header/SiteHeader";
@@ -26,126 +27,758 @@ import AluminiSection from "@/components/home/AluminiSection";
 import CollegeInteractionSection from "@/components/home/CollegeInteractionSection";
 import FooterSection from "@/components/home/FooterSection";
 
-import collegeImage from "../../public/images/collegeone.jpg";
 import collegeHorizontalImage from "../../public/images/college_horizontal.webp";
 import highlightsImage from "../../public/images/campus_walk.png";
 import ncpirImage from "../../public/images/ncpir_handshake.png";
 
-const stats = [
-  { icon: Award, value: "20+", label: "Years of Excellence" },
-  { icon: GraduationCap, value: "50+", label: "Programs & Specializations" },
-  { icon: Users, value: "1000+", label: "Students On Campus" },
-  { icon: MailCheck, value: "90%+", label: "Placement Success" },
-];
-
 export default function Home() {
   return (
     <main className="flex flex-col bg-white">
-      {/* 
-        Hero Section (h-dvh)
-        The header floats absolutely over the top edge of the photo.
-      */}
-      <section className="relative isolate h-dvh w-full overflow-hidden">
-        <Image
-          src={collegeImage}
-          alt="NCERC campus"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+     
+      {/* =========================================================
+          PREMIUM CINEMATIC HERO
+      ========================================================= */}
+      <section
+        className="
+          relative
+          isolate
+          h-[100svh]
+          min-h-[100svh]
+          w-full
+          overflow-hidden
+          bg-black
+          md:h-[100dvh]
+          md:min-h-[100dvh]
+        "
+      >
+        {/* =====================================================
+            VIDEO BACKGROUND
 
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/75 to-transparent lg:via-white/60" />
+            No overlay is applied over the video.
+            The video remains fully visible and natural.
+        ===================================================== */}
+        <div className="absolute inset-0 z-0 overflow-hidden bg-black">
+          <iframe
+            src="https://www.youtube.com/embed/liwQav35JRQ?autoplay=1&mute=1&loop=1&playlist=liwQav35JRQ&controls=0&rel=0&modestbranding=1&playsinline=1&start=20&vq=hd1080"
+            title="NCERC Campus Video"
+            className="
+              absolute
+              left-1/2
+              top-1/2
+              h-[100svh]
+              min-h-full
+              w-[177.78svh]
+              min-w-full
+              -translate-x-1/2
+              -translate-y-1/2
+              scale-[1.035]
+              border-0
+              md:h-[100dvh]
+              md:w-[177.78dvh]
+            "
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
 
-        {/* Header Overlay */}
+        {/* =====================================================
+            HEADER
+        ===================================================== */}
         <div className="absolute inset-x-0 top-0 z-50">
           <SiteHeader />
         </div>
 
-        {/* Hero Content */}
-        <div className="relative z-10 mx-auto flex h-full max-w-8xl flex-col justify-start px-6 pt-32 sm:pt-36 lg:pt-48">
-          <div className="max-w-xl">
-            <h1 className="font-display text-2xl font-bold leading-tight text-navy-950 sm:text-3xl lg:text-4xl">
-              Engineering the Future.
-              <br />
-              <span className="text-gold-500">
-                Inspiring Innovation.
-              </span>
-            </h1>
+        {/* =====================================================
+            PREMIUM RIGHT ACTION PANEL
+        ===================================================== */}
+        <div
+          className="
+            absolute
+            right-0
+            top-1/2
+            z-40
+            flex
+            -translate-y-1/2
+            flex-col
+            overflow-hidden
+            rounded-l-2xl
+            border
+            border-white/15
+            bg-black/45
+            shadow-[0_20px_60px_rgba(0,0,0,0.35)]
+            backdrop-blur-xl
+          "
+        >
+          {/* GOLD ACCENT */}
+          <div
+            className="
+              absolute
+              inset-y-0
+              left-0
+              w-px
+              bg-gradient-to-b
+              from-transparent
+              via-[#D2B87C]/80
+              to-transparent
+            "
+          />
 
-            <div className="my-6 h-1 w-16 bg-gold-500" />
-
-            <p className="max-w-md text-base text-slate-600">
-              Empowering the next generation of engineers, innovators and
-              technology leaders through excellence in education, research and
-              industry.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="https://admissions.nehrucolleges.com/application-form"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-navy-950/40 bg-white/40 px-6 py-3 text-sm font-semibold text-navy-950 backdrop-blur transition hover:bg-white"
-              >
-                Admissions 2026
-                <ArrowRight size={16} />
-              </a>
+          {/* =================================================
+              ADMISSION ENQUIRY
+          ================================================= */}
+          <a
+            href="https://admissions.nehrucolleges.com/application-form"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              group
+              relative
+              flex
+              w-[58px]
+              flex-col
+              items-center
+              justify-center
+              border-b
+              border-white/10
+              px-2
+              py-5
+              text-center
+              transition-all
+              duration-500
+              hover:w-[155px]
+              hover:bg-[#D2B87C]
+              sm:w-[66px]
+              sm:py-6
+            "
+          >
+            <div
+              className="
+                flex
+                h-9
+                w-9
+                items-center
+                justify-center
+                rounded-full
+                border
+                border-[#D2B87C]/70
+                bg-black/10
+                text-[#D2B87C]
+                transition-all
+                duration-500
+                group-hover:border-[#20235A]
+                group-hover:bg-[#20235A]
+                group-hover:text-white
+                group-hover:shadow-[0_0_0_5px_rgba(32,35,90,0.08)]
+              "
+            >
+              <Headphones size={16} strokeWidth={1.6} />
             </div>
-          </div>
+
+            <span
+              className="
+                mt-2.5
+                hidden
+                whitespace-nowrap
+                text-[10px]
+                font-semibold
+                uppercase
+                tracking-[0.17em]
+                text-[#20235A]
+                group-hover:block
+              "
+            >
+              Admission Enquiry
+            </span>
+
+            <span
+              className="
+                mt-2
+                block
+                whitespace-nowrap
+                text-[8px]
+                font-medium
+                uppercase
+                tracking-[0.2em]
+                text-white/65
+                group-hover:hidden
+              "
+            >
+              Enquiry
+            </span>
+          </a>
+
+          {/* =================================================
+              VIEW 360°
+          ================================================= */}
+          <a
+            href="https://ncerc.ac.in/360/"
+            className="
+              group
+              relative
+              flex
+              w-[58px]
+              flex-col
+              items-center
+              justify-center
+              px-2
+              py-5
+              text-center
+              transition-all
+              duration-500
+              hover:w-[155px]
+              hover:bg-white
+              sm:w-[66px]
+              sm:py-6
+            "
+          >
+            <div
+              className="
+                flex
+                h-9
+                w-9
+                items-center
+                justify-center
+                rounded-full
+                border
+                border-white/30
+                bg-white/5
+                text-white
+                transition-all
+                duration-500
+                group-hover:border-[#20235A]
+                group-hover:bg-[#20235A]
+                group-hover:text-white
+                group-hover:shadow-[0_0_0_5px_rgba(32,35,90,0.08)]
+              "
+            >
+              <Rotate3D size={16} strokeWidth={1.6} />
+            </div>
+
+            <span
+              className="
+                mt-2.5
+                hidden
+                whitespace-nowrap
+                text-[10px]
+                font-semibold
+                uppercase
+                tracking-[0.17em]
+                text-[#20235A]
+                group-hover:block
+              "
+            >
+              View 360°
+            </span>
+
+            <span
+              className="
+                mt-2
+                block
+                whitespace-nowrap
+                text-[8px]
+                font-medium
+                uppercase
+                tracking-[0.2em]
+                text-white/65
+                group-hover:hidden
+              "
+            >
+              360°
+            </span>
+          </a>
         </div>
 
-        {/* Floating Stats Panel */}
-        <div className="absolute bottom-6 left-6 right-6 z-10 sm:bottom-8 sm:left-10 sm:right-auto sm:max-w-xl">
-          <div className="rounded-2xl border border-white/10 bg-black/60 p-3.5 shadow-2xl backdrop-blur-2xl">
-            <div className="grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-4 sm:divide-x sm:divide-white/10">
-              {stats.map(({ icon: Icon, value, label }) => (
-                <div
-                  key={label}
-                  className="flex items-center gap-2.5 sm:pl-4 sm:first:pl-0"
-                >
-                  <Icon
-                    size={22}
-                    className="shrink-0 text-gold-400"
-                    strokeWidth={1.5}
-                  />
+        {/* =====================================================
+            PREMIUM BOTTOM ACTION AREA
+        ===================================================== */}
+        <div
+          className="
+            absolute
+            inset-x-0
+            bottom-0
+            z-30
+            px-3
+            pb-5
+            sm:px-6
+            sm:pb-8
+            lg:px-10
+            lg:pb-10
+          "
+        >
+          <div className="mx-auto flex max-w-6xl flex-col items-center">
+          
+            <div
+              className="
+                relative
+                w-full
+                overflow-hidden
+                rounded-2xl
+                border
+                border-white/15
+                bg-black/45
+                shadow-[0_25px_80px_rgba(0,0,0,0.4)]
+                backdrop-blur-2xl
+              "
+            >
+          
+              <div
+                className="
+                  absolute
+                  inset-x-0
+                  top-0
+                  h-px
+                  bg-gradient-to-r
+                  from-transparent
+                  via-[#D2B87C]/80
+                  to-transparent
+                "
+              />
 
-                  <div>
-                    <p className="text-base font-bold leading-none text-white drop-shadow-sm">
-                      {value}
+              <div className="grid grid-cols-2 md:grid-cols-4">
+              
+                <a
+                  href="https://admissions.nehrucolleges.com/application-form"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    group
+                    relative
+                    flex
+                    min-h-[76px]
+                    items-center
+                    justify-center
+                    gap-2
+                    border-b
+                    border-r
+                    border-white/10
+                    px-3
+                    py-3
+                    transition-all
+                    duration-500
+                    hover:bg-[#D2B87C]
+                    sm:min-h-[88px]
+                    sm:gap-3
+                    sm:px-5
+                    sm:py-4
+                    md:border-b-0
+                  "
+                >
+                  <div
+                    className="
+                      flex
+                      h-9
+                      w-9
+                      shrink-0
+                      items-center
+                      justify-center
+                      rounded-full
+                      border
+                      border-[#D2B87C]/60
+                      bg-white/[0.03]
+                      text-[#D2B87C]
+                      transition-all
+                      duration-500
+                      group-hover:border-[#20235A]
+                      group-hover:bg-[#20235A]
+                      group-hover:text-white
+                    "
+                  >
+                    <GraduationCap size={17} strokeWidth={1.6} />
+                  </div>
+
+                  <div className="min-w-0 text-left">
+                    <p
+                      className="
+                        text-[8px]
+                        font-medium
+                        uppercase
+                        tracking-[0.15em]
+                        text-white/50
+                        transition-colors
+                        duration-500
+                        group-hover:text-[#20235A]/60
+                        sm:text-[10px]
+                        sm:tracking-[0.18em]
+                      "
+                    >
+                      Start Your Journey
                     </p>
 
-                    <p className="mt-1 text-[11px] font-medium leading-tight text-white/70">
-                      {label}
+                    <p
+                      className="
+                        mt-1
+                        text-[11px]
+                        font-semibold
+                        text-white
+                        transition-colors
+                        duration-500
+                        group-hover:text-[#20235A]
+                        sm:text-sm
+                      "
+                    >
+                      Admissions Open
                     </p>
                   </div>
-                </div>
-              ))}
+
+                  <ArrowRight
+                    size={16}
+                    className="
+                      ml-auto
+                      hidden
+                      text-[#D2B87C]
+                      transition-all
+                      duration-500
+                      group-hover:translate-x-1
+                      group-hover:text-[#20235A]
+                      sm:block
+                    "
+                  />
+                </a>
+
+            
+                <a
+                  href="#programs"
+                  className="
+                    group
+                    relative
+                    flex
+                    min-h-[76px]
+                    items-center
+                    justify-center
+                    gap-2
+                    border-b
+                    border-white/10
+                    px-3
+                    py-3
+                    transition-all
+                    duration-500
+                    hover:bg-white
+                    sm:min-h-[88px]
+                    sm:gap-3
+                    sm:px-5
+                    sm:py-4
+                    md:border-b-0
+                    md:border-r
+                  "
+                >
+                  <div
+                    className="
+                      flex
+                      h-9
+                      w-9
+                      shrink-0
+                      items-center
+                      justify-center
+                      rounded-full
+                      border
+                      border-white/20
+                      bg-white/[0.03]
+                      text-white/80
+                      transition-all
+                      duration-500
+                      group-hover:border-[#20235A]
+                      group-hover:bg-[#20235A]
+                      group-hover:text-white
+                    "
+                  >
+                    <BookOpen size={16} strokeWidth={1.6} />
+                  </div>
+
+                  <div className="min-w-0 text-left">
+                    <p
+                      className="
+                        text-[8px]
+                        font-medium
+                        uppercase
+                        tracking-[0.15em]
+                        text-white/50
+                        transition-colors
+                        duration-500
+                        group-hover:text-[#20235A]/55
+                        sm:text-[10px]
+                        sm:tracking-[0.18em]
+                      "
+                    >
+                      Academic Excellence
+                    </p>
+
+                    <p
+                      className="
+                        mt-1
+                        text-[11px]
+                        font-semibold
+                        text-white
+                        transition-colors
+                        duration-500
+                        group-hover:text-[#20235A]
+                        sm:text-sm
+                      "
+                    >
+                      Explore Programs
+                    </p>
+                  </div>
+
+                  <ArrowRight
+                    size={16}
+                    className="
+                      ml-auto
+                      hidden
+                      text-white/60
+                      transition-all
+                      duration-500
+                      group-hover:translate-x-1
+                      group-hover:text-[#20235A]
+                      sm:block
+                    "
+                  />
+                </a>
+
+             
+                <a
+                  href="#campus"
+                  className="
+                    group
+                    relative
+                    flex
+                    min-h-[76px]
+                    items-center
+                    justify-center
+                    gap-2
+                    border-r
+                    border-white/10
+                    px-3
+                    py-3
+                    transition-all
+                    duration-500
+                    hover:bg-white
+                    sm:min-h-[88px]
+                    sm:gap-3
+                    sm:px-5
+                    sm:py-4
+                  "
+                >
+                  <div
+                    className="
+                      flex
+                      h-9
+                      w-9
+                      shrink-0
+                      items-center
+                      justify-center
+                      rounded-full
+                      border
+                      border-white/20
+                      bg-white/[0.03]
+                      text-white/80
+                      transition-all
+                      duration-500
+                      group-hover:border-[#20235A]
+                      group-hover:bg-[#20235A]
+                      group-hover:text-white
+                    "
+                  >
+                    <Users size={16} strokeWidth={1.6} />
+                  </div>
+
+                  <div className="min-w-0 text-left">
+                    <p
+                      className="
+                        text-[8px]
+                        font-medium
+                        uppercase
+                        tracking-[0.15em]
+                        text-white/50
+                        transition-colors
+                        duration-500
+                        group-hover:text-[#20235A]/55
+                        sm:text-[10px]
+                        sm:tracking-[0.18em]
+                      "
+                    >
+                      Experience NCERC
+                    </p>
+
+                    <p
+                      className="
+                        mt-1
+                        text-[11px]
+                        font-semibold
+                        text-white
+                        transition-colors
+                        duration-500
+                        group-hover:text-[#20235A]
+                        sm:text-sm
+                      "
+                    >
+                      Campus Life
+                    </p>
+                  </div>
+
+                  <ArrowRight
+                    size={16}
+                    className="
+                      ml-auto
+                      hidden
+                      text-white/60
+                      transition-all
+                      duration-500
+                      group-hover:translate-x-1
+                      group-hover:text-[#20235A]
+                      sm:block
+                    "
+                  />
+                </a>
+
+                
+                <a
+                  href="#placements"
+                  className="
+                    group
+                    relative
+                    flex
+                    min-h-[76px]
+                    items-center
+                    justify-center
+                    gap-2
+                    px-3
+                    py-3
+                    transition-all
+                    duration-500
+                    hover:bg-[#D2B87C]
+                    sm:min-h-[88px]
+                    sm:gap-3
+                    sm:px-5
+                    sm:py-4
+                  "
+                >
+                  <div
+                    className="
+                      flex
+                      h-9
+                      w-9
+                      shrink-0
+                      items-center
+                      justify-center
+                      rounded-full
+                      border
+                      border-[#D2B87C]/60
+                      bg-white/[0.03]
+                      text-[#D2B87C]
+                      transition-all
+                      duration-500
+                      group-hover:border-[#20235A]
+                      group-hover:bg-[#20235A]
+                      group-hover:text-white
+                    "
+                  >
+                    <Play size={15} strokeWidth={1.6} />
+                  </div>
+
+                  <div className="min-w-0 text-left">
+                    <p
+                      className="
+                        text-[8px]
+                        font-medium
+                        uppercase
+                        tracking-[0.15em]
+                        text-white/50
+                        transition-colors
+                        duration-500
+                        group-hover:text-[#20235A]/60
+                        sm:text-[10px]
+                        sm:tracking-[0.18em]
+                      "
+                    >
+                      Career
+                    </p>
+
+                    <p
+                      className="
+                        mt-1
+                        text-[11px]
+                        font-semibold
+                        text-white
+                        transition-colors
+                        duration-500
+                        group-hover:text-[#20235A]
+                        sm:text-sm
+                      "
+                    >
+                      Placements
+                    </p>
+                  </div>
+
+                  <ArrowRight
+                    size={16}
+                    className="
+                      ml-auto
+                      hidden
+                      text-[#D2B87C]
+                      transition-all
+                      duration-500
+                      group-hover:translate-x-1
+                      group-hover:text-[#20235A]
+                      sm:block
+                    "
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* =================================================
+                PREMIUM SCROLL INDICATOR
+            ================================================= */}
+            <div className="mt-5 hidden items-center gap-4 md:flex">
+              <span className="h-px w-10 bg-gradient-to-r from-transparent to-white/30" />
+
+              <span className="text-[9px] font-medium uppercase tracking-[0.32em] text-white/60">
+                Scroll to explore
+              </span>
+
+              <span className="h-px w-10 bg-gradient-to-l from-transparent to-white/30" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Announcement Bar */}
+      {/* =========================================================
+          ANNOUNCEMENT BAR
+      ========================================================= */}
       <div className="w-full">
         <AnnouncementBar />
       </div>
 
-      {/* Page Content Sections */}
+      {/* =========================================================
+          PAGE CONTENT SECTIONS
+      ========================================================= */}
       <div className="flex flex-col">
         <AboutSection image={collegeHorizontalImage} />
+ 
         <ExploreCampus />
+
         <CourseSection />
+
         <HighlightsSection image={highlightsImage} />
+
         <NcpirSection image={ncpirImage} />
+
         <NewsEventsSection />
+
         <UpcomingEventsSection />
+
         <PlacementSection />
+
         <CampusFacilitieSection />
+
         <CommunitySection />
+
         <AluminiSection />
+
         <CollegeInteractionSection />
+
         <FaqSection />
+
         <FooterSection />
       </div>
     </main>

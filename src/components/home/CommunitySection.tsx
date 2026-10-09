@@ -24,12 +24,6 @@ const mainStats = [
         description: "Supporting bright minds\nand deserving talent.",
     },
 ];
-
-const sideStats = [
-    { icon: Users, value: "3000+", label: "Students" },
-    { icon: GraduationCap, value: "8500+", label: "Alumni" },
-];
-
 export default function CommunitySection() {
     return (
         <section className="relative overflow-hidden bg-white py-24">
@@ -156,34 +150,6 @@ export default function CommunitySection() {
                             )
                         )}
                     </div>
-
-                    {/* ====================================================
-                        CTA
-                    ==================================================== */}
-
-                    <Link
-                        href="/about-ncerc"
-                        className="
-                            mt-20
-                            inline-flex
-                            items-center
-                            gap-2
-                            border-b-2
-                            border-gold-500
-                            pb-1
-                            text-sm
-                            font-semibold
-                            uppercase
-                            tracking-wide
-                            text-gold-500
-                            transition
-                            hover:text-gold-400
-                        "
-                    >
-                        Discover Our Community
-
-                        <ArrowRight size={16} />
-                    </Link>
                 </div>
 
                 {/* ====================================================
@@ -254,67 +220,17 @@ export default function CommunitySection() {
                                 color: "#d9a441",
                             }}
                         />
-
-                        {/* Image */}
-
-                        <div className="relative h-72 w-full overflow-hidden rounded-2xl shadow-xl sm:h-80 lg:h-96">
-                            <Image
-                                src={CampusStudents}
-                                alt="Students collaborating on the NCERC campus"
-                                fill
-                                sizes="(min-width: 1024px) 45vw, 100vw"
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
-
-                    {/* ==================================================
-                        SIDE STATS
-                    ================================================== */}
-
-                    <div className="mt-8 max-w-xs border-l-2 border-gold-500 pl-6">
-                        <div className="flex flex-col gap-6">
-                            {sideStats.map(
-                                ({ icon: Icon, value, label }) => (
-                                    <div
-                                        key={label}
-                                        className="
-                                            flex
-                                            items-center
-                                            gap-4
-                                        "
-                                    >
-                                        {/* Icon */}
-
-                                        <Icon
-                                            size={22}
-                                            strokeWidth={1.5}
-                                            className="shrink-0 text-gold-500"
-                                        />
-
-                                        {/* Value */}
-
-                                        <p className="m-0 text-lg font-bold leading-none text-navy-950">
-                                            {value}
-                                        </p>
-
-                                        {/* Label */}
-
-                                        <span className="text-xs font-semibold uppercase leading-none tracking-wide text-gold-500">
-                                            {label}
-                                        </span>
-                                    </div>
-                                )
-                            )}
-                        </div>
-
-                        {/* Side description */}
-
-                        <p className="mt-6 text-sm leading-snug text-slate-600">
-                            A strong network
-                            <br />
-                            for a brighter tomorrow.
-                        </p>
+{/* Image */}
+<div className="relative ml-auto mt-4 h-80 w-full overflow-hidden rounded-2xl shadow-xl sm:mt-5 sm:h-96 lg:mt-6 lg:h-[480px] lg:w-[110%] xl:h-[520px]">
+    <Image
+        src={CampusStudents}
+        alt="Students collaborating on the NCERC campus"
+        fill
+        sizes="(min-width: 1280px) 55vw, (min-width: 1024px) 50vw, 100vw"
+        className="object-cover object-center"
+        priority
+    />
+</div>
                     </div>
                 </div>
             </div>

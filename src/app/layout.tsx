@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Source_Serif_4 } from "next/font/google";
 
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollToTop/page";
+import CtaButtons from "@/components/CtaButtons/page";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,6 +32,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${sourceSerif.variable} antialiased`}>
         {children}
+        <ScrollToTop />
+        <CtaButtons />
+
       </body>
     </html>
   );

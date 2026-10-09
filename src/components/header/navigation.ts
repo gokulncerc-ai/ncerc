@@ -4,6 +4,7 @@ export type NavItem = {
   external?: boolean;
   blurb?: string;
   children?: NavItem[];
+  target?: "_blank" | "_self";
 };
 
 export const primaryNavigation: NavItem[] = [
@@ -20,35 +21,44 @@ export const primaryNavigation: NavItem[] = [
       {label: "Management", href: "/about/management"},
       { label: "Directors & Executive Members", href: "/about/directors-executive" },
       { label: "Mandatory Disclosure", href: "/about/disclosure" },
-      { label: "Approvals & Affiliations", href: "/approvals" },
       {
-        label: "HR Policy",
-        href: "/downloads/hr-policy/HR-POLICY.pdf",
+        label: "NGI-Appstore",
+        href: "https://ncerc.ac.in/appstore/",
         external: true,
-      }
+      },
+      { label: "Approvals & Affiliations", href: "/about/disclosure/approvals" },
+      { label: "Accreditations", href: "/about/accreditation"},
+      {
+        label: "Policy",
+        href: "/about/policy",
+      },
+      { label:"Infrastructure", href: "/about/infrastructure"},
+      {label:"Facilities", href: "/about/facilities"},
+      {label:"Feedback", href: "/about/feedback"},
+      {label: "Holistic Model", href: "/about/holistic"},
+      {label: "Governance", href: "/about/governance"},
     ],
   },
   {
     label: "Admission",
     children: [
-      { label: "Apply Online", href: "/contact" },
-      { label: "Admission Procedure", href: "/admission-procedure" },
-      { label: "Admission Center", href: "/admission-center" },
-      { label: "Our Colleges", href: "/our-colleges" },
+      { label: "Apply Online", href: "https://admissions.nehrucolleges.com/application-form",external: true, },
+      { label: "Admission Procedure", href: "/admission/admission-procedure" },
+      { label: "Admission Center", href: "/admission/admission-center" },
+      { label: "Pay Fees", href: "/admission/pay-fees" },
       {
-        label: "Bank Account Details",
-        href: "/content/download/NCE_5a87d2c1c240a04e2d1a0911ac5dee6d.pdf",
+        label: " 360 Degree Campus View",
+        href: "https://ncerc.ac.in/360/",
         external: true,
       },
       {
-        label: "NGI Brochure",
-        href: "/downloads/Brochure/NGI_Brochure.pdf",
+        label: "Personality & Career Profiling Assessment",
+        href: "https://ncerc.ac.in/admission/",
         external: true,
       },
       {
-        label: "NCERC Brochure",
-        href: "/downloads/Brochure/NCERC.pdf",
-        external: true,
+        label: "Scholarship",
+        href: "/admission/scholarship",
       },
     ],
   },
@@ -56,51 +66,66 @@ export const primaryNavigation: NavItem[] = [
     label: "Academics",
     children: [
       { label: "Courses", href: "/academics/courses" },
-      { label: "Regulations & Curriculum", href: "/academics/regulationsAndCurriculum" },
-      { label: "Autonomous Examination Cell", href: "/academics/autonomousExaminationCell" },
+      { label: "Regulations & Curriculum", href: "/academics/regulations-and-curriculum" },
+      { label: "Autonomous Examination Cell", href: "/academics/autonomous-examination-cell" },
       {
         label: "Exam Manuals",
-        href: "/documents/ExamManual.pdf",
+        href: "/documents/Exam Manual.pdf",
         external: true,
       },
       { label: "Library", href: "/academics/library" },
-      { label: "Certifications", href: "/library" },
-      { label: "Downloads", href: "/mpd" },
+      { label: "Certifications", href: "/academics/certifications" },
+      { label: "Downloads", href: "/academics/download" },
       { label: "Circulars", href: "/mpd" },
-      { label: "Committees", href: "/mpd" },
-      { label: "Grievance Redressal", href: "/mpd" },
-      { label: "AICTE VAANI", href: "/mpd" },
-      { label: "Media & Publication Division", href: "/mpd" },
-      { label: "NGI Smart", href: "/mpd" },
+      { label: "Committees", href: "/academics/committees" },
+      { label: "Grievance Redressal", href: "/academics/grievance-redressal" },
+      { label: "AICTE VAANI", href: "/academics/aicte-vaani" },
+      { label: "Media & Publication Division", href: "/academics/mpd" },
+      { label: "NGI Smart", href: "https://ncerc.ac.in/ngi-smart/",external:true,target: "_blank", },
+      {
+        label: "Antiragging",
+        href: "/documents/antiragging/antiragging.pdf",
+        target: "_blank",
+        external: true,
+      },
     ],
   },
   {
     label: "Departments",
-    href: "/departments",
+    href: "/department",
     children: [
       {
         label: "B.Tech",
         blurb: "Undergraduate engineering programmes",
         children: [
-          { label: "Mechatronics Engineering", href: "/mechatronics-engineering" },
-          { label: "Mechanical Engineering", href: "/mechanical-engineering" },
+          {
+            label: "Mechanical Engineering",
+            href: "/department/mechanical-engineering",
+          },
           {
             label: "Electrical & Electronics Engineering",
-            href: "/electrical-and-electronics-engineering",
+            href: "/department/electrical-and-electronics-engineering",
           },
           {
             label: "Electronics & Communication Engineering",
-            href: "/electronics-and-communication-engineering",
+            href: "/department/electronics-and-communication-engineering",
           },
           {
             label: "Computer Science and Engineering",
-            href: "/computer-science-and-engineering",
+            href: "/department/computer-science-and-engineering",
           },
           {
             label: "CSE (Artificial Intelligence & Machine Learning)",
-            href: "/computer-science-and-engineering-aiml",
+            href: "/department/cse_ai_and_ml",
           },
-          { label: "Applied Science & Humanities", href: "/applied-science-and-humanities" },
+          {
+            label: "Mechatronics Engineering",
+            href: "/department/mechatronics_engineering",
+          },
+          {
+            label: "Applied Science & Humanities",
+            href: "/department/appliedScience/about",
+          },
         ],
       },
       {
@@ -109,57 +134,234 @@ export const primaryNavigation: NavItem[] = [
         children: [
           {
             label: "Computer Science and Engineering",
-            href: "/m-tech-computer-science-and-engineering",
+            href: "/department/MTechCSE",
           },
-          { label: "Cyber Security", href: "/cyber-security" },
-          { label: "Energy Systems", href: "/energy-system" },
-          { label: "VLSI Design", href: "/visi-design" },
+          {
+            label: "Energy Systems",
+            href: "/department/energy-system",
+          },
+          {
+            label: "VLSI Design",
+            href: "/department/visi-design",
+          },
+          {
+            label: "Artificial Intelligence & Data Science",
+            href: "/department/MTechAIML",
+          },
         ],
       },
-      { label: "MCA", href: "/mca" },
-      { label: "MBA", href: "/mba" },
+      {
+        label: "MCA",
+        href: "/department/mca",
+      },
+      {
+        label: "MBA",
+        href: "/department/mba",
+      },
     ],
   },
   {
     label: "Placements",
     children: [
-      { label: "Placement Status", href: "/placement-status" },
-      { label: "Placed Students", href: "/placed-student" },
+      {
+        label: "Placement Status",
+        href: "/placements/placement_status",
+      },
+      {
+        label: "Placed Students",
+        href: "/placements/placed_students",
+      },
     ],
   },
   {
     label: "RTI",
-    href: "/downloads/iqac/RTI.pdf",
+    href: "/documents/rti/RTI.pdf",
     external: true,
   },
   {
-    // No page existed for this on the legacy site yet — wire up
-    // the real destination once content/URL is confirmed.
     label: "R&D Cell",
-    href: "/rd-cell",
+    children: [
+      {
+        label: "2026-2027",
+        href: "/naac/1",
+      },
+      {
+        label: "2025-2026",
+        href: "/documents/rti/R&Dcell.pdf",
+        external: true,
+      },
+    ],
   },
   {
     label: "IQAC",
     children: [
-      { label: "IQAC", href: "/naac/1" },
-      { label: "AQAR", href: "/aqar-details" },
-      { label: "NAAC-IQAC", href: "/naac-iqac" },
+      {
+        label: "IQAC",
+        href: "/iqac",
+      },
+      {
+        label: "AUDIT",
+        href: "/iqac/audit",
+      },
+      {
+        label: "AQAR",
+        href: "/iqac/aqar",
+      },
+      {
+        label: "NAAC-IQAC",
+        href: "/iqac/naac_iqac",
+      },
     ],
   },
 ];
 
 /** Slim links shown in the top utility bar, above the main header row. */
 export const utilityNavigation: NavItem[] = [
-  { label: "Student Portal", href: "/student-portal" },
-  { label: "Alumni", href: "/alumni" },
-  { label: "News & Events", href: "/news-events" },
+  {
+    label: "Student Portal",
+    href: "https://app.icampuz.in/ngi",
+
+    external: true,
+  },
+  {
+    label: "Student Support",
+    children: [
+      {
+        label: "KTU Student Insurance",
+        href: "/student-support/ktu_students_insurance",
+      },
+      {
+        label: "NSS",
+        href: "/student-support/nss",
+      },
+      {
+        label: "NCC",
+        href: "/student-support/ncc",
+
+      },
+      {
+        label: "IEDC",
+        href: "/student-support/iedc",
+      },
+      {
+        label: "IIC",
+        href: "/student-support/iic",
+      },
+      {
+        label: "Sports",
+        href: "/student-support/sports",
+      },
+      {
+        label: "ICETSSI",
+        href: "/student-support/icetssi",
+      },
+      {
+        label: "Magazine",
+        href: "/student-support/magazine",
+      },
+      {
+        label: "IEEE",
+        href: "https://ieeesbncerc.org/",
+        external: true,
+      },
+      {
+        label: "NGI TBI",
+        href: "https://ngitbi.com/",
+        external: true,
+      },
+      {
+        label: "Student Certificates",
+        href: "/student-support/student-certificates",
+      },
+      {
+        label: "ICC Complain Registration",
+        href: "https://docs.google.com/forms/d/e/1FAIpQLSdrEgXQoxvyWziLm7AhFNyOL0_c2wA5JFmiAgvatGR79rAqNw/viewform",
+        external: true,
+      },
+      {
+        label: "ICC Cell Information",
+        href: "/alumni/alumni-feedback",
+      },
+      {
+        label: "ICC Annual Report",
+        href: "/alumni/alumni-feedback",
+      },
+
+    ],
+  },
+  {
+    label: "Alumni",
+    children: [
+      {
+        label: "Alumni",
+        href: "/alumni",
+      },
+      {
+        label: "Alumni Feedback",
+        href: "/alumni/alumni-feedback",
+      },
+      {
+        label: "Alumni Portal",
+        href: "https://www.almashines.com/ngiaa",
+        external: true,
+      },
+
+    ],
+  },
+  {
+    label: "Media Gallery",
+    children: [
+      {
+        label: "Gallery",
+        href: "/media_gallery/gallery",
+      },
+      {
+        label: "News & Events",
+        href: "/media_gallery/news_and_events",
+      },
+      {
+        label: "Upcoming Events",
+        href: "/media_gallery/upcoming_events",
+
+      },
+      {
+        label: "Blogs",
+        href: "/media_gallery/blogs",
+
+      },
+      {
+        label: "Conference",
+        href: "/media_gallery/conference",
+
+      },
+      {
+        label: "Journal",
+        href: "https://xlescience.org/index.php/NIJASET",
+        external: true,
+
+      },
+
+    ],
+  },
 ];
 
 export const socialLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/nehrucollege.pampady/" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/school/ncerc/" },
-  { label: "Instagram", href: "https://www.instagram.com/nehrugroup_kerala" },
-  { label: "YouTube", href: "https://www.youtube.com/@nehrucollegeofengineeringa1480" },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/nehrucollege.pampady/",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/school/ncerc/",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/nehrugroup_kerala",
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@nehrucollegeofengineeringa1480",
+  },
 ];
 
 export const contactDetails = {

@@ -105,7 +105,9 @@ const UpcomingEventsSection = () => {
                 m-0
                 overflow-hidden
                 bg-[#fbfaf7]
-                p-0
+                py-20
+                sm:py-24
+                lg:py-24
             "
         >
             {/* ========================================================
@@ -206,7 +208,6 @@ const UpcomingEventsSection = () => {
                     mx-auto
                     max-w-[1500px]
                     px-5
-                    py-0
                     sm:px-8
                     lg:px-12
                     xl:px-16
@@ -248,13 +249,12 @@ const UpcomingEventsSection = () => {
                         >
                             <span
                                 className="
-                                    font-sans
-                                    text-[15px]
-                                    font-medium
+                                    text-xs
+                                    font-semibold
                                     uppercase
-                                    tracking-[0.16em]
-                                    text-[#b67b17]
-                                    sm:text-[17px]
+                                    tracking-[0.2em]
+                                    text-[#8F7746]
+                                    sm:text-sm
                                 "
                             >
                                 Upcoming Events
@@ -264,7 +264,7 @@ const UpcomingEventsSection = () => {
                                 className="
                                     h-px
                                     w-20
-                                    bg-[#c9922e]
+                                    bg-[#D2B87C]
                                     sm:w-24
                                 "
                             />
@@ -276,13 +276,13 @@ const UpcomingEventsSection = () => {
                             className="
                                 m-0
                                 max-w-[520px]
-                                font-serif
-                                text-[43px]
-                                font-medium
-                                leading-[1.08]
+                                font-display
+                                text-4xl
+                                font-semibold
+                                leading-tight
                                 tracking-[-0.025em]
-                                text-[#10213b]
-                                sm:text-[52px]
+                               text-navy-950
+                                sm:text-5xl
                                 lg:text-[48px]
                                 xl:text-[57px]
                             "
@@ -299,9 +299,9 @@ const UpcomingEventsSection = () => {
                         <div
                             className="
                                 my-7
-                                h-[3px]
+                                h-1
                                 w-16
-                                bg-[#c9922e]
+                                bg-[#D2B87C]
                             "
                         />
 
@@ -311,11 +311,10 @@ const UpcomingEventsSection = () => {
                             className="
                                 m-0
                                 max-w-[490px]
-                                font-sans
-                                text-[16px]
-                                leading-[1.95]
-                                text-[#26364c]
-                                sm:text-[17px]
+                                text-base
+                                leading-relaxed
+                                text-[#6B6257]
+                                sm:text-base
                             "
                         >
                             From academic seminars to cultural festivals,
@@ -327,26 +326,27 @@ const UpcomingEventsSection = () => {
                         {/* CTA */}
 
                         <Link
-                            href="/events"
+                            href="/media_gallery/news_and_events/events"
                             className="
                                 group
-                                mt-6
+                                mt-8
                                 inline-flex
                                 items-center
                                 gap-7
                                 rounded-full
                                 border
-                                border-[#c9922e]
+                                border-[#D2B87C]
                                 bg-transparent
                                 px-7
                                 py-4
-                                font-sans
-                                text-[16px]
-                                font-medium
-                                text-[#b67b17]
+                                text-sm
+                                font-semibold
+                                uppercase
+                                tracking-wide
+                                text-[#8F7746]
                                 transition-all
                                 duration-300
-                                hover:bg-[#c9922e]
+                                hover:bg-[#D2B87C]
                                 hover:text-white
                                 sm:px-8
                             "
@@ -496,10 +496,10 @@ const UpcomingEventsSection = () => {
                                             >
                                                 <span
                                                     className="
-                                                        font-serif
+                                                        font-display
                                                         text-[29px]
                                                         leading-none
-                                                        text-[#b67b17]
+                                                        text-[#8F7746]
                                                     "
                                                 >
                                                     {event.day}
@@ -508,11 +508,11 @@ const UpcomingEventsSection = () => {
                                                 <span
                                                     className="
                                                         mt-1
-                                                        font-sans
                                                         text-[11px]
                                                         font-semibold
+                                                        uppercase
                                                         tracking-[0.12em]
-                                                        text-[#b67b17]
+                                                        text-[#8F7746]
                                                     "
                                                 >
                                                     {event.month}
@@ -546,17 +546,16 @@ const UpcomingEventsSection = () => {
                                                 <EventIcon
                                                     size={21}
                                                     strokeWidth={1.5}
-                                                    className="text-[#c28a22]"
+                                                    className="text-[#D2B87C]"
                                                 />
 
                                                 <span
                                                     className="
-                                                        font-sans
-                                                        text-[13px]
-                                                        font-medium
+                                                        text-xs
+                                                        font-semibold
                                                         uppercase
                                                         tracking-[0.12em]
-                                                        text-[#b67b17]
+                                                        text-[#8F7746]
                                                     "
                                                 >
                                                     {event.category}
@@ -569,12 +568,12 @@ const UpcomingEventsSection = () => {
                                                 className="
                                                     m-0
                                                     min-h-[58px]
-                                                    font-serif
-                                                    text-[22px]
-                                                    font-medium
-                                                    leading-[1.12]
+                                                    font-display
+                                                    text-lg
+                                                    font-semibold
+                                                    leading-tight
                                                     tracking-[-0.015em]
-                                                    text-[#10213b]
+                                                   text-navy-950
                                                     sm:text-[21px]
                                                     xl:text-[22px]
                                                 "
@@ -604,15 +603,15 @@ const UpcomingEventsSection = () => {
                                                         strokeWidth={1.7}
                                                         className="
                                                             shrink-0
-                                                            text-[#c28a22]
+                                                            text-[#D2B87C]
                                                         "
                                                     />
 
                                                     <span
                                                         className="
-                                                            font-sans
-                                                            text-[14px]
-                                                            text-[#29415f]
+                                                            text-sm
+                                                            leading-relaxed
+                                                            text-[#6B6257]
                                                         "
                                                     >
                                                         {event.time}
@@ -633,15 +632,15 @@ const UpcomingEventsSection = () => {
                                                         strokeWidth={1.7}
                                                         className="
                                                             shrink-0
-                                                            text-[#c28a22]
+                                                            text-[#D2B87C]
                                                         "
                                                     />
 
                                                     <span
                                                         className="
-                                                            font-sans
-                                                            text-[14px]
-                                                            text-[#29415f]
+                                                            text-sm
+                                                            leading-relaxed
+                                                            text-[#6B6257]
                                                         "
                                                     >
                                                         {event.location}

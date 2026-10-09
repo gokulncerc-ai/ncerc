@@ -50,7 +50,7 @@ const disclosures: DisclosureItem[] = [
     description:
       "Approvals and statutory information that the institution is required to publish.",
     type: "Approvals",
-    href: "https://ncerc.ac.in/approvals",
+    href: "/about/disclosure/approvals",
     icon: ClipboardCheck,
     internal: false,
   },
@@ -143,9 +143,8 @@ export default function DisclosurePage() {
   return (
     <main className="w-full max-w-[100vw] overflow-x-clip bg-white">
       <SiteHeader />
-
       {/* Hero */}
-      <section className="relative overflow-hidden bg-navy-950 py-20">
+      <section className="relative overflow-hidden bg-[#20235A] py-20">
         <div
           aria-hidden
           className="pointer-events-none absolute right-0 top-10 hidden h-32 w-32 lg:block"
@@ -153,16 +152,21 @@ export default function DisclosurePage() {
             backgroundImage:
               "radial-gradient(currentColor 1.5px, transparent 1.5px)",
             backgroundSize: "14px 14px",
-            color: "#d9a441",
+            color: "#D2B87C",
             opacity: 0.3,
           }}
         />
 
+        <div className="absolute inset-0 bg-gradient-to-r from-[#20235A] via-[#20235A]/95 to-[#15183F]/90" />
+
+        <div className="pointer-events-none absolute -right-32 -top-32 h-72 w-72 rounded-full border border-[#D2B87C]/15" />
+
         <div className="relative mx-auto flex w-full max-w-8xl flex-col gap-8 px-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-3">
-              <span className="h-px w-10 shrink-0 bg-gold-500" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-500">
+              <span className="h-px w-10 shrink-0 bg-[#D2B87C]" />
+
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D2B87C]">
                 Transparency &amp; Compliance
               </span>
             </div>
@@ -170,7 +174,7 @@ export default function DisclosurePage() {
             <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-white sm:text-5xl">
               Mandatory
               <br />
-              <span className="text-gold-500">Disclosure</span>
+              <span className="text-[#D2B87C]">Disclosure</span>
             </h1>
 
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base">
@@ -183,13 +187,13 @@ export default function DisclosurePage() {
             <span className="rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white/60">
               NCERC
             </span>
+
             <span className="rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white/60">
               Public Documents
             </span>
           </div>
         </div>
       </section>
-
       {/* Disclosure links */}
       <section className="w-full overflow-hidden bg-[#faf7f2] py-20">
         <div className="mx-auto w-full max-w-8xl px-6">
@@ -223,22 +227,23 @@ export default function DisclosurePage() {
       </section>
 
       {/* Closing statement */}
-      <section className="w-full overflow-hidden bg-navy-950 py-16">
-        <div className="mx-auto w-full max-w-8xl px-6 text-center">
-          <div className="mx-auto max-w-2xl">
-            <ShieldCheck
-              size={30}
-              strokeWidth={1.4}
-              className="mx-auto text-gold-500"
-            />
-
-            <h2 className="mt-4 font-display text-2xl font-semibold leading-tight text-white sm:text-3xl">
+      <section className="relative w-full overflow-hidden bg-[#20235A] py-16 sm:py-20">
+        {/* Subtle decorative circles from reference layout */}
+        <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full border border-[#D2B87C]/15" />
+        <div className="pointer-events-none absolute -left-20 -bottom-20 h-64 w-64 rounded-full border border-white/5" />
+        <div className="relative mx-auto w-full max-w-7xl px-6 text-center sm:px-8">
+          <div className="mx-auto max-w-3xl">
+            {/* Shield Icon Badge */}
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-[#D2B87C]/30 bg-[#15183f]/60 text-[#D2B87C]">
+              <ShieldCheck size={28} strokeWidth={1.5} />
+            </div>
+            <h2 className="mt-6 font-serif text-3xl font-normal leading-tight tracking-[-0.02em] text-white sm:text-4xl lg:text-5xl">
               Open, accountable and
               <br />
-              <span className="text-gold-500">committed to quality.</span>
+              <span className="italic text-[#D2B87C]">committed to quality.</span>
             </h2>
-
-            <p className="mt-4 text-sm leading-relaxed text-white/70 sm:text-base">
+            <div className="mx-auto mt-6 h-px w-16 bg-[#D2B87C]" />
+            <p className="mx-auto mt-6 max-w-2xl text-sm leading-8 text-white/75 sm:text-base">
               NCERC is an ISO 9001:2015 certified institution, approved by
               AICTE and Re-Accredited by NAAC with an &lsquo;A&rsquo; Grade.
               Publishing this information reflects our commitment to
@@ -246,8 +251,9 @@ export default function DisclosurePage() {
             </p>
           </div>
         </div>
+        {/* Bottom Accent Line */}
+        <div className="absolute bottom-0 inset-x-0 h-1 bg-[#D2B87C]" />
       </section>
-
       <FooterSection />
     </main>
   );

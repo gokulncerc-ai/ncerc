@@ -1,15 +1,8 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/about/disclosure/page": "app/about/disclosure/page.js",
-  "/about/directors-executive/page": "app/about/directors-executive/page.js",
-  "/about/autonomous/page": "app/about/autonomous/page.js",
-  "/about/management/page": "app/about/management/page.js",
-  "/about/page": "app/about/page.js",
-  "/academics/library/page": "app/academics/library/page.js",
-  "/academics/autonomousExaminationCell/page": "app/academics/autonomousExaminationCell/page.js",
-  "/about/principal/page": "app/about/principal/page.js",
-  "/academics/library/ug-library/page": "app/academics/library/ug-library/page.js",
+  "/department/computer-science-and-engineering/placement/page": "app/department/computer-science-and-engineering/placement/page.js",
+  "/department/computer-science-and-engineering/faculty-details/page": "app/department/computer-science-and-engineering/faculty-details/page.js",
+  "/department/computer-science-and-engineering/digital-library/page": "app/department/computer-science-and-engineering/digital-library/page.js",
   "/page": "app/page.js",
-  "/academics/regulationsAndCurriculum/page": "app/academics/regulationsAndCurriculum/page.js",
-  "/academics/courses/page": "app/academics/courses/page.js"
+  "/department/computer-science-and-engineering/teaching-learning-process/page": "app/department/computer-science-and-engineering/teaching-learning-process/page.js",
+  "/department/computer-science-and-engineering/syllabus/page": "app/department/computer-science-and-engineering/syllabus/page.js"
 }

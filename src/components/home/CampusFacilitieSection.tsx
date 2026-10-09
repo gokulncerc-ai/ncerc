@@ -13,10 +13,6 @@ import {
 
 import CampusImage from "../../../public/images/campus_two.png";
 
-/* ============================================================
-   FACILITIES
-============================================================ */
-
 const facilities = [
     {
         icon: GraduationCap,
@@ -47,10 +43,6 @@ const facilities = [
         label: "Campus\nAmenities",
     },
 ];
-
-/* ============================================================
-   CAMPUS FACILITIES SECTION
-============================================================ */
 
 export const CampusFacilitieSection = () => {
     return (
@@ -298,76 +290,56 @@ export const CampusFacilitieSection = () => {
                         helping you learn, connect and thrive.
                     </p>
 
-                    {/* =================================================
-                        FACILITIES
-                    ================================================= */}
-
                     <div
-                        className="
-                            mt-8
-                            grid
-                            grid-cols-2
-                            gap-y-7
-                            sm:grid-cols-4
-                        "
-                    >
-                        {facilities.map(
-                            ({ icon: Icon, label }, index) => {
-                                const isLastInRow =
-                                    (index + 1) % 4 === 0;
+    className="
+        mt-8
+        grid
+        -translate-x-12
+        grid-cols-2
+        gap-y-7
+        sm:grid-cols-4
+    "
+>
+    {facilities.map(({ icon: Icon, label }, index) => {
+        const isLastInRow = (index + 1) % 4 === 0;
+        const isLastItem = index === facilities.length - 1;
 
-                                const isLastItem =
-                                    index === facilities.length - 1;
+        return (
+            <div
+                key={label}
+                className={`
+                    px-2
+                    text-center
+                    sm:px-4
+                    ${
+                        !isLastInRow && !isLastItem
+                            ? "sm:border-r sm:border-slate-200"
+                            : ""
+                    }
+                `}
+            >
+                <Icon
+                    size={32}
+                    strokeWidth={1.5}
+                    className="mx-auto text-gold-500"
+                />
 
-                                return (
-                                    <div
-                                        key={label}
-                                        className={`
-                                            px-2
-                                            text-center
-                                            sm:px-4
-                                            ${!isLastInRow &&
-                                                !isLastItem
-                                                ? "sm:border-r sm:border-slate-200"
-                                                : ""
-                                            }
-                                        `}
-                                    >
-                                        <Icon
-                                            size={32}
-                                            strokeWidth={1.5}
-                                            className="
-                                                mx-auto
-                                                text-gold-500
-                                            "
-                                        />
+                <p className="m-0 mt-3 whitespace-pre-line font-sans text-sm font-semibold leading-snug text-navy-950">
+                    {label}
+                </p>
+            </div>
+        );
+    })}
+</div>
 
-                                        <p
-                                            className="
-                                                m-0
-                                                mt-3
-                                                whitespace-pre-line
-                                                font-sans
-                                                text-sm
-                                                font-semibold
-                                                leading-snug
-                                                text-navy-950
-                                            "
-                                        >
-                                            {label}
-                                        </p>
-                                    </div>
-                                );
-                            }
-                        )}
-                    </div>
 
                     {/* =================================================
                         CTA
                     ================================================= */}
-
                     <Link
-                        href="/facilities"
+                        href="https://ncerc.ac.in/360/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="
                             group
                             mt-7
@@ -399,6 +371,7 @@ export const CampusFacilitieSection = () => {
                             "
                         />
                     </Link>
+
                 </div>
             </div>
         </section>

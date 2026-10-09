@@ -1,6 +1,13 @@
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
-import { ArrowRight, Award, BadgeCheck, Briefcase, Lightbulb } from "lucide-react";
+import {
+    ArrowRight,
+    Award,
+    BadgeCheck,
+    Briefcase,
+    Lightbulb,
+} from "lucide-react";
+import aboutimage from "../../../public/images/campus_two.png";
 
 const highlights = [
     { icon: Award, value: "20+", label: "Years of\nExcellence" },
@@ -9,7 +16,11 @@ const highlights = [
     { icon: Lightbulb, value: "Innovation", label: "Driven\nCampus" },
 ];
 
-export default function AboutSection({ image }: { image: StaticImageData }) {
+export default function AboutSection({
+    image,
+}: {
+    image: StaticImageData;
+}) {
     return (
         <section className="relative overflow-hidden bg-[#faf7f2] py-24">
             {/* Faint building line-art tucked in the bottom-right corner */}
@@ -24,7 +35,11 @@ export default function AboutSection({ image }: { image: StaticImageData }) {
                     stroke="currentColor"
                     strokeWidth="1.5"
                 />
-                <path d="M100 90h40M100 130h40M100 170h40M160 130h40M160 170h40M220 170h40" stroke="currentColor" strokeWidth="1.5" />
+                <path
+                    d="M100 90h40M100 130h40M100 170h40M160 130h40M160 170h40M220 170h40"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                />
             </svg>
 
             <div className="relative mx-auto grid max-w-8xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2">
@@ -44,15 +59,17 @@ export default function AboutSection({ image }: { image: StaticImageData }) {
 
                     {/* Corner brackets */}
                     <span className="absolute -left-4 -top-4 hidden h-16 w-16 rounded-tl-3xl border-l-2 border-t-2 border-gold-500 sm:block" />
+
                     <span className="absolute -bottom-4 -right-4 hidden h-16 w-16 rounded-br-3xl border-b-2 border-r-2 border-gold-500 sm:block" />
 
-                    <div className="relative overflow-hidden rounded-[28px] shadow-xl">
+                    <div className="relative h-[300px] overflow-hidden rounded-[28px] shadow-xl sm:h-[350px] lg:h-[600px]">
                         <Image
-                            src={image}
+                            src={aboutimage}
                             alt="Students and the NCERC campus building"
-                            className="h-auto w-full object-cover"
+                            fill
                             placeholder="blur"
                             sizes="(min-width: 1024px) 45vw, 100vw"
+                            className="object-cover"
                             priority
                         />
                     </div>
@@ -64,6 +81,7 @@ export default function AboutSection({ image }: { image: StaticImageData }) {
                         <span className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-500">
                             About NCERC
                         </span>
+
                         <span className="h-px w-12 bg-gold-500" />
                     </div>
 
@@ -86,8 +104,16 @@ export default function AboutSection({ image }: { image: StaticImageData }) {
                     <div className="mt-10 grid grid-cols-2 gap-y-8 sm:grid-cols-4">
                         {highlights.map(({ icon: Icon, value, label }) => (
                             <div key={value} className="pr-4">
-                                <Icon size={30} strokeWidth={1.5} className="text-gold-500" />
-                                <p className="mt-3 text-lg font-bold text-navy-950">{value}</p>
+                                <Icon
+                                    size={30}
+                                    strokeWidth={1.5}
+                                    className="text-gold-500"
+                                />
+
+                                <p className="mt-3 text-lg font-bold text-navy-950">
+                                    {value}
+                                </p>
+
                                 <p className="whitespace-pre-line text-sm leading-snug text-slate-500">
                                     {label}
                                 </p>
@@ -96,7 +122,7 @@ export default function AboutSection({ image }: { image: StaticImageData }) {
                     </div>
 
                     <Link
-                        href="/about-ncerc"
+                        href="/about"
                         className="mt-10 inline-flex items-center gap-2 border-b-2 border-gold-500 pb-1 text-sm font-semibold uppercase tracking-wide text-gold-500 transition hover:text-gold-400"
                     >
                         Discover NCERC
