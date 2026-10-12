@@ -11,7 +11,7 @@ import {
   Microscope,
   Users,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 
@@ -325,7 +325,7 @@ const page = () => {
                                   affiliated to APJ Abdul Kalam Technological
                                   University (KTU). The institution is ISO
                                   9001:2015 certified, approved by AICTE,
-                                  re-accredited by NAAC with an 'A' Grade
+                                  re-accredited by NAAC with an &apos;A&apos; Grade
                                   and has NBA accredited undergraduate
                                   programmes.
                               </p>
@@ -351,9 +351,11 @@ const page = () => {
                       <div className={tw.storyGrid}>
                           <div className={tw.storyVisual}>
                               <div className={tw.storyImage}>
-                                  <img
+                                  <Image
                                       className="block h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-[1.025]"
                                       src="/images/home/ncerecfront.webp"
+                                      fill
+                                      sizes="(min-width: 1024px) 330px, 100vw"
                                       alt="Nehru College of Engineering and Research Centre campus"
                                   />
 
@@ -389,7 +391,7 @@ const page = () => {
                               </h2>
 
                               <p className={tw.bodyText}>
-                                  Achieving autonomous status reflects NCERC's
+                                  Achieving autonomous status reflects NCERC&apos;s
                                   continued commitment to academic
                                   excellence, research and innovation. The
                                   institution provides an environment where
@@ -447,7 +449,7 @@ const page = () => {
                           </div>
 
                           <p className={tw.recognitionDescription}>
-                              NCERC's academic journey is supported by
+                              NCERC&apos;s academic journey is supported by
                               recognised accreditations, certifications and
                               institutional approvals.
                           </p>
@@ -587,10 +589,12 @@ const page = () => {
                               {/* Supporting Image */}
                               <div className="mt-7 h-[260px] w-full max-w-xl overflow-hidden border border-[#d2b87c]/30 bg-[#20235a]/5 sm:h-[300px] lg:h-[340px]">
                                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                                  <img
+                                  <Image
                                       src="https://i.pinimg.com/736x/9e/05/e0/9e05e0eebb77b5448268ffd44250c246.jpg"
                                       alt="Students collaborating in a university campus environment"
                                       loading="lazy"
+                                      fill
+                                      sizes="(min-width: 1024px) 330px, 100vw"
                                       className="block h-full w-full object-cover object-center"
                                   />
                               </div>
@@ -643,7 +647,7 @@ const page = () => {
 
                               <p className={tw.documentDescription}>
                                   Access the official documents related to
-                                  NCERC's autonomous status.
+                                  NCERC&apos;s autonomous status.
                               </p>
                           </div>
 

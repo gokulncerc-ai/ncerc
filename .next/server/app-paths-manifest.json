@@ -1,7 +1,7 @@
 {
-  "/department/mechanical-engineering/digital-library/page": "app/department/mechanical-engineering/digital-library/page.js",
-  "/department/mechanical-engineering/faculty-details/page": "app/department/mechanical-engineering/faculty-details/page.js",
-  "/department/mechanical-engineering/syllabus/page": "app/department/mechanical-engineering/syllabus/page.js",
   "/department/mechanical-engineering/committee/page": "app/department/mechanical-engineering/committee/page.js",
-  "/department/mechanical-engineering/tlp/page": "app/department/mechanical-engineering/tlp/page.js"
+  "/academics/regulations-and-curriculum/page": "app/academics/regulations-and-curriculum/page.js",
+  "/academics/courses/page": "app/academics/courses/page.js",
+  "/academics/downloads/page": "app/academics/downloads/page.js",
+  "/academics/reputation-ranking/page": "app/academics/reputation-ranking/page.js"
 }

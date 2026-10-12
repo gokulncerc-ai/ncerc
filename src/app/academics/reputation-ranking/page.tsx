@@ -1,6 +1,6 @@
 
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import SiteHeader from "@/components/header/SiteHeader";
@@ -210,9 +210,11 @@ const Page = () => {
                 {/* HERO */}
                 <section className="relative overflow-hidden bg-[#20235A] text-white">
                     <div className="absolute inset-0">
-                        <img
+                        <Image
                             src={images.hero}
                             alt="University campus architecture"
+                            fill
+                            sizes="(min-width: 1024px) 330px, 100vw"
                             className="h-full w-full object-cover opacity-20"
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-[#20235A] via-[#20235A]/95 to-[#20235A]/70" />
@@ -323,9 +325,11 @@ const Page = () => {
 
                         <div className="relative">
                             <div className="aspect-[5/3] overflow-hidden">
-                                <img
+                                <Image
                                     src={images.recognition}
                                     alt="Students collaborating on an academic project"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                                 />
                             </div>
@@ -384,9 +388,11 @@ const Page = () => {
                                         className="group flex h-full flex-col border border-[#E0D9CB] bg-[#FAF7F2] transition-colors duration-300 hover:border-[#20235A]/40"
                                     >
                                         <div className="h-44 overflow-hidden bg-[#E5E0D5]">
-                                            <img
+                                            <Image
                                                 src={item.image}
                                                 alt={item.imageAlt}
+                                                fill
+                                                sizes="(min-width: 1024px) 330px, 100vw"
                                                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                             />
                                         </div>
@@ -468,9 +474,11 @@ const Page = () => {
                             </a>
 
                             <div className="mt-9 aspect-[4/3] overflow-hidden">
-                                <img
+                                <Image
                                     src={images.campus}
                                     alt="University learning environment"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover"
                                 />
                             </div>
@@ -627,9 +635,11 @@ const Page = () => {
                     <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
                         <div className="relative">
                             <div className="aspect-[4/3] overflow-hidden">
-                                <img
+                                <Image
                                     src={images.award}
                                     alt="Academic award and student achievement"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover"
                                 />
                             </div>
@@ -723,9 +733,11 @@ const Page = () => {
                                         className="group grid overflow-hidden border border-[#DED7C9] bg-[#FAF7F2] sm:grid-cols-[0.85fr_1.15fr]"
                                     >
                                         <div className="min-h-56 overflow-hidden sm:min-h-full">
-                                            <img
+                                            <Image
                                                 src={item.image}
                                                 alt={item.imageAlt}
+                                                fill
+                                                sizes="(min-width: 1024px) 330px, 100vw"
                                                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                             />
                                         </div>
@@ -767,9 +779,11 @@ const Page = () => {
                     <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-16">
                         <div className="relative">
                             <div className="aspect-[4/3] overflow-hidden">
-                                <img
+                                <Image
                                     src={images.research}
                                     alt="Research and scientific learning"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover"
                                 />
                             </div>

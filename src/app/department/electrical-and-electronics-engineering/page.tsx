@@ -1,10 +1,8 @@
 "use client";
-
 import Image from "next/image";
 import {
   ArrowRight,
   ArrowUpRight,
-  Check,
   ChevronRight,
   Cpu,
   GraduationCap,
@@ -21,13 +19,6 @@ import React from "react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNavigation from "./DepartmentNav/page";
-
-// =========================================================
-// IMAGES
-// =========================================================
-
-const HOD_IMAGE =
-  "/images/dpt/electrical-and-electronics-engineering/img/faculty/DrJohnsonY.jpeg";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1800&q=90";
@@ -261,9 +252,11 @@ const page = () => {
               {/* Hero Image */}
               <div className="relative min-h-[450px] overflow-hidden lg:min-h-full">
 
-                <img
+                <Image
                   src={HERO_IMAGE}
                   alt="Electrical engineering power infrastructure"
+                  fill
+                  sizes="(min-width: 1024px) 330px, 100vw"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
 
@@ -482,7 +475,7 @@ const page = () => {
               </h2>
 
               <p className="mt-6 text-[16px] leading-8 text-[#1E1917]/60">
-                The department's academic offering brings together core
+                The department&apos;s academic offering brings together core
                 electrical engineering subjects with computing and emerging
                 technology applications.
               </p>

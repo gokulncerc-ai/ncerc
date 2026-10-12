@@ -95,7 +95,7 @@ const faculty = [
 
 export default function Page() {
     const [activeFaculty, setActiveFaculty] =
-        useState<number | null>(null);``
+        useState<number | null>(null);
     const selectedFaculty =
         activeFaculty !== null ? faculty[activeFaculty] : null;
 

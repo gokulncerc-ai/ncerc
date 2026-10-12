@@ -239,16 +239,16 @@ export default function MBAAchievementsPage() {
 
                 <div className="relative overflow-hidden border border-white/10 bg-[#171946] p-2 sm:p-3">
                   <div className="relative flex min-h-[290px] items-center justify-center overflow-hidden bg-[#F7F4ED] sm:min-h-[390px] lg:min-h-[480px]">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <Image
                       src={HERO_IMAGE}
                       alt="Nehru School of Management achievement"
                       loading="eager"
+                      fill
+                      sizes="(min-width: 1024px) 330px, 100vw"
                       fetchPriority="high"
                       className="block h-auto max-h-[270px] w-full object-contain sm:max-h-[360px] lg:max-h-[440px]"
                     />
                   </div>
-
                   <div className="flex items-center justify-between gap-4 px-3 py-4 sm:px-5">
                     <div className="flex items-center gap-3">
                       <div className="flex h-9 w-9 shrink-0 items-center justify-center bg-[#D2B87C]/15">
@@ -482,8 +482,8 @@ export default function MBAAchievementsPage() {
                   </h2>
 
                   <p className="mt-5 max-w-2xl text-sm font-normal leading-7 text-white/65 sm:text-base sm:leading-8">
-                    The MBA programme’s NBA accreditation for 2026–2028
-                    represents an important milestone in NSM’s continuing
+                    The MBA programme&apos;s NBA accreditation for 2026–2028
+                    represents an important milestone in NSM&apos;s continuing
                     commitment to academic quality, industry relevance and
                     management education.
                   </p>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
     ArrowRight,
@@ -12,10 +11,10 @@ import {
     Search,
     Sparkles,
     Camera,
-    Images,
 } from "lucide-react";
-import SiteHeader from '@/components/header/SiteHeader'
-import FooterSection from '@/components/home/FooterSection'
+import Image from 'next/image';
+import SiteHeader from '@/components/header/SiteHeader';
+import FooterSection from '@/components/home/FooterSection';
 import React from 'react';
 
 const libraryLinks = [

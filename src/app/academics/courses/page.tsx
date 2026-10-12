@@ -8,7 +8,7 @@ import {
     CheckCircle2,
     Clock3,
 } from "lucide-react"
-
+import Image from 'next/image'
 
 const ugCourses = [
     {
@@ -182,9 +182,11 @@ const page = () => {
                                     {/* Image */}
                                     <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10] lg:aspect-[4/3]">
 
-                                        <img
+                                        <Image
                                             src="https://presidencyuniversity.in/uploads/department/64f868c0dc9cf1694001344.webp"
                                             alt="Students engaged in academic and engineering learning"
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="absolute inset-0 h-full w-full object-cover object-[50%_42%] sm:object-[50%_45%] lg:object-center"
                                             loading="eager"
                                         />
