@@ -10,11 +10,9 @@ export type Achievement = {
   image: string;
   alt: string;
 };
-
 type AchievementsGridProps = {
   items: Achievement[];
 };
-
 export default function AchievementsGrid({ items }: AchievementsGridProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
