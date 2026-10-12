@@ -14,10 +14,10 @@ import {
     GraduationCap,
     LineChart,
     Network,
-    Search,
-    ShieldCheck,
     Sparkles,
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -181,10 +181,13 @@ const page = () => {
 
                             {/* Hero Image */}
                             <div className="relative min-h-[430px] overflow-hidden lg:min-h-full">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1600&q=90"
                                     alt="Artificial intelligence and data science technology"
                                     className="absolute inset-0 h-full w-full object-cover"
+                                    width={1000}
+                                    height={750}
+                                    sizes="(max-width: 1024px) 100vw, 400px"
                                 />
 
                                 <div className="absolute inset-0 bg-gradient-to-r from-[#20235A] via-[#20235A]/25 to-transparent" />
@@ -685,14 +688,27 @@ const page = () => {
         ========================================================== */}
                 <section className="mx-auto max-w-[1440px] px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
                     <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
+                        {/* Left Column */}
                         <div>
                             <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#8F7746]">
                                 The NCERC Advantage
                             </span>
 
                             <div className="mt-7 h-px w-16 bg-[#D2B87C]" />
+
+                            {/* AI & Data Science Image */}
+                            <div className="relative mt-8 aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl">
+                                <Image
+                                    src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Artificial intelligence and data science research"
+                                    fill
+                                    sizes="(max-width: 1024px) 100vw, 35vw"
+                                    className="object-cover object-center transition-transform duration-500 hover:scale-105"
+                                />
+                            </div>
                         </div>
 
+                        {/* Right Column */}
                         <div>
                             <h2 className="font-serif text-[34px] leading-[1.12] tracking-[-0.02em] text-[#20235A] sm:text-[44px] lg:text-[50px]">
                                 A platform for advanced computing, research and data-driven
@@ -735,13 +751,13 @@ const page = () => {
                                 </h2>
                             </div>
 
-                            <a
+                            <Link
                                 href="/"
                                 className="group flex w-fit items-center gap-4 bg-[#20235A] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#171946]"
                             >
                                 Explore NCERC
                                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>

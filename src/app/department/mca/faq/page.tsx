@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-
+import Image from "next/image";
 const faqItems = [
     {
         question:
@@ -82,14 +82,15 @@ const Page = () => {
                                 MCA Programme
                             </span>
                         </div>
-
                         {/* =========================
                             MCA VISUAL
                         ========================== */}
                         <div className="mt-6 overflow-hidden border border-[#20235A]/10">
-                            <img
+                            <Image
                                 src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85"
                                 alt="MCA Computer Technology"
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="h-36 w-full object-cover sm:h-40"
                             />
                         </div>

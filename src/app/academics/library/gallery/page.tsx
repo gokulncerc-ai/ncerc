@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
     ArrowRight,
@@ -186,13 +187,13 @@ const page = () => {
 
                             <div className="mt-10 flex flex-wrap gap-4">
 
-                                <a
+                                <Link
                                     href="#gallery"
                                     className="inline-flex items-center gap-3 rounded-full bg-[#D2B87C] px-6 py-3.5 text-sm font-semibold text-[#20235A] transition hover:bg-[#C4A96F]"
                                 >
                                     Explore Gallery
                                     <ArrowRight size={17} />
-                                </a>
+                                </Link>
 
                                 <Link
                                     href="/academics/library"
@@ -216,11 +217,16 @@ const page = () => {
 
                                 <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
 
-                                    <img
+
+                                    <Image
                                         src="https://images.unsplash.com/photo-1526243741027-444d633d7365?auto=format&fit=crop&w=1200&q=85"
                                         alt="NCERC Central Library"
+                                        width={100}
+                                        height={100}
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
                                         className="h-full w-full object-cover"
                                     />
+
 
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#20235A]/80 via-transparent to-transparent" />
 
@@ -300,13 +306,13 @@ const page = () => {
                     INTRO
                 ================================================= */}
 
-                <section className="px-6 py-24 lg:px-8 lg:py-32">
+                {/* <section className="px-6 py-24 lg:px-8 lg:py-32">
 
                     <div className="mx-auto max-w-7xl">
 
-                        <div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr] lg:items-end">
+                        <div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr] lg:items-end"> */}
 
-                            <div>
+                            {/* <div>
 
                                 <div className="mb-5 flex items-center gap-3">
                                     <span className="h-px w-10 bg-[#D2B87C]" />
@@ -323,9 +329,9 @@ const page = () => {
                                     </span>
                                 </h2>
 
-                            </div>
+                            </div> */}
 
-                            <div className="max-w-2xl lg:ml-auto">
+                            {/* <div className="max-w-2xl lg:ml-auto">
 
                                 <p className="text-lg leading-8 text-[#6B6257]">
                                     Take a visual journey through the library
@@ -338,17 +344,19 @@ const page = () => {
                                     <Images
                                         size={18}
                                         className="text-[#D2B87C]"
+                                        width={1200}
+                                        height={800}
                                     />
                                     Explore our library spaces and resources
                                 </div>
 
-                            </div>
+                            </div> */}
 
-                        </div>
+                        {/* </div>
 
                     </div>
 
-                </section>
+                </section> */}
 
 
                 {/* =================================================
@@ -357,7 +365,7 @@ const page = () => {
 
                 <section
                     id="gallery"
-                    className="px-6 pb-24 lg:px-8 lg:pb-32"
+                    className="px-6 p-24  lg:px-8 lg:pb-32"
                 >
 
                     <div className="mx-auto max-w-7xl">
@@ -411,9 +419,12 @@ const page = () => {
                                             }`}
                                     >
 
-                                        <img
+                                        <Image
                                             src={item.image}
                                             alt={item.title}
+                                            width={1200}
+                                            height={800}                                         
+                                            sizes="(max-width: 1024px) 100vw, 50vw"
                                             className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-105"
                                         />
 

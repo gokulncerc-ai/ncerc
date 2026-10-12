@@ -12,7 +12,6 @@ import {
     Newspaper,
     Search,
     ScrollText,
-    ShieldCheck,
     Sparkles,
     UserCheck,
     Users,

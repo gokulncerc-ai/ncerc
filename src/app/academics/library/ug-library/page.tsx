@@ -8,7 +8,6 @@ import {
     GraduationCap,
     LibraryBig,
     Monitor,
-    Network,
     ScrollText,
     Search,
     Sparkles,
@@ -369,7 +368,7 @@ const page = () => {
                             </h2>
 
                             <p className="mt-5 text-base leading-8 text-white/60">
-                                An overview of the library's physical facilities,
+                                An overview of the library&apos;s physical facilities,
                                 collection and daily academic usage.
                             </p>
                         </div>

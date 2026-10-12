@@ -29,7 +29,7 @@ const facilityCards: FacilityCard[] = [
     title: "Laboratories",
     description:
       "Specialized laboratory spaces supporting practical learning, experimentation and engineering applications.",
-    href: "/departments/electrical-and-electronics-engineering/facilities/laboratories",
+    href: "/department/electrical-and-electronics-engineering/facilities/laboratories",
     icon: <FlaskConical className="h-6 w-6" />,
   },
   {
@@ -37,7 +37,7 @@ const facilityCards: FacilityCard[] = [
     title: "Class Rooms",
     description:
       "Purpose-built academic spaces designed to support focused classroom learning and interaction.",
-    href: "/departments/electrical-and-electronics-engineering/facilities/class-rooms",
+    href: "/department/electrical-and-electronics-engineering/facilities/class-rooms",
     icon: <Users className="h-6 w-6" />,
   },
   {
@@ -45,7 +45,7 @@ const facilityCards: FacilityCard[] = [
     title: "Seminar Halls",
     description:
       "Dedicated spaces for seminars, technical sessions, presentations and academic programmes.",
-    href: "/departments/electrical-and-electronics-engineering/facilities/seminar-halls",
+    href: "/department/electrical-and-electronics-engineering/facilities/seminar-halls",
     icon: <Landmark className="h-6 w-6" />,
   },
   {
@@ -53,7 +53,7 @@ const facilityCards: FacilityCard[] = [
     title: "Library",
     description:
       "Academic resources and learning facilities that support students, faculty and departmental activities.",
-    href: "/departments/electrical-and-electronics-engineering/facilities/library",
+    href: "/department/electrical-and-electronics-engineering/facilities/library",
     icon: <BookOpen className="h-6 w-6" />,
   },
   {
@@ -61,7 +61,7 @@ const facilityCards: FacilityCard[] = [
     title: "Smart Rooms",
     description:
       "Technology-enabled learning environments designed for modern teaching and collaborative learning.",
-    href: "/departments/electrical-and-electronics-engineering/facilities/smart-rooms",
+    href: "/department/electrical-and-electronics-engineering/facilities/smart-rooms",
     icon: <Monitor className="h-6 w-6" />,
   },
 ];
@@ -108,7 +108,7 @@ export default function FacilitiesPage() {
               </a>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering"
+                href="/department/electrical-and-electronics-engineering"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
               >
                 Department Overview
@@ -339,7 +339,7 @@ export default function FacilitiesPage() {
               <div>
                 <p className="max-w-3xl text-sm leading-7 text-[#1E1917]/65 sm:text-base">
                   From practical laboratory work to technology-enabled
-                  classrooms and academic resource spaces, the department's
+                  classrooms and academic resource spaces, the department&apos;s
                   facilities provide students with different environments for
                   developing technical knowledge and professional capabilities.
                 </p>
@@ -402,7 +402,7 @@ export default function FacilitiesPage() {
               </div>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering"
+                href="/department/electrical-and-electronics-engineering"
                 className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#D2B87C] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.15em] text-[#20235A] transition-all duration-300 hover:bg-white"
               >
                 Explore Department

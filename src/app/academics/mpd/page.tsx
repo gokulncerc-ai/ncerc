@@ -16,6 +16,7 @@ import {
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
+import Image from "next/image";
 
 const projectImages = [
     {
@@ -215,10 +216,13 @@ const Page = () => {
 
                                     <div className="overflow-hidden rounded-[1.5rem] bg-white">
 
-                                        <img
+                                        <Image
                                             src="https://ncerc.ac.in/images/MPD%20NCERC%20LOG.jpg"
                                             alt="NCERC Media and Publication Division"
                                             className="h-auto w-full object-cover"
+                                            width={800}
+                                            height={600}
+                                            sizes="(max-width: 1024px) 100vw, 50vw"
                                         />
 
                                     </div>
@@ -427,135 +431,96 @@ const Page = () => {
                     PUBLICATION CATALOGUE
                 ===================================================== */}
 
+
+
                 <section
                     id="publications"
                     className="bg-white"
                 >
-
                     <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-12 lg:py-28">
-
-                        <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr]">
+                        <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr] lg:items-stretch">
 
                             {/* Left */}
-
-                            <div>
-
+                            <div className="flex flex-col">
                                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8F7746]">
-
                                     Publication Catalogue
-
                                 </p>
 
-
                                 <h2 className="mt-4 font-serif text-4xl leading-tight text-[#20235A] sm:text-5xl">
-
                                     Our publications.
-
                                 </h2>
 
-
                                 <p className="mt-6 max-w-sm text-base leading-8 text-[#6B6257]">
-
                                     The Media & Publication Division works across
                                     multiple formats to support academic,
                                     institutional and creative communication.
-
                                 </p>
 
-
-                                <div className="mt-8 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#20235A] text-[#D2B87C]">
-
-                                    <BookOpen className="h-6 w-6" />
-
+                                {/* Media & Publications Image */}
+                                <div className="relative mt-6 min-h-[280px] flex-1 overflow-hidden rounded-2xl lg:min-h-0">
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1000&q=85"
+                                        alt="Media and Publications Division editorial workspace"
+                                        width={1000}
+                                        height={750}
+                                        sizes="(max-width: 1024px) 100vw, 400px"
+                                        className="absolute inset-0 h-full w-full object-cover"
+                                    />
                                 </div>
-
                             </div>
 
-
                             {/* Right */}
-
                             <div className="space-y-4">
-
                                 {publicationCategories.map((category) => {
-
                                     const Icon = category.icon;
 
                                     return (
-
                                         <div
                                             key={category.title}
                                             className="rounded-[1.5rem] border border-[#E3DED4] bg-[#FAF7F2] p-6 transition hover:border-[#D2B87C]"
                                         >
-
                                             <div className="flex items-start gap-5">
-
                                                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white text-[#8F7746]">
-
                                                     <Icon className="h-5 w-5" />
-
                                                 </div>
 
-
                                                 <div className="min-w-0 flex-1">
-
                                                     <div className="flex flex-wrap items-center justify-between gap-3">
-
                                                         <h3 className="font-serif text-2xl text-[#20235A]">
-
                                                             {category.title}
-
                                                         </h3>
 
-
                                                         <span className="rounded-full bg-[#20235A] px-3 py-1 text-xs font-semibold text-[#D2B87C]">
-
                                                             {category.count}
-
                                                         </span>
-
                                                     </div>
 
-
                                                     <div className="mt-5 grid gap-x-6 gap-y-2 sm:grid-cols-2">
-
                                                         {category.items.map((item) => (
-
                                                             <div
                                                                 key={item}
                                                                 className="flex items-start gap-2 py-1"
                                                             >
-
                                                                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D2B87C]" />
 
                                                                 <p className="text-sm leading-6 text-[#6B6257]">
-
                                                                     {item}
-
                                                                 </p>
-
                                                             </div>
-
                                                         ))}
-
                                                     </div>
-
                                                 </div>
-
                                             </div>
-
                                         </div>
-
                                     );
-
                                 })}
-
                             </div>
 
                         </div>
-
                     </div>
-
                 </section>
+
+
 
 
                 {/* =====================================================
@@ -609,9 +574,12 @@ const Page = () => {
 
                                     <div className="relative aspect-[16/10] overflow-hidden">
 
-                                        <img
+                                        <Image
                                             src={projectImages[index].src}
                                             alt={projectImages[index].title}
+                                            width={1000}
+                                            height={750}
+                                            sizes="(max-width: 1024px) 100vw, 400px"
                                             className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                                         />
 
@@ -715,9 +683,12 @@ const Page = () => {
 
                                 <div className="relative aspect-[16/9] overflow-hidden">
 
-                                    <img
+                                    <Image
                                         src={projectImages[2].src}
                                         alt={projectImages[2].title}
+                                        width={1000}
+                                        height={750}
+                                        sizes="(max-width: 1024px) 100vw, 400px"
                                         className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                                     />
 
@@ -865,7 +836,7 @@ const Page = () => {
                 {/* =====================================================
                     DARK CLOSING SECTION
                 ===================================================== */}
-
+                {/* 
                 <section className="bg-[#20235A]">
 
                     <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
@@ -922,7 +893,7 @@ const Page = () => {
 
                     </div>
 
-                </section>
+                </section> */}
 
 
                 {/* =====================================================
@@ -982,9 +953,12 @@ const Page = () => {
 
                         <div className="overflow-hidden rounded-2xl bg-white p-2 shadow-2xl">
 
-                            <img
+                            <Image
                                 src={projectImages[selectedImage].src}
                                 alt={projectImages[selectedImage].title}
+                                width={1000}
+                                height={750}
+                                sizes="(max-width: 1024px) 100vw, 400px"
                                 className="max-h-[80vh] max-w-full rounded-xl object-contain"
                             />
 

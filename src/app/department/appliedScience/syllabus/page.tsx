@@ -466,7 +466,7 @@ export default function SyllabusPage() {
                                 </h2>
 
                                 <p className="mt-4 max-w-xl text-sm leading-7 text-white/60">
-                                    Discover the department's facilities and
+                                    Discover the department&apos;s facilities and
                                     academic activities supporting first-year
                                     learning at NCERC.
                                 </p>

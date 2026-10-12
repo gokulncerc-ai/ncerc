@@ -40,9 +40,6 @@ type Faculty = {
   dateOfJoining: string;
   nature: string;
 };
-
-const PHOTO_PATH = "/images/dpt/mba/img/faculty";
-
 const currentFaculty: Faculty[] = [
   {
     name: "Prof Dr KrishnaKumar T P",

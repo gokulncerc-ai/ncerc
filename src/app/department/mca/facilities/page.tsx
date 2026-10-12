@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import {
     ArrowUpRight,
@@ -147,9 +147,11 @@ const Page = () => {
 
                     {/* Hero Visual */}
                     <div className="relative min-h-[360px] overflow-hidden lg:min-h-full">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=90"
                             alt="Modern technology learning environment"
+                            fill
+                            sizes="(min-width: 1024px) 330px, 100vw"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
 
@@ -250,9 +252,11 @@ const Page = () => {
                             </p>
 
                             <div className="mt-8 overflow-hidden border border-[#20235A]/10 bg-white">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=900&q=85"
                                     alt="Students collaborating with technology"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-44 w-full object-cover sm:h-52"
                                 />
                             </div>
@@ -460,9 +464,11 @@ const Page = () => {
                         </div>
 
                         <div className="relative min-h-[300px] overflow-hidden lg:min-h-full">
-                            <img
+                            <Image
                                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=90"
                                 alt="Collaborative technology learning"
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="absolute inset-0 h-full w-full object-cover"
                             />
 

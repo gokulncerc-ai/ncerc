@@ -4,7 +4,6 @@ import {
   ArrowRight,
   Building2,
   FileCheck2,
-  FileText,
   Landmark,
   ShieldCheck,
   Users,

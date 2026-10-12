@@ -121,7 +121,7 @@ const page = () => {
 
                                 <p className="mt-7 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
                                     Explore the certifications, accreditations and
-                                    recognitions that reflect NCERC's commitment to
+                                    recognitions that reflect NCERC&apos;s commitment to
                                     quality, academic excellence and continuous
                                     institutional development.
                                 </p>
@@ -149,7 +149,7 @@ const page = () => {
                                     <div className="mt-7 border-t border-white/10 pt-6">
                                         <p className="text-sm leading-7 text-white/60">
                                             Certifications and accreditations that
-                                            document the institution's academic,
+                                            document the institution&apos;s academic,
                                             administrative and quality initiatives.
                                         </p>
                                     </div>
@@ -204,7 +204,7 @@ const page = () => {
                         <div className="max-w-3xl">
 
                             <p className="text-xl leading-9 text-[#1E1917]">
-                                NCERC's certifications and accreditations represent
+                                NCERC&apos;s certifications and accreditations represent
                                 its continued efforts towards maintaining recognised
                                 standards in education, administration, quality
                                 management and campus development.
@@ -473,7 +473,7 @@ const page = () => {
 
                             <p className="max-w-xl text-base leading-8 text-[#6B6257]">
                                 Certifications and recognitions provide documented
-                                milestones in the institution's continuing journey
+                                milestones in the institution&apos;s continuing journey
                                 towards quality education, academic development and
                                 responsible campus practices.
                             </p>

@@ -24,7 +24,7 @@ interface InnerHeaderProps {
   activeTab?: string;
 }
 
-const BASE_PATH = "/department/ug/cse_ai_and_ml";
+const BASE_PATH = "/department/cse_ai_and_ml";
 
 const navigationItems: NavigationItem[] = [
   {

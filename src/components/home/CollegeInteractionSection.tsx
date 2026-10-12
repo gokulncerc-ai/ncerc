@@ -13,7 +13,7 @@ import {
     Building2,
     Rocket,
 } from "lucide-react";
-
+import Image from "next/image";
 interface Testimonial {
     photo: string;
     icon: typeof Microscope;
@@ -300,10 +300,12 @@ export default function CollegeInteractionSection() {
                                                 bg-[#F2EFE8]
                                             "
                                         >
-                                            <img
+                                            <Image
                                                 src={photo}
                                                 alt={name}
                                                 loading="lazy"
+                                                fill
+                                                sizes="(min-width: 1024px) 330px, 100vw"
                                                 className="
                                                     h-full
                                                     w-full

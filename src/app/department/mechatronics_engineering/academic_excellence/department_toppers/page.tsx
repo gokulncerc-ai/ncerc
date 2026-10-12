@@ -1,6 +1,7 @@
-import SiteHeader from '@/components/header/SiteHeader'
-import FooterSection from '@/components/home/FooterSection'
-import DepartmentNavigation from '../../DepartmentsNavigation/page'
+import SiteHeader from '@/components/header/SiteHeader';
+import FooterSection from '@/components/home/FooterSection';
+import Image from 'next/image';
+import DepartmentNavigation from '../../DepartmentsNavigation/page';
 import React from 'react'
 import {
     ArrowRight,
@@ -251,14 +252,6 @@ const topperSections = [
     },
 ]
 
-const getInitials = (name: string) => {
-    const parts = name.split(' ')
-    return parts
-        .slice(0, 2)
-        .map((part) => part.charAt(0))
-        .join('')
-}
-
 const page = () => {
     const totalStudents = topperSections.reduce(
         (total, section) => total + section.students.length,
@@ -439,9 +432,11 @@ const page = () => {
                         <div className="grid overflow-hidden bg-[#20235A] lg:grid-cols-[1.05fr_0.95fr]">
 
                             <div className="relative min-h-[360px] sm:min-h-[450px] lg:min-h-[570px]">
-                                <img
+                                <Image
                                     src="https://ncerc.ac.in/images/dpt/mechatronics-engineering/department-toppers/Mechatronics%20Toppers%20S7.jpeg"
                                     alt="Mechatronics Engineering Department Toppers"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="absolute inset-0 h-full w-full object-cover"
                                 />
 
@@ -605,9 +600,11 @@ const page = () => {
                                                 {/* Image */}
                                                 <div className="relative aspect-[4/3] overflow-hidden bg-[#F2EFE8]">
 
-                                                    <img
+                                                    <Image
                                                         src={student.image}
                                                         alt={student.name}
+                                                        fill
+                                                        sizes="(min-width: 1024px) 330px, 100vw"
                                                         className="h-full w-full object-cover object-center transition duration-700 group-hover:scale-[1.04]"
                                                     />
 

@@ -11,7 +11,7 @@ import {
     Wifi,
     Zap,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../../DepartmentNav/page";
@@ -130,7 +130,7 @@ export default function SmartRoomsPage() {
                             </a>
 
                             <Link
-                                href="/departments/electrical-and-electronics-engineering/facilities"
+                                href="/department/electrical-and-electronics-engineering/facilities"
                                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
                             >
                                 <ArrowLeft className="h-4 w-4" />
@@ -210,7 +210,7 @@ export default function SmartRoomsPage() {
                                 </p>
 
                                 <p className="mt-5 max-w-2xl text-sm leading-7 text-[#1E1917]/60 sm:text-base">
-                                    Designed around the needs of modern learners, the department's
+                                    Designed around the needs of modern learners, the department&apos;s
                                     smart learning spaces help students experience concepts
                                     through a combination of instruction, visual content and
                                     technology-supported activities.
@@ -226,9 +226,11 @@ export default function SmartRoomsPage() {
                         <div className="grid overflow-hidden rounded-[2rem] border border-[#1E1917]/10 bg-[#F2EFE8] lg:grid-cols-[1.05fr_0.95fr]">
                             {/* IMAGE */}
                             <div className="group relative min-h-[360px] overflow-hidden lg:min-h-[600px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=90"
                                     alt="Smart classroom and collaborative learning environment"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
 
@@ -330,9 +332,11 @@ export default function SmartRoomsPage() {
                                     className="group overflow-hidden rounded-3xl border border-[#1E1917]/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                                 >
                                     <div className="relative h-64 overflow-hidden">
-                                        <img
+                                        <Image
                                             src={card.image}
                                             alt={card.title}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
 
@@ -460,7 +464,7 @@ export default function SmartRoomsPage() {
                                 </h2>
 
                                 <p className="mt-5 max-w-md text-sm leading-7 text-[#1E1917]/65 sm:text-base">
-                                    The smart room environment complements the department's
+                                    The smart room environment complements the department&apos;s
                                     academic infrastructure by bringing technology into everyday
                                     classroom learning.
                                 </p>
@@ -572,7 +576,7 @@ export default function SmartRoomsPage() {
                             </div>
 
                             <Link
-                                href="/departments/electrical-and-electronics-engineering/facilities"
+                                href="/department/electrical-and-electronics-engineering/facilities"
                                 className="group inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-[#D2B87C] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#20235A] transition-all duration-300 hover:bg-white"
                             >
                                 View All Facilities

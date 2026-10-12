@@ -8,7 +8,6 @@ import {
     BriefcaseBusiness,
     CalendarDays,
     ChevronRight,
-    CircleCheck,
     Compass,
     Cpu,
     Lightbulb,

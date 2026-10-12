@@ -8,6 +8,7 @@ import {
     ChevronRight,
     X,
 } from "lucide-react";
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import McaNavigation from "../../mca/mcanavigation/page";
@@ -125,9 +126,11 @@ const Page = () => {
                             <div className="relative overflow-hidden border border-white/15 bg-white/5">
 
                                 <div className="aspect-[5/4]">
-                                    <img
+                                    <Image
                                         src={achievements[0].image}
                                         alt={achievements[0].title}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                                     />
                                 </div>
@@ -227,9 +230,11 @@ const Page = () => {
                             className="group relative block w-full overflow-hidden border border-[#20235A]/10 bg-white text-left focus:outline-none"
                         >
                             <div className="aspect-[16/9]">
-                                <img
+                                <Image
                                     src={achievements[0].image}
                                     alt={achievements[0].title}
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
                                 />
                             </div>
@@ -311,9 +316,11 @@ const Page = () => {
                                 >
                                     <div className="relative overflow-hidden border border-[#20235A]/10">
                                         <div className="aspect-[4/3]">
-                                            <img
+                                            <Image
                                                 src={achievements[1].image}
                                                 alt={achievements[1].title}
+                                                fill
+                                                sizes="(min-width: 1024px) 330px, 100vw"
                                                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                                             />
                                         </div>
@@ -454,9 +461,11 @@ const Page = () => {
                         </button>
 
                         <div className="flex max-h-[90vh] max-w-[90vw] flex-col items-center">
-                            <img
+                            <Image
                                 src={achievements[activeImage].image}
                                 alt={achievements[activeImage].title}
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="max-h-[78vh] max-w-full object-contain"
                             />
 

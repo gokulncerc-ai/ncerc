@@ -1,15 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import {
     ArrowUpRight,
     CalendarDays,
     ChevronRight,
     FileText,
-    Globe2,
     Mail,
-    MapPin,
     Users,
 } from "lucide-react";
 import SiteHeader from "@/components/header/SiteHeader";
@@ -337,7 +334,7 @@ const conferenceData: Record<string, ConferenceData> = {
 
 const years = ["2026", "2023", "2022", "2021"];
 
-const page = () => {
+export default function Page() {
     const [activeYear, setActiveYear] = useState("2026");
 
     const activeConference = conferenceData[activeYear];
@@ -969,5 +966,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

@@ -1,6 +1,7 @@
-import SiteHeader from '@/components/header/SiteHeader'
-import FooterSection from '@/components/home/FooterSection'
-import DepartmentNavigation from '../DepartmentsNavigation/page'
+import SiteHeader from '@/components/header/SiteHeader';
+import FooterSection from '@/components/home/FooterSection';
+import DepartmentNavigation from '../DepartmentsNavigation/page';
+import Image from 'next/image';
 import React from 'react'
 import {
     ArrowUpRight,
@@ -197,7 +198,7 @@ const page = () => {
                                 </p>
 
                                 <p>
-                                    These achievements represent the department's
+                                    These achievements represent the department&lsquo;s
                                     commitment to innovation, practical learning,
                                     entrepreneurship and the overall development
                                     of its students.
@@ -266,9 +267,11 @@ const page = () => {
                     <div className="mx-auto max-w-[1400px] px-6 sm:px-8 lg:px-12 xl:px-16">
                         <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-20 xl:gap-28">
                             <div className="relative overflow-hidden bg-[#EAE6DD]">
-                                <img
+                                <Image
                                     src="https://ncerc.ac.in/content/img/seminar-mec/digital_electronics.png"
                                     alt="Digital Electronics book published by Mechatronics faculty"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="aspect-[16/10] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                 />
 
@@ -417,9 +420,11 @@ const page = () => {
                                                 </div>
 
                                                 <div className="overflow-hidden bg-[#EAE6DD]">
-                                                    <img
+                                                    <Image
                                                         src={project.image}
                                                         alt={project.title}
+                                                        fill
+                                                        sizes="(min-width: 1024px) 330px, 100vw"
                                                         className="aspect-[16/10] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                                     />
                                                 </div>
@@ -530,9 +535,11 @@ const page = () => {
                             </div>
 
                             <div className="relative overflow-hidden bg-[#EAE6DD]">
-                                <img
+                                <Image
                                     src="https://ncerc.ac.in/content/img/seminar-mec/11.png"
                                     alt="Mohammed Favas M Gold Medal achievement"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="aspect-[16/10] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                 />
 

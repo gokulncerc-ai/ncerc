@@ -129,7 +129,7 @@ const categories = [
     "Library",
 ];
 
-const page = () => {
+export default function Page() {
     const [activeCategory, setActiveCategory] = useState("All");
     const [searchTerm, setSearchTerm] = useState("");
 
@@ -735,5 +735,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

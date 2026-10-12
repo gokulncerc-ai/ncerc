@@ -249,29 +249,25 @@ export default function PolicyPage() {
                     documents.
                   </span>
                 </h2>
-
                 <p className="mt-5 max-w-md text-base leading-8 text-[#6A645D]">
                   Select a document to open the published PDF in a new tab.
-                  You can review the contents and use your browser's PDF
+                  You can review the contents and use your browser&apos;s PDF
                   viewer to download or print a copy.
                 </p>
-
                 <div className="mt-8 flex items-start gap-3 border-l-2 border-[#D2B87C] bg-white px-5 py-4">
                   <FileCheck2
                     size={20}
                     className="mt-0.5 shrink-0 text-[#8F7746]"
                     aria-hidden="true"
                   />
-
                   <p className="text-sm leading-6 text-[#6A645D]">
                     Please refer to the original PDF for the complete policy
                     wording, applicable provisions, and any amendments.
                   </p>
                 </div>
               </div>
-
               <div className="space-y-4">
-                {policyDocs.map((doc, index) => (
+                {policyDocs.map((doc) => (
                   <a
                     key={doc.href}
                     href={doc.href}

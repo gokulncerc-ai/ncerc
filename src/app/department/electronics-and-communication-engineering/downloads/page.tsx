@@ -7,13 +7,6 @@ import {
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNav from "../DepartmentNav/page";
-type Activity = {
-  image: string;
-  title?: string;
-  paragraphs: string[];
-  meta?: string[];
-  link?: { href: string; external: boolean };
-};
 export const metadata: Metadata = {
   title:
     "Top Engineering Colleges in Thrissur | Electronics and Communication Engineering - NCERC",

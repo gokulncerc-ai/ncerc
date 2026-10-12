@@ -317,7 +317,7 @@ const Page = () => {
                                 </h2>
 
                                 <p className="mt-6 max-w-2xl text-base leading-8 text-white/60">
-                                    Explore the department's academic resources and stay
+                                    Explore the department&apos;s academic resources and stay
                                     connected with the curriculum, schedule and learning
                                     structure of the programme.
                                 </p>

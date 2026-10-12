@@ -10,10 +10,8 @@ import {
     CalendarDays,
     HeartHandshake,
 } from "lucide-react";
-
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-
 const activities = [
     {
         id: 813,
@@ -164,7 +162,7 @@ const activities = [
 
 const ITEMS_PER_PAGE = 6;
 
-const page = () => {
+export default function Page(){
     const [currentPage, setCurrentPage] = useState(1);
 
     const totalPages = Math.ceil(activities.length / ITEMS_PER_PAGE);
@@ -592,5 +590,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

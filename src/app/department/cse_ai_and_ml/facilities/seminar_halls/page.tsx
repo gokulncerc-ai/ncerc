@@ -1,7 +1,7 @@
 "use client";
-
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
     ArrowRight,
     ArrowUpRight,
@@ -10,7 +10,6 @@ import {
     Headphones,
     Lightbulb,
     Mic2,
-    MonitorPlay,
     Presentation,
     Projector,
     Sparkles,
@@ -18,13 +17,10 @@ import {
     Video,
     Wifi,
 } from "lucide-react";
-
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNav from "../../DepartmentNav/page";
-
 const BASE_PATH = "/departments/ug/cse_ai_and_ml";
-
 const seminarHalls = [
     {
         id: "01",
@@ -231,16 +227,15 @@ const page = () => {
                         {/* Hero Image */}
                         <div className="relative">
                             <div className="absolute -left-4 -top-4 h-20 w-20 border-l border-t border-[#D2B87C]/40" />
-
                             <div className="relative h-[390px] overflow-hidden sm:h-[470px] lg:h-[520px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=2200&q=90"
                                     alt="Modern seminar hall"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-[1.02]"
                                 />
-
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#11142f]/85 via-[#20235A]/10 to-transparent" />
-
                                 <div className="absolute bottom-6 left-6 right-6">
                                     <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D2B87C]">
                                         Academic Infrastructure
@@ -353,9 +348,11 @@ const page = () => {
                                 >
                                     {/* Image */}
                                     <div className="relative h-[270px] overflow-hidden bg-[#20235A] sm:h-[330px]">
-                                        <img
+                                        <Image
                                             src={hall.image}
                                             alt={hall.name}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                                         />
 
@@ -556,9 +553,11 @@ const page = () => {
                     <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
                         <div className="grid items-center gap-8 lg:grid-cols-[1.25fr_0.75fr]">
                             <div className="relative h-[380px] overflow-hidden sm:h-[500px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=2200&q=90"
                                     alt="Academic seminar event"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                                 />
 

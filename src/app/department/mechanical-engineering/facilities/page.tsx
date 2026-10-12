@@ -4,7 +4,6 @@ import {
   ArrowRight,
   BookOpen,
   Building2,
-  ChevronRight,
   FlaskConical,
   Landmark,
   Monitor,

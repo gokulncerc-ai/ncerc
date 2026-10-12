@@ -87,7 +87,7 @@ const highlights = [
 ];
 
 
-const page = () => {
+const Page = () => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null)
     return (
         <>
@@ -128,7 +128,7 @@ const page = () => {
                             </p>
 
                             <div className="mt-9 flex flex-wrap items-center gap-4">
-                                <a
+                                <Link
                                     href="#objectives"
                                     className="
                   inline-flex items-center gap-2
@@ -146,9 +146,9 @@ const page = () => {
                                 >
                                     Explore Association
                                     <ArrowUpRight size={15} strokeWidth={1.8} />
-                                </a>
+                                </Link>
 
-                                <a
+                                <Link
                                     href="#gallery"
                                     className="
                   inline-flex items-center gap-2
@@ -165,7 +165,7 @@ const page = () => {
                                 >
                                     Alumni Meet
                                     <ChevronRight size={15} strokeWidth={1.8} />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -492,7 +492,7 @@ const page = () => {
                 <section className="bg-[#20235A] pb-20 sm:pb-24 lg:pb-28">
                     <div className="mx-auto max-w-8xl px-6 sm:px-8 lg:px-12">
                         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                            {galleryImages.map((image, index) => (
+                            {galleryImages.map((image) => (
                                 <button
                                     key={image.src}
                                     type="button"
@@ -680,8 +680,11 @@ const page = () => {
             "
                             onClick={(event) => event.stopPropagation()}
                         >
-                            <img
+                            <Image
                                 src={selectedImage}
+                                width={1000}
+                                height={750}
+                                sizes="(max-width: 1024px) 100vw, 400px"
                                 alt="NCERC Alumni Meet"
                                 className="
                 mx-auto
@@ -702,4 +705,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page;

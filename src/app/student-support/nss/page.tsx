@@ -215,7 +215,7 @@ const page = () => {
                                     ) is a government-sponsored public service
                                     program in India, launched in 1969 by the
                                     Ministry of Youth Affairs and Sports. It
-                                    aims to develop students' personality
+                                    aims to develop students personality
                                     through community service and social
                                     responsibility. NSS provides young
                                     volunteers, primarily college and university
@@ -286,7 +286,7 @@ const page = () => {
                                 <p className="mt-7 max-w-2xl text-base leading-8 text-[#1E1917]/65 sm:text-lg sm:leading-9">
                                     The core philosophy of NSS is{" "}
                                     <strong className="font-semibold text-[#20235A]">
-                                        "Not Me, But You,"
+                                        &quot;Not Me, But You,&quot;
                                     </strong>{" "}
                                     emphasizing selfless service and teamwork.
                                     Volunteers participate in various
@@ -423,7 +423,7 @@ const page = () => {
                                 <p className="max-w-3xl text-base leading-8 text-[#1E1917]/65 sm:text-lg sm:leading-9">
                                     With its motto of{" "}
                                     <strong className="font-semibold text-[#20235A]">
-                                        "Service Before Self,"
+                                    &quot;Service Before Self,&quot;
                                     </strong>{" "}
                                     NSS plays a vital role in shaping
                                     responsible citizens who contribute

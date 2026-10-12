@@ -1,7 +1,7 @@
 import SiteHeader from '@/components/header/SiteHeader'
 import FooterSection from '@/components/home/FooterSection'
 import DepartmentNavigation from '../../DepartmentsNavigation/page'
-
+import Image from 'next/image'
 import {
     ArrowRight,
     BookOpen,
@@ -350,9 +350,11 @@ const Page = () => {
 
                                                 {lab.images.length === 1 ? (
                                                     <div className="overflow-hidden bg-[#F2EFE8]">
-                                                        <img
+                                                        <Image
                                                             src={lab.images[0]}
                                                             alt={`${lab.title} - Mechatronics Engineering`}
+                                                            fill
+                                                            sizes="(min-width: 1024px) 330px, 100vw"
                                                             className="aspect-[16/10] h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
                                                         />
                                                     </div>
@@ -371,11 +373,13 @@ const Page = () => {
                                                                         : 'mt-8 aspect-[4/5]'
                                                                         }`}
                                                                 >
-                                                                    <img
+                                                                    <Image
                                                                         src={
                                                                             image
                                                                         }
                                                                         alt={`${lab.title} ${imageIndex + 1}`}
+                                                                        fill
+                                                                        sizes="(min-width: 1024px) 330px, 100vw"
                                                                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
                                                                     />
                                                                 </div>

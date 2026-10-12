@@ -8,10 +8,7 @@ type ShowcaseItem = {
   image: string;
   alt: string;
 };
-
-// Images must be placed in /public/images/dpt/mba/associations/
-const IMAGE_PATH = "/images/dpt/mba/img/associations";
-
+import Image from "next/image";
 const associations: ShowcaseItem[] = [
   {
     title: "NIPM",
@@ -123,7 +120,7 @@ export default function AssociationsShowcase() {
                   className="relative block aspect-[4/3] w-full overflow-hidden border-b border-[#20235A]/10 bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D2B87C]"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.alt}
                     loading="lazy"
@@ -180,7 +177,7 @@ export default function AssociationsShowcase() {
                   className="relative block aspect-[4/3] w-full overflow-hidden border-b border-[#20235A]/10 bg-[#F2EFE8] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D2B87C]"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.alt}
                     loading="lazy"
@@ -248,7 +245,7 @@ export default function AssociationsShowcase() {
             onClick={(event) => event.stopPropagation()}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={activeItem.image}
               alt={activeItem.alt}
               className="max-h-[80vh] w-auto max-w-full object-contain"

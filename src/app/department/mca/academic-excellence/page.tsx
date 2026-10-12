@@ -20,7 +20,7 @@ const excellenceSections = [
         label: "Academic Distinction",
         description:
             "Explore the university rank holders who represent outstanding academic performance within the MCA programme.",
-        href: "/departments/mca/academic-excellence/university-rank-holders",
+        href: "/department/mca/academic-excellence/university-rank-holders",
         icon: Trophy,
     },
     {

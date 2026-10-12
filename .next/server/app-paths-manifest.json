@@ -1,8 +1,7 @@
 {
-  "/department/computer-science-and-engineering/placement/page": "app/department/computer-science-and-engineering/placement/page.js",
-  "/department/computer-science-and-engineering/faculty-details/page": "app/department/computer-science-and-engineering/faculty-details/page.js",
-  "/department/computer-science-and-engineering/digital-library/page": "app/department/computer-science-and-engineering/digital-library/page.js",
-  "/page": "app/page.js",
-  "/department/computer-science-and-engineering/teaching-learning-process/page": "app/department/computer-science-and-engineering/teaching-learning-process/page.js",
-  "/department/computer-science-and-engineering/syllabus/page": "app/department/computer-science-and-engineering/syllabus/page.js"
+  "/department/mechanical-engineering/digital-library/page": "app/department/mechanical-engineering/digital-library/page.js",
+  "/department/mechanical-engineering/faculty-details/page": "app/department/mechanical-engineering/faculty-details/page.js",
+  "/department/mechanical-engineering/syllabus/page": "app/department/mechanical-engineering/syllabus/page.js",
+  "/department/mechanical-engineering/committee/page": "app/department/mechanical-engineering/committee/page.js",
+  "/department/mechanical-engineering/tlp/page": "app/department/mechanical-engineering/tlp/page.js"
 }

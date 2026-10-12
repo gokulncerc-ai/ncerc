@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -346,51 +345,56 @@ const Page = () => {
         setSelectedPhotoIndex(index);
     };
 
-    const closeLightbox = () => {
+    const closeLightbox = useCallback(() => {
         setSelectedPhotoIndex(null);
-    };
+    }, []);
 
-    const showNextPhoto = () => {
+
+    const showNextPhoto = useCallback(() => {
         if (!selectedCollection || selectedPhotoIndex === null) return;
-
+    
         setSelectedPhotoIndex(
             (selectedPhotoIndex + 1) % selectedCollection.photos.length
         );
-    };
-
-    const showPreviousPhoto = () => {
+    }, [selectedCollection, selectedPhotoIndex]);
+    
+    const showPreviousPhoto = useCallback(() => {
         if (!selectedCollection || selectedPhotoIndex === null) return;
-
+    
         setSelectedPhotoIndex(
             selectedPhotoIndex === 0
                 ? selectedCollection.photos.length - 1
                 : selectedPhotoIndex - 1
         );
-    };
+    }, [selectedCollection, selectedPhotoIndex]);
+    
 
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
             if (selectedPhotoIndex === null) return;
-
+    
             if (event.key === "Escape") {
                 closeLightbox();
-            }
-
-            if (event.key === "ArrowRight") {
+            } else if (event.key === "ArrowRight") {
                 showNextPhoto();
-            }
-
-            if (event.key === "ArrowLeft") {
+            } else if (event.key === "ArrowLeft") {
                 showPreviousPhoto();
             }
         };
-
+    
         window.addEventListener("keydown", handleKeyDown);
-
+    
         return () => {
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [selectedPhotoIndex, selectedCollection]);
+    }, [
+        selectedPhotoIndex,
+        selectedCollection,
+        closeLightbox,
+        showNextPhoto,
+        showPreviousPhoto,
+    ]);
+    
 
     useEffect(() => {
         if (selectedCollection) {

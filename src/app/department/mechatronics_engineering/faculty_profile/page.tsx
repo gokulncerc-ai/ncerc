@@ -10,7 +10,7 @@ import {
     UserRound,
     Users,
 } from 'lucide-react'
-
+import Image from 'next/image'
 const teachingFaculty = [
     {
         name: 'Prof. Dr. Anto Francis Cherussery',
@@ -120,7 +120,7 @@ const getInitials = (name: string) => {
 /* =========================================================
    SMALL FACULTY CARD
 ========================================================= */
-
+const hod = teachingFaculty[0];
 const FacultyCard = ({
     faculty,
 }: {
@@ -141,9 +141,11 @@ const FacultyCard = ({
             <div className="relative h-[250px] overflow-hidden bg-[#F2EFE8] sm:h-full sm:min-h-[260px]">
 
                 {faculty.image ? (
-                    <img
+                    <Image
                         src={faculty.image}
                         alt={faculty.name}
+                        fill
+                        sizes="(min-width: 1024px) 330px, 100vw"
                         className="h-full w-full object-cover object-center transition duration-700 group-hover:scale-[1.035]"
                     />
                 ) : (
@@ -428,17 +430,23 @@ const page = () => {
                         <div className="grid overflow-hidden bg-[#20235A] lg:grid-cols-[280px_1fr]">
 
                             {/* HOD IMAGE */}
-
                             <div className="relative h-[320px] overflow-hidden bg-[#F2EFE8] lg:h-[360px]">
-
-                                <img
-                                    src={teachingFaculty[0].image}
-                                    alt={teachingFaculty[0].name}
-                                    className="h-full w-full object-cover object-center"
+                            {hod.image ? (
+                                <Image
+                                src={hod.image}
+                                alt={hod.name}
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
+                                className="h-full w-full object-cover object-center"
                                 />
-
-                                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#20235A]/70 to-transparent" />
-
+                            ) : (
+                                <div className="flex h-full items-center justify-center">
+                                <span className="font-serif text-3xl text-[#20235A]">
+                                    {getInitials(hod.name)}
+                                </span>
+                                </div>
+                            )}
+                            {/* existing gradient overlay */}
                             </div>
 
                             {/* HOD CONTENT */}

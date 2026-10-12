@@ -1,6 +1,7 @@
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNavigation from "./DepartmentsNavigation/page";
+import Image from "next/image";
 import {
     ArrowRight,
     ArrowUpRight,
@@ -18,7 +19,6 @@ import {
     ShieldCheck,
     Sparkles,
     Target,
-    Users,
     Wrench,
 } from "lucide-react";
 import React from "react";
@@ -233,9 +233,11 @@ const page = () => {
 
                             {/* Hero Image */}
                             <div className="relative min-h-[450px] overflow-hidden lg:min-h-full">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1600&q=90"
                                     alt="Robotics and mechatronics engineering"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="absolute inset-0 h-full w-full object-cover"
                                 />
 

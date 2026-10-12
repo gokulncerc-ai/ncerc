@@ -8,7 +8,6 @@ import {
     Boxes,
     ChevronRight,
     Cpu,
-    ExternalLink,
     Lightbulb,
     Printer,
     Settings2,

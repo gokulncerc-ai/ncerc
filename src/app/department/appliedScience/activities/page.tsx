@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
@@ -143,7 +143,7 @@ export default function ActivitiesPage() {
                             <p className="mt-7 max-w-2xl text-sm leading-7 text-white/70 sm:text-base sm:leading-8">
                                 Discover the academic activities, programmes,
                                 celebrations, and learning experiences that
-                                bring the department's educational vision to
+                                bring the department&apos;s educational vision to
                                 life.
                             </p>
 
@@ -168,10 +168,13 @@ export default function ActivitiesPage() {
 
                             <div className="relative overflow-hidden border border-white/10 bg-white/[0.055] p-4 sm:p-5">
                                 <div className="relative h-[320px] overflow-hidden sm:h-[350px]">
-                                    <img
+                                    <Image
                                         src={activities[6].image}
                                         alt={activities[6].title}
-                                        className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                                        fill
+                                        priority
+                                        sizes="(min-width: 768px) 420px, 100vw"
+                                        className="object-cover transition-transform duration-700 hover:scale-105"
                                     />
 
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#20235A]/90 via-[#20235A]/10 to-transparent" />
@@ -277,10 +280,12 @@ export default function ActivitiesPage() {
                                 onClick={() => openActivity(activities[6])}
                                 className="group relative min-h-[340px] overflow-hidden text-left sm:min-h-[430px] md:min-h-[520px]"
                             >
-                                <img
+                                <Image
                                     src={activities[6].image}
                                     alt={activities[6].title}
-                                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
+                                    fill
+                                    sizes="(min-width: 768px) 55vw, 100vw"
+                                    className="object-cover transition-transform duration-700 group-hover:scale-[1.035]"
                                 />
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#20235A]/65 via-transparent to-transparent" />
@@ -393,10 +398,16 @@ export default function ActivitiesPage() {
                                                 : "h-[300px]"
                                                 }`}
                                         >
-                                            <img
+                                            <Image
                                                 src={activity.image}
                                                 alt={activity.title}
-                                                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.045]"
+                                                fill
+                                                sizes={
+                                                    index === 0
+                                                        ? "(min-width: 1024px) 66vw, 100vw"
+                                                        : "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                }
+                                                className="object-cover transition-transform duration-700 group-hover:scale-[1.045]"
                                             />
 
                                             <div className="absolute inset-0 bg-gradient-to-t from-[#20235A]/80 via-transparent to-transparent opacity-80" />
@@ -525,7 +536,7 @@ export default function ActivitiesPage() {
 
                                 <p className="mt-4 max-w-xl text-sm leading-7 text-white/60">
                                     Discover the facilities and faculty that
-                                    support the department's academic
+                                    support the department&apos;s academic
                                     environment.
                                 </p>
                             </div>
@@ -591,10 +602,12 @@ export default function ActivitiesPage() {
                         <div className="grid max-h-[92vh] overflow-y-auto md:grid-cols-[1.05fr_0.95fr]">
                             {/* Modal image */}
                             <div className="relative min-h-[330px] bg-[#20235A] sm:min-h-[420px] md:min-h-[570px]">
-                                <img
+                                <Image
                                     src={selectedActivity.image}
                                     alt={selectedActivity.title}
-                                    className="h-full min-h-[330px] w-full object-cover sm:min-h-[420px] md:min-h-[570px]"
+                                    fill
+                                    sizes="(min-width: 768px) 50vw, 100vw"
+                                    className="object-cover"
                                 />
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#20235A]/80 via-transparent to-transparent" />

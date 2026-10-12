@@ -1,6 +1,6 @@
 "use client";
-
 import React, { useState } from "react";
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import McaNavigation from "../../mca/mcanavigation/page";
@@ -13,7 +13,6 @@ import {
     GraduationCap,
     X,
 } from "lucide-react";
-
 const faculty = [
     {
         id: "01",
@@ -94,9 +93,9 @@ const faculty = [
     },
 ];
 
-const page = () => {
-    const [activeFaculty, setActiveFaculty] = useState<number | null>(null);
-
+export default function Page() {
+    const [activeFaculty, setActiveFaculty] =
+        useState<number | null>(null);``
     const selectedFaculty =
         activeFaculty !== null ? faculty[activeFaculty] : null;
 
@@ -162,9 +161,11 @@ const page = () => {
                         <div className="relative lg:justify-self-end">
                             <div className="relative ml-auto max-w-[500px]">
                                 <div className="aspect-[4/3] overflow-hidden border border-white/10 bg-white/5">
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=85"
                                         alt="Academic faculty and students"
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-full w-full object-cover object-center grayscale-[10%] transition-transform duration-700 hover:scale-[1.02]"
                                     />
                                 </div>
@@ -279,9 +280,11 @@ const page = () => {
                                         }
                                         className="relative block aspect-[4/3] w-full overflow-hidden bg-[#F7F5F0] text-left focus:outline-none"
                                     >
-                                        <img
+                                        <Image
                                             src={member.image}
                                             alt={member.name}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="h-full w-full object-contain p-5 transition-transform duration-700 group-hover:scale-[1.025] sm:p-6"
                                         />
 
@@ -495,9 +498,11 @@ const page = () => {
 
                         {/* Modal Image */}
                         <div className="flex min-h-[300px] items-center justify-center bg-[#F2EFE8] p-6 sm:min-h-[400px] lg:min-h-[560px]">
-                            <img
+                            <Image
                                 src={selectedFaculty.image}
                                 alt={selectedFaculty.name}
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="h-full max-h-[500px] w-full object-contain"
                             />
                         </div>
@@ -562,5 +567,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

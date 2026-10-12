@@ -11,7 +11,7 @@ import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../../DepartmentNav/page";
 
 const BASE =
-  "/departments/electrical-and-electronics-engineering/syllabus/syllabus-hand-book";
+  "/department/electrical-and-electronics-engineering/syllabus/syllabus-hand-book";
 
 // Adjust this to wherever the PDF lives inside /public
 const EEE_PDF =
@@ -103,7 +103,7 @@ export default function SyllabusHandBookPage() {
               </a>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering/syllabus"
+                href="/department/electrical-and-electronics-engineering/syllabus"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
               >
                 Back to Syllabus
@@ -403,7 +403,7 @@ export default function SyllabusHandBookPage() {
               </div>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering/syllabus"
+                href="/department/electrical-and-electronics-engineering/syllabus"
                 className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#D2B87C] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#20235A] transition-all duration-300 hover:bg-white"
               >
                 Back to Syllabus

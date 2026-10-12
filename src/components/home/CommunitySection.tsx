@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, GraduationCap, Globe, Users } from "lucide-react";
+import { GraduationCap, Globe, Users } from "lucide-react";
 
 import CampusStudents from "../../../public/images/campus_students.png";
 

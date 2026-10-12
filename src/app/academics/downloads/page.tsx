@@ -8,7 +8,6 @@ import {
     BookOpen,
     CalendarDays,
     CheckCircle2,
-    ClipboardCheck,
     Download,
     FileCheck2,
     FileText,
@@ -22,7 +21,6 @@ import {
     Target,
     Trophy,
     University,
-    Users,
 } from "lucide-react";
 import SiteHeader from '@/components/header/SiteHeader';
 import FooterSection from '@/components/home/FooterSection';
@@ -279,21 +277,21 @@ const page = () => {
 
                                 <div className="mt-10 flex flex-wrap gap-3">
 
-                                    <a
+                                    <Link
                                         href="#documents"
                                         className="inline-flex items-center gap-3 rounded-full bg-[#D2B87C] px-6 py-3.5 text-sm font-semibold text-[#20235A] transition hover:bg-[#C4A96F]"
                                     >
                                         Explore Documents
                                         <ArrowRight size={17} />
-                                    </a>
+                                    </Link>
 
-                                    <a
+                                    <Link
                                         href="#categories"
                                         className="inline-flex items-center gap-3 rounded-full border border-white/15 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-[#D2B87C]/40 hover:text-[#D2B87C]"
                                     >
                                         Browse Categories
                                         <ArrowRight size={17} />
-                                    </a>
+                                    </Link>
 
                                 </div>
 
@@ -545,7 +543,7 @@ const page = () => {
                                     const Icon = item.icon;
 
                                     return (
-                                        <a
+                                        <Link
                                             key={item.id}
                                             href={item.href}
                                             target="_blank"
@@ -590,7 +588,7 @@ const page = () => {
 
                                             </div>
 
-                                        </a>
+                                        </Link>
                                     );
                                 })}
 
@@ -608,7 +606,7 @@ const page = () => {
                                     const Icon = item.icon;
 
                                     return (
-                                        <a
+                                        <Link
                                             key={item.id}
                                             href={item.href}
                                             target="_blank"
@@ -652,7 +650,7 @@ const page = () => {
 
                                             </div>
 
-                                        </a>
+                                        </Link>
                                     );
                                 })}
 
@@ -806,13 +804,13 @@ const page = () => {
 
                             </div>
 
-                            <a
+                            <Link
                                 href="#documents"
                                 className="inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-[#D2B87C] px-7 py-4 text-sm font-semibold text-[#20235A] transition hover:bg-[#C4A96F]"
                             >
                                 Browse All Downloads
                                 <ArrowRight size={17} />
-                            </a>
+                            </Link>
 
                         </div>
 

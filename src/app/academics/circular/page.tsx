@@ -128,7 +128,7 @@ const AicteCircularModal = ({
                         <p>
                             The AICTE Circular on the Revised Academic Calendar
                             2026–27 is{" "}
-                            <a
+                            <Link
                                 href={pdfUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -136,14 +136,14 @@ const AicteCircularModal = ({
                             >
                                 available here
                                 <ExternalLink className="h-4 w-4" />
-                            </a>{" "}
+                            </Link>{" "}
                             for the information of all concerned.
                         </p>
                     </div>
 
                     {/* PDF Button */}
                     <div className="mt-9 border-t border-[#E3DED4] pt-7">
-                        <a
+                        <Link
                             href={pdfUrl}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -151,15 +151,14 @@ const AicteCircularModal = ({
                         >
                             View Full Circular
                             <ArrowUpRight className="h-4 w-4" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
         </div>
     );
 };
-
-const page = () => {
+export default function Page() {
 
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
@@ -265,7 +264,7 @@ const page = () => {
 
                             if (item.type === "pdf" && item.href) {
                                 return (
-                                    <a
+                                    <Link
                                         key={item.id}
                                         href={item.href}
                                         target="_blank"
@@ -302,7 +301,7 @@ const page = () => {
                                                 <ArrowUpRight className="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 );
                             }
 
@@ -420,5 +419,3 @@ const page = () => {
         </>
     )
 }
-
-export default page

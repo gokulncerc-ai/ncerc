@@ -17,7 +17,6 @@ const highlights = [
 ];
 
 export default function AboutSection({
-    image,
 }: {
     image: StaticImageData;
 }) {

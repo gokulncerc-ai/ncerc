@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
@@ -13,7 +13,6 @@ import {
     GraduationCap,
     Lightbulb,
     MonitorPlay,
-    Presentation,
     Settings2,
     Users,
 } from "lucide-react";
@@ -389,25 +388,31 @@ const page = () => {
 
                             <div className="grid gap-4 sm:grid-cols-2">
                                 <div className="overflow-hidden sm:row-span-2">
-                                    <img
+                                    <Image
                                         src={visualizationImages[0].src}
                                         alt={visualizationImages[0].alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-full min-h-[360px] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                     />
                                 </div>
 
                                 <div className="overflow-hidden">
-                                    <img
+                                    <Image
                                         src={visualizationImages[1].src}
                                         alt={visualizationImages[1].alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[260px] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                     />
                                 </div>
 
                                 <div className="overflow-hidden">
-                                    <img
+                                    <Image
                                         src={visualizationImages[2].src}
                                         alt={visualizationImages[2].alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[260px] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                     />
                                 </div>
@@ -473,9 +478,11 @@ const page = () => {
                             {/* ICAMPUZ */}
                             <div className="grid items-center gap-12 lg:grid-cols-[1fr_1fr] lg:gap-20">
                                 <div className="overflow-hidden">
-                                    <img
+                                    <Image
                                         src={softwareImages[0].src}
                                         alt={softwareImages[0].alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[360px] w-full object-cover transition-transform duration-700 hover:scale-[1.03] sm:h-[430px]"
                                     />
                                 </div>
@@ -547,9 +554,11 @@ const page = () => {
                                 </div>
 
                                 <div className="order-1 overflow-hidden lg:order-2">
-                                    <img
+                                    <Image
                                         src={softwareImages[1].src}
                                         alt={softwareImages[1].alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[360px] w-full object-cover transition-transform duration-700 hover:scale-[1.03] sm:h-[430px]"
                                     />
                                 </div>
@@ -604,9 +613,11 @@ const page = () => {
                                     key={image.src}
                                     className="overflow-hidden"
                                 >
-                                    <img
+                                    <Image
                                         src={image.src}
                                         alt={image.alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[280px] w-full object-cover transition-transform duration-700 hover:scale-[1.04] sm:h-[330px]"
                                     />
                                 </div>
@@ -844,9 +855,11 @@ const page = () => {
                             <div className="relative">
                                 <div className="absolute -left-4 -top-4 h-20 w-20 border-l border-t border-[#D2B87C]" />
 
-                                <img
+                                <Image
                                     src="https://ncerc.ac.in/images/dpt/mechatronics-engineering/TLP/TLP_img_9.png"
                                     alt="Computational software learning"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="relative h-[340px] w-full object-cover sm:h-[430px]"
                                 />
 
@@ -855,9 +868,11 @@ const page = () => {
                         </div>
 
                         <div className="mt-10 ml-auto max-w-2xl overflow-hidden">
-                            <img
+                            <Image
                                 src="https://ncerc.ac.in/images/dpt/mechatronics-engineering/TLP/TLP_img_10.png"
                                 alt="Analytical software demonstration"
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="h-[260px] w-full object-cover sm:h-[330px]"
                             />
                         </div>
@@ -910,9 +925,11 @@ const page = () => {
                                     key={image.src}
                                     className="overflow-hidden"
                                 >
-                                    <img
+                                    <Image
                                         src={image.src}
                                         alt={image.alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[300px] w-full object-cover transition-transform duration-700 hover:scale-[1.03] sm:h-[420px]"
                                     />
                                 </div>
@@ -984,9 +1001,11 @@ const page = () => {
                                     key={image.src}
                                     className="overflow-hidden"
                                 >
-                                    <img
+                                    <Image
                                         src={image.src}
                                         alt={image.alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[270px] w-full object-cover transition-transform duration-700 hover:scale-[1.03] sm:h-[320px]"
                                     />
                                 </div>
@@ -1075,9 +1094,11 @@ const page = () => {
                                                     : ""
                                             }`}
                                     >
-                                        <img
+                                        <Image
                                             src={image.src}
                                             alt={image.alt}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="h-[280px] w-full object-cover transition-transform duration-700 hover:scale-[1.04] sm:h-[360px]"
                                         />
                                     </div>

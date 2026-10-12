@@ -378,7 +378,7 @@ const page = () => {
 
                                     <p className="mt-3 text-xs leading-5 text-[#1E1917]/50">
                                         Moments and experiences from the
-                                        institution's vibrant community.
+                                        institution&apos;s vibrant community.
                                     </p>
                                 </div>
 

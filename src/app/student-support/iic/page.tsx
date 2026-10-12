@@ -57,7 +57,7 @@ const page = () => {
                                     <span className="h-px w-9 bg-[#D2B87C]" />
 
                                     <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#D2B87C]">
-                                        Institution's Innovation Council
+                                        Institution&apos;s Innovation Council
                                     </span>
                                 </div>
 
@@ -212,7 +212,7 @@ const page = () => {
                         <div className="mt-8 grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
                             <div>
                                 <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8F7746]">
-                                    Institution's Innovation Council
+                                    Institution&apos;s Innovation Council
                                 </p>
                             </div>
 
@@ -267,7 +267,7 @@ const page = () => {
 
                                 <div className="mt-7 grid gap-7 md:grid-cols-2">
                                     <p className="text-sm leading-7 text-[#1E1917]/60 sm:text-base">
-                                        The Institution's Innovation Council
+                                        The Institution&apos;s Innovation Council
                                         creates a space for students to
                                         participate in innovation-oriented
                                         activities, connect with wider
@@ -594,7 +594,7 @@ const page = () => {
                             <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
                                 <div className="max-w-2xl">
                                     <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#D2B87C]">
-                                        Institution's Innovation Council
+                                        Institution&apos;s Innovation Council
                                     </p>
 
                                     <h2 className="font-serif text-3xl leading-[1.05] tracking-[-0.025em] sm:text-4xl lg:text-5xl">

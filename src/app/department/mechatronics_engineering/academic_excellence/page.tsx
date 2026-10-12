@@ -188,7 +188,7 @@ const page = () => {
 
                             <p className="mt-7 max-w-2xl text-[15px] leading-8 text-[#1E1917]/70 sm:text-base sm:leading-[1.9]">
                                 Discover the students and accomplishments that
-                                represent the department's commitment to
+                                represent the department&apos;s commitment to
                                 academic excellence.
                             </p>
                         </div>

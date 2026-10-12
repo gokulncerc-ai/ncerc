@@ -6,7 +6,6 @@ import {
     ArrowUpRight,
     CalendarDays,
     Clock3,
-    GraduationCap,
 } from "lucide-react";
 
 type CalendarEvent = {

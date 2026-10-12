@@ -6,7 +6,6 @@ import {
     ArrowRight,
     ArrowUpRight,
     BriefcaseBusiness,
-    Check,
     ChevronRight,
     GraduationCap,
     Microscope,
@@ -337,7 +336,7 @@ const FacultyProfilePage = () => {
                                         <p className="mt-5 max-w-xl text-sm leading-7 text-white/55">
                                             The Head of Department provides
                                             academic leadership and coordinates
-                                            the department's teaching and
+                                            the department&apos;s teaching and
                                             learning activities.
                                         </p>
                                     </div>
@@ -565,7 +564,7 @@ const FacultyProfilePage = () => {
 
                                 <p className="mt-3 text-sm leading-6 text-[#1e1917]/50">
                                     A coordinated academic and technical team
-                                    contributes to the department's daily
+                                    contributes to the department&apos;s daily
                                     operations.
                                 </p>
                             </div>

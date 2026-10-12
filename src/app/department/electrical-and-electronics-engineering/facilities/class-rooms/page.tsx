@@ -7,7 +7,7 @@ import {
     Monitor,
     Users,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../../DepartmentNav/page";
@@ -116,7 +116,7 @@ export default function ClassRoomsPage() {
                                 </a>
 
                                 <Link
-                                    href="/departments/electrical-and-electronics-engineering/facilities"
+                                    href="/department/electrical-and-electronics-engineering/facilities"
                                     className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
                                 >
                                     <ArrowLeft className="h-4 w-4" />
@@ -266,9 +266,11 @@ export default function ClassRoomsPage() {
                             <div className="grid lg:grid-cols-[1.1fr_0.9fr]">
                                 {/* Image */}
                                 <div className="relative min-h-[340px] overflow-hidden lg:min-h-[480px]">
-                                    <img
+                                    <Image
                                         src={featuredClassroom.image}
                                         alt={featuredClassroom.alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                                     />
 
@@ -374,9 +376,11 @@ export default function ClassRoomsPage() {
                                 >
                                     {/* Image */}
                                     <div className="relative aspect-[16/10] overflow-hidden bg-[#20235A]">
-                                        <img
+                                        <Image
                                             src={classroom.image}
                                             alt={classroom.alt}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
 
@@ -435,7 +439,7 @@ export default function ClassRoomsPage() {
                                 <p className="max-w-3xl text-sm leading-7 text-[#1E1917]/65 sm:text-base">
                                     Effective engineering education requires an environment that
                                     encourages students to listen, question, collaborate and
-                                    apply what they learn. The department's classrooms are
+                                    apply what they learn. The department&apos;s classrooms are
                                     intended to support these different dimensions of academic
                                     learning.
                                 </p>
@@ -507,7 +511,7 @@ export default function ClassRoomsPage() {
                             </div>
 
                             <Link
-                                href="/departments/electrical-and-electronics-engineering/facilities"
+                                href="/department/electrical-and-electronics-engineering/facilities"
                                 className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#D2B87C] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.15em] text-[#20235A] transition-all duration-300 hover:bg-white"
                             >
                                 Back to Facilities

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
@@ -469,11 +469,13 @@ export default function FacultyProfilePage() {
                                         aria-label={`View profile of ${faculty.name}`}
                                     >
                                         {faculty.image ? (
-                                            <img
-                                                src={faculty.image}
-                                                alt={faculty.name}
-                                                className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.045]"
-                                            />
+                                            <Image
+                                            src={faculty.image}
+                                            alt={faculty.name}
+                                            fill
+                                            sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                                            className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.045]"
+                                        />
                                         ) : (
                                             <div className="flex h-full w-full flex-col items-center justify-center bg-[#20235A]">
                                                 <div className="flex h-24 w-24 items-center justify-center rounded-full border border-[#D2B87C]/40 bg-white/[0.06]">
@@ -633,7 +635,7 @@ export default function FacultyProfilePage() {
                                 <p className="mt-4 max-w-xl text-sm leading-7 text-[#706A63]">
                                     Explore the facilities, activities, and
                                     academic environment that support the
-                                    department's learning experience.
+                                    department&apos;s learning experience.
                                 </p>
                             </div>
 
@@ -700,11 +702,13 @@ export default function FacultyProfilePage() {
                             {/* Modal image */}
                             <div className="relative min-h-[340px] bg-[#20235A] sm:min-h-[440px]">
                                 {selectedFaculty.image ? (
-                                    <img
-                                        src={selectedFaculty.image}
-                                        alt={selectedFaculty.name}
-                                        className="h-full min-h-[340px] w-full object-cover object-top sm:min-h-[440px]"
-                                    />
+                                    <Image
+                                    src={selectedFaculty.image}
+                                    alt={selectedFaculty.name}
+                                    fill
+                                    sizes="(min-width: 768px) 40vw, 100vw"
+                                    className="object-cover object-top"
+                                />
                                 ) : (
                                     <div className="flex h-full min-h-[340px] items-center justify-center bg-[#20235A] sm:min-h-[440px]">
                                         <div className="flex h-32 w-32 items-center justify-center rounded-full border border-[#D2B87C]/40">
@@ -759,7 +763,7 @@ export default function FacultyProfilePage() {
                                 <p className="mt-7 max-w-md text-sm leading-7 text-[#706A63]">
                                     Faculty member of the Department of Applied
                                     Science & Humanities at NCERC, contributing
-                                    to the department's academic and practical
+                                    to the department&apos;s academic and practical
                                     learning environment.
                                 </p>
 

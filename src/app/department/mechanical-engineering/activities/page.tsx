@@ -478,7 +478,7 @@ export default function ActivitiesPage() {
 
                 <p className="mt-7 text-sm leading-7 text-[#1E1917]/60">
                   A visual record from the department activity archive,
-                  preserved as part of the Mechanical Engineering department's
+                  preserved as part of the Mechanical Engineering department&apos;s
                   events and celebrations.
                 </p>
 

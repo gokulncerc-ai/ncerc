@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
-    ArrowRight,
     Briefcase,
     Cpu,
     GraduationCap,
@@ -128,11 +126,9 @@ export default function CourseSection() {
                         ({
                             index,
                             image,
-                            icon: Icon,
                             title,
                             subtitle,
                             description,
-                            href,
                             panel,
                         }) => (
                             <div

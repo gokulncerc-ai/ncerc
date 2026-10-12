@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -49,7 +48,7 @@ const excellenceItems: ExcellenceItem[] = [
     description:
       "Recognizing students who have demonstrated outstanding academic performance at the university level.",
     icon: Landmark,
-    href: "/departments/electrical-and-electronics-engineering/academic-excellence/university-rank-holders",
+    href: "/department/electrical-and-electronics-engineering/academic-excellence/university-rank-holders",
   },
   {
     number: "02",
@@ -57,7 +56,7 @@ const excellenceItems: ExcellenceItem[] = [
     description:
       "Celebrating exceptional academic achievers who have secured the highest positions within the department.",
     icon: Trophy,
-    href: "/departments/electrical-and-electronics-engineering/academic-excellence/department-toppers",
+    href: "/department/electrical-and-electronics-engineering/academic-excellence/department-toppers",
   },
   {
     number: "03",
@@ -65,7 +64,7 @@ const excellenceItems: ExcellenceItem[] = [
     description:
       "Supporting students with career opportunities, industry exposure and pathways towards professional success.",
     icon: Briefcase,
-    href: "/departments/electrical-and-electronics-engineering/academic-excellence/placement",
+    href: "/department/electrical-and-electronics-engineering/academic-excellence/placement",
   },
   {
     number: "04",
@@ -73,7 +72,7 @@ const excellenceItems: ExcellenceItem[] = [
     description:
       "Highlighting accomplishments that reflect the broader academic and professional excellence of our students.",
     icon: Star,
-    href: "/departments/electrical-and-electronics-engineering/academic-excellence/other-achievements",
+    href: "/department/electrical-and-electronics-engineering/academic-excellence/other-achievements",
   },
 ];
 
@@ -235,7 +234,7 @@ export default function AcademicExcellencePage() {
               </a>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering"
+                href="/department/electrical-and-electronics-engineering"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
               >
                 Department Overview
@@ -402,7 +401,7 @@ export default function AcademicExcellencePage() {
               </div>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering/achievements"
+                href="/department/electrical-and-electronics-engineering/achievements"
                 className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#D2B87C] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#20235A] transition-all duration-300 hover:bg-white"
               >
                 View Achievements

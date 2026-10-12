@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
     ArrowRight,
     ArrowUpRight,
@@ -11,7 +12,6 @@ import {
     ChevronRight,
     Clock3,
     Database,
-    ExternalLink,
     LibraryBig,
     Monitor,
     Search,
@@ -208,9 +208,11 @@ const page = () => {
                             <div className="absolute -left-4 -top-4 h-20 w-20 border-l border-t border-[#D2B87C]/40" />
 
                             <div className="relative h-[390px] overflow-hidden sm:h-[470px] lg:h-[520px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=2200&q=90"
                                     alt="Academic library interior"
+                                    fill
+                                    sizes="(min-width: 768px) 40vw, 100vw"
                                     className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-[1.02]"
                                 />
 
@@ -367,9 +369,11 @@ const page = () => {
                     <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
                         <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
                             <div className="relative h-[430px] overflow-hidden sm:h-[540px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=2000&q=90"
                                     alt="Library bookshelves and study area"
+                                    fill
+                                    sizes="(min-width: 768px) 40vw, 100vw"
                                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                                 />
 
@@ -507,9 +511,11 @@ const page = () => {
                     <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
                         <div className="grid items-center gap-8 lg:grid-cols-[1.25fr_0.75fr]">
                             <div className="relative h-[380px] overflow-hidden sm:h-[500px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=2200&q=90"
                                     alt="Students studying in a library"
+                                    fill
+                                    sizes="(min-width: 768px) 40vw, 100vw"
                                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                                 />
 
@@ -614,7 +620,7 @@ const page = () => {
 
                                     <p className="mt-2 text-sm leading-7 text-[#1e1917]/55">
                                         Library access is available according
-                                        to the institution's academic
+                                        to the institution&apos;s academic
                                         schedule.
                                     </p>
                                 </div>

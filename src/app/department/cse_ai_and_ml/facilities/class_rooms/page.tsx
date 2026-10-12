@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
     ArrowRight,
     ArrowUpRight,
@@ -378,9 +379,11 @@ const page = () => {
                                     {/* Image */}
                                     <div className="relative h-[270px] overflow-hidden bg-[#20235A] sm:h-[330px]">
 
-                                        <img
+                                        <Image
                                             src={room.image}
                                             alt={room.name}
+                                            fill
+                                            sizes="(min-width: 768px) 40vw, 100vw"
                                             className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                                         />
 

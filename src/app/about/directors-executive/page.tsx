@@ -2,7 +2,6 @@ import Image from "next/image";
 import {
   ArrowUpRight,
   BriefcaseBusiness,
-  Building2,
   Users,
 } from "lucide-react";
 

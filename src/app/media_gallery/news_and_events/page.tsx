@@ -118,7 +118,7 @@ const categories = [
     "Achievement",
 ];
 
-const page = () => {
+export default function Page() {
     const [searchTerm, setSearchTerm] = useState("");
     const [activeCategory, setActiveCategory] = useState("All");
     const [currentPage, setCurrentPage] = useState(1);
@@ -720,5 +720,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

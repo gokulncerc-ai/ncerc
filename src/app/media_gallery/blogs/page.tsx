@@ -8,7 +8,7 @@ import {
     Search,
     Sparkles,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 
@@ -268,10 +268,12 @@ function BlogImage({
                 ${className}
             `}
         >
-            <img
+            <Image
                 src={src}
                 alt={alt}
                 loading="lazy"
+                fill
+                sizes="(min-width: 1024px) 330px, 100vw"
                 className="
                     h-full
                     w-full
@@ -423,7 +425,7 @@ function BlogCard({
     );
 }
 
-const page = () => {
+export default function Page() {
     const [activeCategory, setActiveCategory] =
         useState("All");
 
@@ -889,7 +891,7 @@ const page = () => {
                                 </h2>
 
                                 <p className="mt-4 max-w-xl text-sm leading-6 text-white/55">
-                                    Explore NCERC's academic programmes,
+                                    Explore NCERC&apos;s academic programmes,
                                     departments and initiatives beyond
                                     our journal.
                                 </p>
@@ -934,5 +936,3 @@ const page = () => {
         </main>
     );
 };
-
-export default page;

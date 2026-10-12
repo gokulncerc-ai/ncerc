@@ -11,6 +11,7 @@ import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import McaNavigation from "../../mca/mcanavigation/page";
 import Faq from "../../mca/faq/page"
+import Image from "next/image";
 
 const activities = [
     {
@@ -174,9 +175,11 @@ const Page = () => {
 
                     {/* Hero Image */}
                     <div className="relative min-h-[360px] overflow-hidden lg:min-h-full">
-                        <img
+                        <Image
                             src={activities[0].image}
                             alt={activities[0].title}
+                            fill
+                            sizes="100vw"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
 
@@ -258,9 +261,11 @@ const Page = () => {
                     <div className="grid overflow-hidden bg-[#20235A] lg:grid-cols-[1.15fr_0.85fr]">
 
                         <div className="relative min-h-[360px] overflow-hidden sm:min-h-[440px] lg:min-h-[540px]">
-                            <img
+                            <Image
                                 src={activities[0].image}
                                 alt={activities[0].title}
+                                fill
+                                sizes="100vw"
                                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                             />
 
@@ -378,9 +383,11 @@ const Page = () => {
                                                 : "aspect-[4/3]"
                                             }`}
                                     >
-                                        <img
+                                        <Image
                                             src={activity.image}
                                             alt={activity.title}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                                         />
 
@@ -566,9 +573,11 @@ const Page = () => {
                     <div className="flex max-h-[90vh] w-full max-w-6xl flex-col items-center">
 
                         <div className="relative max-h-[75vh] w-full overflow-hidden bg-black">
-                            <img
+                            <Image
                                 src={selectedActivity.image}
                                 alt={selectedActivity.title}
+                                fill
+                                sizes="100vw"
                                 className="mx-auto max-h-[75vh] w-full object-contain"
                             />
                         </div>

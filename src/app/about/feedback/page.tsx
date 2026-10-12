@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import {
-  ArrowDownToLine,
   ArrowRight,
   ClipboardList,
-  FileText,
   MessageSquareText,
 } from "lucide-react";
 
@@ -28,29 +26,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const feedbackDownloads = [
-  {
-    label: "Feedback Year 2019–20",
-    href: "/downloads/feedback/feedback2019-2020.pdf",
-  },
-  {
-    label: "Feedback Year 2018–19",
-    href: "/downloads/feedback/feedback2018-19.pdf",
-  },
-  {
-    label: "Feedback Year 2017–18",
-    href: "/downloads/feedback/feedback2017-2018.pdf",
-  },
-  {
-    label: "Feedback Year 2015–16",
-    href: "/downloads/feedback/feedback2015-16.pdf",
-  },
-  {
-    label: "Feedback Year 2014–15",
-    href: "/downloads/feedback/feedback2014-15.pdf",
-  },
-];
 
 const feedbackForms = [
   {
@@ -146,7 +121,7 @@ export default function FeedbackPage() {
             </div>
 
             <div className="mt-9 grid grid-cols-1 gap-4 md:grid-cols-2">
-              {feedbackForms.map((form, index) => (
+              {feedbackForms.map((form) => (
                 <a
                   key={form.label}
                   href={form.href}

@@ -12,6 +12,7 @@ import {
     Network,
     Users,
 } from "lucide-react";
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import Faq from "../../mca/faq/page";
@@ -115,9 +116,11 @@ const Page = () => {
 
                     {/* Hero Visual */}
                     <div className="relative min-h-[360px] lg:min-h-full">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=90"
                             alt="Computer technology and digital systems"
+                            fill
+                            sizes="(min-width: 1024px) 330px, 100vw"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
 
@@ -233,9 +236,11 @@ const Page = () => {
 
                             {/* Supporting Image */}
                             <div className="mt-7 max-w-md overflow-hidden border border-[#20235A]/10 bg-white">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
                                     alt="Students working with computer technology"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-36 w-full object-cover transition-transform duration-500 hover:scale-[1.02] sm:h-40"
                                 />
                             </div>
@@ -388,9 +393,11 @@ const Page = () => {
                         </div>
 
                         <div className="relative overflow-hidden border border-[#20235A]/10 bg-[#FAF7F2]">
-                            <img
+                            <Image
                                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=90"
                                 alt="Technology professionals working together"
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="h-[320px] w-full object-cover sm:h-[380px]"
                             />
 

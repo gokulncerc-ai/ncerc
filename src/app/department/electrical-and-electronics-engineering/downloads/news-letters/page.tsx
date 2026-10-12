@@ -83,7 +83,7 @@ export default function NewsLettersPage() {
                             </a>
 
                             <Link
-                                href="/departments/electrical-and-electronics-engineering/downloads"
+                                href="/department/electrical-and-electronics-engineering/downloads"
                                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
                             >
                                 Back to Downloads
@@ -289,7 +289,7 @@ export default function NewsLettersPage() {
 
                                     <div className="mt-7 flex flex-wrap justify-center gap-3">
                                         <Link
-                                            href="/departments/electrical-and-electronics-engineering/downloads"
+                                            href="/department/electrical-and-electronics-engineering/downloads"
                                             className="inline-flex items-center gap-2 rounded-full bg-[#20235A] px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-[#D2B87C] hover:text-[#20235A]"
                                         >
                                             Back to Downloads
@@ -366,7 +366,7 @@ export default function NewsLettersPage() {
 
                                 <p className="mt-3 text-sm leading-6 text-[#1E1917]/65">
                                     Important events, programmes and activities can be preserved
-                                    as part of the department's publication archive.
+                                    as part of the department&apos;s publication archive.
                                 </p>
                             </div>
 
@@ -414,7 +414,7 @@ export default function NewsLettersPage() {
                             </div>
 
                             <Link
-                                href="/departments/electrical-and-electronics-engineering/downloads"
+                                href="/department/electrical-and-electronics-engineering/downloads"
                                 className="group inline-flex w-fit items-center gap-2 rounded-full bg-[#D2B87C] px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-[#20235A] transition-all duration-300 hover:bg-white"
                             >
                                 Back to Downloads

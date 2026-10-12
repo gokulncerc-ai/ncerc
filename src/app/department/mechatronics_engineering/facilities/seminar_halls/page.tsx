@@ -9,7 +9,7 @@ import {
     Presentation,
     Wifi,
 } from 'lucide-react'
-
+import Image from 'next/image'
 const seminarHalls = [
     {
         number: '01',
@@ -306,7 +306,7 @@ const page = () => {
 
                         {/* Gallery */}
                         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 xl:gap-20">
-                            {seminarHalls.map((hall, index) => (
+                            {seminarHalls.map((hall) => (
                                 <article key={hall.number}>
                                     <div className="relative">
                                         {/* Number */}
@@ -318,9 +318,11 @@ const page = () => {
 
                                         {/* Image */}
                                         <div className="overflow-hidden">
-                                            <img
+                                            <Image
                                                 src={hall.image}
                                                 alt={hall.title}
+                                                fill
+                                                sizes="(min-width: 1024px) 330px, 100vw"
                                                 className="aspect-[16/10] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                             />
                                         </div>

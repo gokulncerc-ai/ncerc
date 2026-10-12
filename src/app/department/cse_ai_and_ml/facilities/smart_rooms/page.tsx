@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import {
@@ -7,9 +7,7 @@ import {
     ArrowUpRight,
     Check,
     ChevronRight,
-    Cloud,
     Cpu,
-    Lightbulb,
     Monitor,
     MonitorPlay,
     Network,
@@ -263,9 +261,11 @@ const page = () => {
                             <div className="absolute -left-4 -top-4 h-20 w-20 border-l border-t border-[#D2B87C]/40" />
 
                             <div className="relative h-[390px] overflow-hidden sm:h-[470px] lg:h-[520px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=2200&q=90"
                                     alt="Smart classroom"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-[1.02]"
                                 />
 
@@ -382,9 +382,11 @@ const page = () => {
                                 >
                                     {/* Image */}
                                     <div className="relative h-[270px] overflow-hidden bg-[#20235A] sm:h-[330px]">
-                                        <img
+                                        <Image
                                             src={room.image}
                                             alt={room.name}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                                         />
 
@@ -535,9 +537,11 @@ const page = () => {
                     <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
                         <div className="grid items-center gap-8 lg:grid-cols-[1.25fr_0.75fr]">
                             <div className="relative h-[380px] overflow-hidden sm:h-[500px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2200&q=90"
                                     alt="Technology enabled classroom learning"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                                 />
 

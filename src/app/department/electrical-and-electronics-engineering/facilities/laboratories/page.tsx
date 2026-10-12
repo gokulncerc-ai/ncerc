@@ -10,7 +10,7 @@ import {
     Settings2,
     Zap,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../../DepartmentNav/page";
@@ -159,7 +159,7 @@ export default function LaboratoriesPage() {
                                 </a>
 
                                 <Link
-                                    href="/departments/electrical-and-electronics-engineering/facilities"
+                                    href="/department/electrical-and-electronics-engineering/facilities"
                                     className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
                                 >
                                     <ArrowLeft className="h-4 w-4" />
@@ -307,7 +307,7 @@ export default function LaboratoriesPage() {
                             <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
                                 {/* Image */}
                                 <div className="relative min-h-[320px] overflow-hidden lg:min-h-[440px]">
-                                    <img
+                                    <Image
                                         src={featuredLaboratory.image}
                                         alt={featuredLaboratory.alt}
                                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
@@ -380,7 +380,7 @@ export default function LaboratoriesPage() {
                                 >
                                     {/* Image */}
                                     <div className="relative aspect-[16/10] overflow-hidden bg-[#20235A]">
-                                        <img
+                                        <Image
                                             src={laboratory.image}
                                             alt={laboratory.alt}
                                             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -516,7 +516,7 @@ export default function LaboratoriesPage() {
                             </div>
 
                             <Link
-                                href="/departments/electrical-and-electronics-engineering/facilities"
+                                href="/department/electrical-and-electronics-engineering/facilities"
                                 className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#D2B87C] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.15em] text-[#20235A] transition-all duration-300 hover:bg-white"
                             >
                                 Back to Facilities

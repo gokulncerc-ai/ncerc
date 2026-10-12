@@ -15,7 +15,7 @@ import {
   Sparkles,
   Trophy,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNavigation from "../DepartmentNav/page";
@@ -45,7 +45,6 @@ export const metadata: Metadata = {
   },
 };
 
-const IMAGE_PATH = "/images/dpt/mba/img/achievements";
 const HERO_IMAGE =
   "https://i.pinimg.com/736x/e3/e6/86/e3e6865960303a2cf4db914d31736811.jpg";
 
@@ -241,7 +240,7 @@ export default function MBAAchievementsPage() {
                 <div className="relative overflow-hidden border border-white/10 bg-[#171946] p-2 sm:p-3">
                   <div className="relative flex min-h-[290px] items-center justify-center overflow-hidden bg-[#F7F4ED] sm:min-h-[390px] lg:min-h-[480px]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={HERO_IMAGE}
                       alt="Nehru School of Management achievement"
                       loading="eager"

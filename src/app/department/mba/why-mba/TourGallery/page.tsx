@@ -7,9 +7,6 @@ type TourImage = {
   src: string;
   caption: string;
 };
-
-const BASE_PATH = "/images/dpt/mba/iv-img";
-
 const tourImages: TourImage[] = [
   {
     src: `https://ncerc.ac.in/images/dpt/mba/iv-img/IV-NT-batch-2023-2025_img3.png`,

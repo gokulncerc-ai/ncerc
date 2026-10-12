@@ -1,6 +1,6 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import React, { useCallback, useEffect, useState } from "react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNavigation from "../departmentnavigation/page";
@@ -106,7 +106,7 @@ const achievements: Achievement[] = [
     },
 ];
 
-const page = () => {
+export default function Page() {
     const [selectedAchievement, setSelectedAchievement] =
         useState<Achievement | null>(null);
 
@@ -117,54 +117,62 @@ const page = () => {
         setSelectedIndex(index);
     };
 
-    const closeAchievement = () => {
+
+    const closeAchievement = useCallback(() => {
         setSelectedAchievement(null);
-    };
-
-    const showPrevious = () => {
-        const previousIndex =
-            (selectedIndex - 1 + achievements.length) % achievements.length;
-
-        setSelectedIndex(previousIndex);
-        setSelectedAchievement(achievements[previousIndex]);
-    };
-
-    const showNext = () => {
-        const nextIndex = (selectedIndex + 1) % achievements.length;
-
-        setSelectedIndex(nextIndex);
-        setSelectedAchievement(achievements[nextIndex]);
-    };
-
+    }, []);
+    
+    const showPrevious = useCallback(() => {
+        setSelectedIndex((currentIndex) => {
+            const previousIndex =
+                (currentIndex - 1 + achievements.length) % achievements.length;
+    
+            setSelectedAchievement(achievements[previousIndex]);
+    
+            return previousIndex;
+        });
+    }, []);
+    
+    const showNext = useCallback(() => {
+        setSelectedIndex((currentIndex) => {
+            const nextIndex = (currentIndex + 1) % achievements.length;
+    
+            setSelectedAchievement(achievements[nextIndex]);
+    
+            return nextIndex;
+        });
+    }, []);
+    
     useEffect(() => {
         if (!selectedAchievement) {
             document.body.style.overflow = "";
             return;
         }
-
+    
         document.body.style.overflow = "hidden";
-
+    
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
                 closeAchievement();
-            }
-
-            if (event.key === "ArrowLeft") {
+            } else if (event.key === "ArrowLeft") {
                 showPrevious();
-            }
-
-            if (event.key === "ArrowRight") {
+            } else if (event.key === "ArrowRight") {
                 showNext();
             }
         };
-
+    
         window.addEventListener("keydown", handleKeyDown);
-
+    
         return () => {
             document.body.style.overflow = "";
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [selectedAchievement, selectedIndex]);
+    }, [
+        selectedAchievement,
+        closeAchievement,
+        showPrevious,
+        showNext,
+    ]);
 
     return (
         <>
@@ -307,9 +315,11 @@ const page = () => {
                                 onClick={() => openAchievement(achievements[8], 8)}
                                 className="group relative min-h-[380px] overflow-hidden text-left sm:min-h-[500px] lg:min-h-[620px]"
                             >
-                                <img
+                                <Image
                                     src={achievements[8].image}
                                     alt={achievements[8].title}
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]"
                                 />
 
@@ -403,10 +413,12 @@ const page = () => {
                                     aria-label={`View ${achievement.title}`}
                                 >
                                     <div className="relative aspect-[4/3] overflow-hidden bg-[#F2EFE8]">
-                                        <img
+                                        <Image
                                             src={achievement.image}
                                             alt={achievement.title}
                                             loading={index > 2 ? "lazy" : "eager"}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.035]"
                                         />
 
@@ -553,12 +565,13 @@ const page = () => {
                         onClick={(event) => event.stopPropagation()}
                     >
                         <div className="relative flex min-h-[300px] items-center justify-center bg-[#171946] lg:min-h-[650px] lg:w-[68%]">
-                            <img
+                            <Image
                                 src={selectedAchievement.image}
                                 alt={selectedAchievement.title}
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="max-h-[60vh] w-full object-contain lg:max-h-[82vh]"
                             />
-
                             <div className="absolute bottom-4 left-4 rounded-full bg-black/40 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
                                 {selectedIndex + 1} / {achievements.length}
                             </div>
@@ -614,5 +627,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

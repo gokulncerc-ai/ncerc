@@ -6,6 +6,7 @@ import {
     GraduationCap,
     X,
 } from "lucide-react";
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import McaNavigation from "../../../mca/mcanavigation/page";
@@ -228,9 +229,11 @@ const Page = () => {
                                     onClick={() => setActiveStudent(index)}
                                     className="relative flex h-[280px] w-full items-center justify-center overflow-hidden bg-[#F7F5F0] text-left focus:outline-none sm:h-[300px]"
                                 >
-                                    <img
+                                    <Image
                                         src={student.image}
                                         alt={student.name}
+                                        fill
+                                        sizes="100vw"
                                         className="h-full w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.015] sm:p-4"
                                     />
 
@@ -425,9 +428,11 @@ const Page = () => {
 
                         <div className="flex max-h-[88vh] max-w-[90vw] flex-col items-center">
 
-                            <img
+                            <Image
                                 src={toppers[activeStudent].image}
                                 alt={toppers[activeStudent].name}
+                                fill
+                                sizes="100vw"
                                 className="max-h-[76vh] max-w-full object-contain"
                             />
 

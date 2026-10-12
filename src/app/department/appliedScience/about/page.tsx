@@ -1,8 +1,7 @@
-
 "use client";
-
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
     ArrowDown,
     ArrowRight,
@@ -16,7 +15,6 @@ import {
     Languages,
     Lightbulb,
     Microscope,
-    Target,
     Users,
 } from "lucide-react";
 
@@ -25,17 +23,7 @@ import FooterSection from "@/components/home/FooterSection";
 import DepartmentNavigation from "../departmentnavigation/page";
 
 const BASE_PATH = "/applied-science-and-humanities";
-
-const navigationItems = [
-    { label: "About", href: `${BASE_PATH}/` },
-    { label: "HOD's Desk", href: `${BASE_PATH}/hod-desk.php` },
-    { label: "Facilities", href: `${BASE_PATH}/facilities.php` },
-    { label: "Faculty Profile", href: `${BASE_PATH}/faculty-details.php` },
-    { label: "Activities", href: `${BASE_PATH}/activities.php` },
-    { label: "Syllabus", href: `${BASE_PATH}/syllabus.php` },
-    { label: "Achievements", href: `${BASE_PATH}/achievements.php` },
-];
-
+  
 const disciplines = [
     {
         number: "01",
@@ -231,12 +219,13 @@ export default function Page() {
                                 <div className="absolute -right-3 -top-3 hidden h-full w-full border border-[#D2B87C]/20 lg:block" />
 
                                 <div className="relative h-[360px] overflow-hidden border border-white/10 sm:h-[450px] lg:h-[500px] xl:h-[540px]">
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=2200&q=85"
                                         alt="Scientific research and laboratory learning"
-                                        className="absolute inset-0 h-full w-full object-cover object-center"
+                                        fill
+                                        sizes="100vw"
+                                        className="object-cover object-center"
                                     />
-
                                     <div className="absolute inset-0 bg-gradient-to-r from-[#11152e]/75 via-[#11152e]/20 to-transparent" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#11152e]/80 via-transparent to-transparent" />
 
@@ -479,23 +468,21 @@ export default function Page() {
                             <div className="absolute -right-3 -top-3 hidden h-full w-full border border-[#D2B87C]/40 lg:block" />
 
                             <div className="relative h-[320px] overflow-hidden border border-[#e7e2d8] sm:h-[420px] lg:h-[490px]">
-                                <img
-                                    src="https://i.pinimg.com/1200x/90/55/0a/90550a05f85e1e092ce5b2f61eade42b.jpg"
-                                    alt="Laboratory environment for practical science education"
-                                    className="absolute inset-0 h-full w-full object-cover object-center"
-                                    loading="lazy"
-                                />
-
+                            <Image
+                                src="https://i.pinimg.com/1200x/90/55/0a/90550a05f85e1e092ce5b2f61eade42b.jpg"
+                                alt="Laboratory environment for practical science education"
+                                fill
+                                sizes="(min-width: 1024px) 50vw, 100vw"
+                                className="object-cover object-center"
+                            />
                                 <div className="absolute inset-0 bg-gradient-to-r from-[#11152e]/45 via-transparent to-transparent" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#11152e]/85 via-transparent to-transparent" />
-
                                 <div className="absolute left-6 top-6 flex items-center gap-3 sm:left-8 sm:top-8 lg:left-10 lg:top-10">
                                     <span className="h-px w-7 bg-[#D2B87C]" />
                                     <span className="text-[9px] font-semibold uppercase tracking-[0.22em] text-white/80">
                                         Learning by Doing
                                     </span>
                                 </div>
-
                                 <div className="absolute bottom-7 left-6 right-6 sm:bottom-9 sm:left-8 sm:right-8 lg:bottom-10 lg:left-10 lg:right-10">
                                     <p className="mb-3 text-[9px] font-semibold uppercase tracking-[0.2em] text-[#D2B87C]">
                                         Practical Education

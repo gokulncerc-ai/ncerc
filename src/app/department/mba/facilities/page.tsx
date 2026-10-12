@@ -37,11 +37,6 @@ export const metadata: Metadata = {
   },
 };
 
-const NAVY = "#20235A";
-const GOLD = "#D2B87C";
-const INK = "#1E1917";
-const CREAM = "#FAF8F3";
-
 const studentFacilitiesText =
   "Nehru School of Management offers fantastic facilities and services to its students like Assured placements by the leading companies, Village Attachment Programme, Student Mentoring Groups and Activity Based Learning, Value based Education, Meditation and Yoga, Out bond training programmes, Additional training and certifications on courses – For all Domains, Research Projects and Presentation in National and International Conferences, HR Conclave ,National Level management Meets, Highly Qualified and experienced Faculty Member, Best Student Awards, Business Incubation centre, Different Student Clubs, International study Tours, Intercollegiate competitions etc. Students can also enjoy the comfortable and sociable surroundings of their academic environment.";
 

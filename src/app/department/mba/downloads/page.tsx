@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -8,7 +7,7 @@ import {
   BookOpen,
   Newspaper,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNavigation from "../DepartmentNav/page";
@@ -78,9 +77,6 @@ const downloads: DownloadItem[] = [
     icon: Newspaper,
   },
 ];
-
-const HERO_IMAGE = "/images/dpt/mba/img/facilities/board-room.png";
-
 export default function MBADownloadsPage() {
   return (
     <>
@@ -159,7 +155,7 @@ export default function MBADownloadsPage() {
               {/* HERO IMAGE */}
               <div className="relative -mx-5 min-h-[300px] overflow-hidden sm:-mx-8 sm:min-h-[380px] lg:mx-0 lg:min-h-[520px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="https://i.pinimg.com/736x/c6/ac/2f/c6ac2fa40f6995190721a5792af5e664.jpg"
                   alt="Nehru School of Management board room"
                   className="absolute inset-0 h-full w-full object-cover object-center"

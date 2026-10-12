@@ -40,23 +40,15 @@ type NewsItem = {
   image: string;
   imageAlt: string;
 };
-
-const IMAGE_PATH = "/images/dpt/mba/img/news-events";
-
 const newsItems: NewsItem[] = [
   {
     title: "Proud Moment for NCERC!",
     description:
-      "NCERC's MBA program has been accredited by the National Board of Accreditation (NBA) for the period 2026–2028, marking another significant milestone in its pursuit of academic excellence. This achievement reflects the institution's commitment to delivering quality management education, fostering innovation, and preparing future leaders through industry-oriented learning.",
+      "NCERCs MBA program has been accredited by the National Board of Accreditation (NBA) for the period 2026–2028, marking another significant milestone in its pursuit of academic excellence. This achievement reflects the institutions commitment to delivering quality management education, fostering innovation, and preparing future leaders through industry-oriented learning.",
     image: `https://ncerc.ac.in/mba/img/news-events/Proud-moment.webp`,
     imageAlt: "Proud Moment NCERC",
   },
 ];
-
-const NAVY = "#20235A";
-const GOLD = "#D2B87C";
-const CREAM = "#FAF8F3";
-const BODY = "#1E1917";
 
 function SectionHeading({
   eyebrow,

@@ -69,7 +69,7 @@ const syllabusData = {
     },
 };
 
-const page = () => {
+export default function Page() {
     const [activeUniversity, setActiveUniversity] =
         useState<University>(null);
 
@@ -484,5 +484,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

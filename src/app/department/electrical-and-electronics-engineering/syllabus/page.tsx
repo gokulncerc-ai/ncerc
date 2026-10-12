@@ -19,7 +19,7 @@ interface SyllabusCard {
 }
 
 const BASE =
-  "/departments/electrical-and-electronics-engineering/syllabus";
+  "/department/electrical-and-electronics-engineering/syllabus";
 
 const syllabusCards: SyllabusCard[] = [
   {
@@ -78,7 +78,7 @@ export default function SyllabusPage() {
               </a>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering"
+                href="/department/electrical-and-electronics-engineering"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
               >
                 Department Overview
@@ -358,7 +358,7 @@ export default function SyllabusPage() {
               </div>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering"
+                href="/department/electrical-and-electronics-engineering"
                 className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#D2B87C] px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#20235A] transition-all duration-300 hover:bg-white"
               >
                 Department Overview

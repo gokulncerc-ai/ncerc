@@ -17,7 +17,7 @@ const downloadItems = [
     title: "NEWS LETTERS/MAGAZINES",
     description:
       "Access departmental newsletters and magazines featuring academic updates, activities, achievements and important developments.",
-    href: "/departments/electrical-and-electronics-engineering/downloads/news-letters",
+    href: "/department/electrical-and-electronics-engineering/downloads/news-letters",
     icon: Newspaper,
   },
   {
@@ -25,7 +25,7 @@ const downloadItems = [
     title: "DEPARTMENT CIRCULARS AND NOTIFICATIONS",
     description:
       "Find departmental circulars, notifications and important announcements intended for students and academic stakeholders.",
-    href: "/departments/electrical-and-electronics-engineering/downloads/department-circular",
+    href: "/department/electrical-and-electronics-engineering/downloads/department-circular",
     icon: AlertCircle,
   },
   {
@@ -33,7 +33,7 @@ const downloadItems = [
     title: "OTHER DOWNLOADS",
     description:
       "Explore additional departmental resources, documents and downloadable materials available for academic reference.",
-    href: "/departments/electrical-and-electronics-engineering/downloads/other-downloads",
+    href: "/department/electrical-and-electronics-engineering/downloads/other-downloads",
     icon: Download,
   },
 ];
@@ -84,7 +84,7 @@ export default function DownloadsPage() {
               </a>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering"
+                href="/department/electrical-and-electronics-engineering"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
               >
                 Department Overview
@@ -387,13 +387,13 @@ export default function DownloadsPage() {
                 </h2>
 
                 <p className="mt-5 max-w-2xl text-sm leading-7 text-white/65 sm:text-base">
-                  Discover the department's academic activities, facilities,
+                  Discover the department&apos;s academic activities, facilities,
                   achievements and other resources.
                 </p>
               </div>
 
               <Link
-                href="/departments/electrical-and-electronics-engineering"
+                href="/department/electrical-and-electronics-engineering"
                 className="group inline-flex w-fit items-center gap-2 rounded-full bg-[#D2B87C] px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-[#20235A] transition-all duration-300 hover:bg-white"
               >
                 Explore Department

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import SiteHeader from "@/components/header/SiteHeader";
@@ -371,9 +371,11 @@ export default function FacilitiesPage() {
                                             className="relative block h-56 w-full cursor-pointer overflow-hidden text-left"
                                             aria-label={`View ${facility.title} gallery`}
                                         >
-                                            <img
+                                            <Image
                                                 src={facility.image}
                                                 alt={facility.title}
+                                                fill
+                                                sizes="(min-width: 1024px) 330px, 100vw"
                                                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                             />
 
@@ -577,10 +579,12 @@ export default function FacilitiesPage() {
 
                         {/* MAIN IMAGE */}
                         <div className="relative flex min-h-0 flex-1 items-center justify-center bg-[#171936] p-4 sm:p-7">
-                            <img
+                            <Image
                                 src={selectedFacility.gallery[activeImage]}
                                 alt={`${selectedFacility.title} - Image ${activeImage + 1
                                     } `}
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="max-h-[55vh] w-full object-contain sm:max-h-[58vh]"
                             />
 
@@ -631,10 +635,12 @@ export default function FacilitiesPage() {
                                             aria-label={`View image ${index + 1
                                                 } `}
                                         >
-                                            <img
+                                            <Image
                                                 src={image}
                                                 alt={`${selectedFacility.title} thumbnail ${index + 1
                                                     } `}
+                                                    fill
+                                                    sizes="(min-width: 1024px) 330px, 100vw"
                                                 className="h-full w-full object-cover"
                                             />
 

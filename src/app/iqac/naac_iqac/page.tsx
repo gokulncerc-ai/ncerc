@@ -501,11 +501,10 @@ const resources: Resource[] = [
 
 const isPdf = (href: string) => /\.pdf(?:$|[?#])/i.test(href);
 
-const page = () => {
+export default function Page() {
     const [selectedResource, setSelectedResource] = useState<Resource | null>(null);
     const [selectedSection, setSelectedSection] = useState<ResourceSection | null>(null);
     const [selectedDocument, setSelectedDocument] = useState<DocumentItem | null>(null);
-
     const closeAllModals = () => {
         setSelectedResource(null);
         setSelectedSection(null);
@@ -793,5 +792,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

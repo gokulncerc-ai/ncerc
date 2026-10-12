@@ -13,7 +13,7 @@ import {
     Search,
     Wifi,
 } from 'lucide-react'
-
+import Image from 'next/image'
 const libraryStats = [
     {
         value: '28,309',
@@ -644,9 +644,11 @@ const page = () => {
                                             : ''
                                         }`}
                                 >
-                                    <img
+                                    <Image
                                         src={image.src}
                                         alt={image.alt}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                                     />
 

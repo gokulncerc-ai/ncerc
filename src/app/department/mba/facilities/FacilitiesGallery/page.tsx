@@ -8,8 +8,6 @@ type Facility = {
   label: string;
 };
 
-// Images must be placed in /public/images/dpt/mba/facilities/
-const BASE_PATH = "/images/dpt/mba/img/facilities";
 const facilities: Facility[] = [
   { src: `https://ncerc.ac.in/images/dpt/mba/facilities/board-room.png`, label: "Board Room" },
   { src: `https://ncerc.ac.in/images/dpt/mba/facilities/canteen2.png`, label: "Canteen" },

@@ -527,7 +527,7 @@ export default function MechanicalEngineeringIndustryIntegratedPage() {
           description="Our mission focuses on creating a strong academic environment while developing technical competence, leadership, ethics and social responsibility."
         >
           <div className="grid gap-4 md:grid-cols-2">
-            {missionPoints.map((point, index) => (
+            {missionPoints.map((point) => (
               <article
                 key={point.label}
                 className="group border border-[#20235A]/10 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#D2B87C] sm:p-8"

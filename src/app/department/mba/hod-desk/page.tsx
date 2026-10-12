@@ -6,9 +6,9 @@ import InnerHeader from "../DepartmentNav/page";
 import FAQ from "../FAQ.tsx/page";
 
 export const metadata: Metadata = {
-  title: "MBA HoD's Desk | Nehru School of Management, NCERC",
+  title: "MBA HoD Desk | Nehru School of Management, NCERC",
   description:
-    "Read the message from Dr Krishna Kumar T P, HoD and Professor at Nehru School of Management, and learn about NSM's approach to management education, leadership and professional development.",
+    "Read the message from Dr Krishna Kumar T P, HoD and Professor at Nehru School of Management, and learn about NSM approach to management education, leadership and professional development.",
   keywords: [
     "Nehru School of Management",
     "MBA HoD message",
@@ -219,7 +219,7 @@ export default function MBAHodDeskPage() {
                   <span className="h-px w-8 bg-[#D2B87C]" />
 
                   <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-[#8F7746]">
-                    From the HoD's Desk
+                    From the HoD&apos;s Desk
                   </span>
                 </div>
 

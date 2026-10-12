@@ -425,7 +425,7 @@ export default function MBAWhyMbaPage() {
 
                 <p className="max-w-md text-sm leading-7 text-[#1E1917]/65 sm:text-base">
                   Discover learning experiences, destinations and
-                  memories from NSM's educational tours and visits.
+                  memories from NSM&apos;s educational tours and visits.
                 </p>
               </div>
 

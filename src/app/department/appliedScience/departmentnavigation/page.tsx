@@ -14,7 +14,7 @@ interface InnerHeaderProps {
     activeTab?: string;
 }
 
-const BASE_PATH = "/department/applied_science_and_humanities";
+const BASE_PATH = "/department/appliedScience";
 
 const navigationItems: NavigationItem[] = [
     {

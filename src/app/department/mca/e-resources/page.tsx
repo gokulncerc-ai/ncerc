@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
@@ -74,9 +74,11 @@ const page = () => {
                         <div className="relative lg:justify-self-end">
                             <div className="relative ml-auto max-w-[500px]">
                                 <div className="aspect-[4/3] overflow-hidden border border-white/10 bg-white/5">
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=1200&q=85"
                                         alt="Academic resources and learning"
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-full w-full object-cover object-center grayscale-[10%] transition-transform duration-700 hover:scale-[1.02]"
                                     />
                                 </div>
@@ -173,9 +175,11 @@ const page = () => {
                         <div className="mt-10 grid overflow-hidden border border-[#20235A]/10 bg-white lg:grid-cols-[0.72fr_1.28fr]">
                             {/* Editorial Panel */}
                             <div className="relative min-h-[320px] overflow-hidden bg-[#20235A] sm:min-h-[400px]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=85"
                                     alt="Books and academic resources"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="absolute inset-0 h-full w-full object-cover opacity-35"
                                 />
 

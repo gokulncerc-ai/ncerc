@@ -1,6 +1,6 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import McaNavigation from "../../mca/mcanavigation/page";
@@ -9,7 +9,6 @@ import {
     ArrowUpRight,
     BookOpen,
     CalendarDays,
-    ChevronRight,
     Download,
     FileText,
     X,
@@ -58,26 +57,30 @@ const syllabusDocuments = [
     },
 ];
 
-const page = () => {
+export default function Page() {
     const [isHandbookOpen, setIsHandbookOpen] = useState(false);
 
-    useEffect(() => {
-        if (!isHandbookOpen) return;
 
+    useEffect(() => {
+        if (!isHandbookOpen) {
+            document.body.style.overflow = "";
+            return;
+        }
+    
         const handleEscape = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
                 setIsHandbookOpen(false);
             }
         };
-
+    
         document.addEventListener("keydown", handleEscape);
         document.body.style.overflow = "hidden";
-
+    
         return () => {
             document.removeEventListener("keydown", handleEscape);
             document.body.style.overflow = "";
         };
-    }, [isHandbookOpen]);
+    }, [isHandbookOpen]);    
 
     return (
         <>
@@ -132,9 +135,11 @@ const page = () => {
                         <div className="relative hidden lg:block">
                             <div className="relative ml-auto max-w-[440px] border border-white/10 bg-white/[0.04] p-4">
                                 <div className="relative aspect-[4/5] overflow-hidden bg-[#2A2D68]">
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1000&q=85"
                                         alt="Academic syllabus and study materials"
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-full w-full object-cover opacity-75"
                                     />
 
@@ -540,5 +545,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

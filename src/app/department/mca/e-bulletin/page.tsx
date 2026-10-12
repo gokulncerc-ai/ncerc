@@ -1,11 +1,10 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import {
     ArrowUpRight,
     BookOpen,
     CalendarDays,
-    ChevronRight,
     FileText,
     X,
 } from "lucide-react";
@@ -130,9 +129,11 @@ const Page = () => {
                     <div className="relative mx-auto w-full max-w-[420px]">
                         <div className="relative border border-white/10 bg-white/[0.03] p-4">
                             <div className="aspect-[4/5] overflow-hidden bg-[#181B4A]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1000&q=85"
                                     alt="Academic publication"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover"
                                 />
                             </div>
@@ -237,9 +238,11 @@ const Page = () => {
                             onClick={() => setActiveBulletin(0)}
                             className="group relative block min-h-[320px] overflow-hidden text-left focus:outline-none sm:min-h-[400px]"
                         >
-                            <img
+                            <Image
                                 src={bulletins[0].image}
                                 alt={bulletins[0].title}
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                             />
 
@@ -467,9 +470,11 @@ const Page = () => {
 
                         <div className="grid max-h-[88vh] overflow-y-auto lg:grid-cols-[0.9fr_1.1fr]">
                             <div className="min-h-[280px] bg-[#20235A] lg:min-h-[600px]">
-                                <img
+                                <Image
                                     src={bulletins[activeBulletin].image}
                                     alt={bulletins[activeBulletin].title}
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover"
                                 />
                             </div>

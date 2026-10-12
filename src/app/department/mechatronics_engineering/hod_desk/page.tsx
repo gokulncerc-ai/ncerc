@@ -1,7 +1,7 @@
 import SiteHeader from '@/components/header/SiteHeader';
 import FooterSection from '@/components/home/FooterSection';
 import DepartmentNavigation from "../DepartmentsNavigation/page";
-
+import Image from 'next/image';
 import {
     ArrowRight,
     Award,
@@ -18,7 +18,7 @@ import React from 'react'
    Example:
    const hodImage = '/images/mechatronics/hod.jpg'
 ========================================================= */
-const hodImage = '/images/alumins/alumini.png'
+const hodImage = '/images/alumins/alumini.png';
 
 const Page = () => {
     return (
@@ -147,9 +147,11 @@ const Page = () => {
                                     <div className="relative aspect-[4/5] w-full">
 
                                         {hodImage ? (
-                                            <img
+                                            <Image
                                                 src={hodImage}
                                                 alt="Dr. Anto Francis Cherussery"
+                                                fill
+                                                sizes="(min-width: 1024px) 330px, 100vw"
                                                 className="h-full w-full object-cover"
                                             />
                                         ) : (

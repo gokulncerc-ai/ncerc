@@ -1,15 +1,15 @@
-import SiteHeader from '@/components/header/SiteHeader'
-import FooterSection from '@/components/home/FooterSection'
-import DepartmentNavigation from '../DepartmentsNavigation/page'
-import React from 'react'
+import SiteHeader from '@/components/header/SiteHeader';
+import FooterSection from '@/components/home/FooterSection';
+import DepartmentNavigation from '../DepartmentsNavigation/page';
+import React from 'react';
 import {
     ArrowUpRight,
     CalendarDays,
     Mic2,
     Presentation,
     Wrench,
-} from 'lucide-react'
-
+} from 'lucide-react';
+import Image from 'next/image';
 const activities = [
     {
         number: '01',
@@ -242,9 +242,11 @@ const page = () => {
                                                 </div>
 
                                                 <div className="overflow-hidden bg-[#EAE6DD]">
-                                                    <img
+                                                    <Image
                                                         src={activity.image}
                                                         alt={activity.title}
+                                                        fill
+                                                        sizes="(min-width: 1024px) 330px, 100vw"
                                                         className="aspect-[16/10] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                                     />
                                                 </div>

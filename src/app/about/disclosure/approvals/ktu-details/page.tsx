@@ -5,7 +5,6 @@ import {
   ArrowLeft,
   ArrowDownToLine,
   ArrowUpRight,
-  BookOpenCheck,
   FileCheck2,
   GraduationCap,
   ShieldCheck,

@@ -18,7 +18,7 @@ import {
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 
-const page = () => {
+const Page = () => {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -997,4 +997,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

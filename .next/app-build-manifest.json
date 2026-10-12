@@ -11,60 +11,125 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
+    "/department/cse_ai_and_ml/facilities/laboratories/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/cse_ai_and_ml/facilities/laboratories/page.js"
+    ],
     "/department/mca/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/department/mca/page.js"
-    ],
-    "/department/mca/career-scope/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/mca/career-scope/page.js"
-    ],
-    "/department/mca/facilities/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/mca/facilities/page.js"
     ],
     "/department/mca/activities/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/department/mca/activities/page.js"
     ],
-    "/department/mca/achievements/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/mca/achievements/page.js"
-    ],
     "/department/mca/academic-excellence/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/department/mca/academic-excellence/page.js"
     ],
-    "/department/mca/association/page": [
+    "/department/mca/academic-excellence/university-rank-holders/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/department/mca/association/page.js"
+      "static/chunks/app/department/mca/academic-excellence/university-rank-holders/page.js"
     ],
-    "/department/mca/e-resources/page": [
+    "/department/electrical-and-electronics-engineering/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/department/mca/e-resources/page.js"
+      "static/chunks/app/department/electrical-and-electronics-engineering/page.js"
     ],
-    "/department/mca/syllabus/page": [
+    "/department/electrical-and-electronics-engineering/facilities/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/department/mca/syllabus/page.js"
+      "static/chunks/app/department/electrical-and-electronics-engineering/facilities/page.js"
     ],
-    "/department/mba/page": [
+    "/department/electrical-and-electronics-engineering/facilities/smart-rooms/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/department/mba/page.js"
+      "static/chunks/app/department/electrical-and-electronics-engineering/facilities/smart-rooms/page.js"
     ],
-    "/department/MTechAIML/page": [
+    "/department/electrical-and-electronics-engineering/facilities/seminar-halls/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/department/MTechAIML/page.js"
+      "static/chunks/app/department/electrical-and-electronics-engineering/facilities/seminar-halls/page.js"
+    ],
+    "/department/electrical-and-electronics-engineering/facilities/library/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/electrical-and-electronics-engineering/facilities/library/page.js"
+    ],
+    "/department/electrical-and-electronics-engineering/facilities/class-rooms/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/electrical-and-electronics-engineering/facilities/class-rooms/page.js"
+    ],
+    "/department/electrical-and-electronics-engineering/faculty-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/electrical-and-electronics-engineering/faculty-details/page.js"
+    ],
+    "/department/electrical-and-electronics-engineering/digital-library/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/electrical-and-electronics-engineering/digital-library/page.js"
+    ],
+    "/department/cse_ai_and_ml/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/cse_ai_and_ml/page.js"
+    ],
+    "/department/cse_ai_and_ml/facilities/class_rooms/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/cse_ai_and_ml/facilities/class_rooms/page.js"
+    ],
+    "/department/cse_ai_and_ml/facilities/seminar_halls/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/cse_ai_and_ml/facilities/seminar_halls/page.js"
+    ],
+    "/department/cse_ai_and_ml/facilities/smart_rooms/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/cse_ai_and_ml/facilities/smart_rooms/page.js"
+    ],
+    "/department/cse_ai_and_ml/facilities/library/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/cse_ai_and_ml/facilities/library/page.js"
+    ],
+    "/department/appliedScience/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/about/page.js"
+    ],
+    "/department/appliedScience/hod_desk/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/hod_desk/page.js"
+    ],
+    "/department/appliedScience/facilities/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/facilities/page.js"
+    ],
+    "/department/appliedScience/faculty_profile/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/faculty_profile/page.js"
+    ],
+    "/department/appliedScience/syllabus/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/syllabus/page.js"
+    ],
+    "/department/appliedScience/achievements/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/achievements/page.js"
     ],
     "/department/mechanical-engineering/page": [
       "static/chunks/webpack.js",
@@ -135,181 +200,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/department/mechanical-engineering/committee/page.js"
-    ],
-    "/department/visi-design/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/visi-design/page.js"
-    ],
-    "/department/energy-system/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/energy-system/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/facilities/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/facilities/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/activities/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/activities/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/achievements/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/achievements/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/academic-excellence/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/academic-excellence/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/faculty-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/faculty-details/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/downloads/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/downloads/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/digital-library/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/digital-library/page.js"
-    ],
-    "/department/electrical-and-electronics-engineering/syllabus/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electrical-and-electronics-engineering/syllabus/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/career-scope/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/career-scope/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/facilities/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/facilities/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/activities/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/activities/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/achievements/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/achievements/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/academic-excellence/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/academic-excellence/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/downloads/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/downloads/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/faculty-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/faculty-details/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/digital-library/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/digital-library/page.js"
-    ],
-    "/department/electronics-and-communication-engineering/syllabus/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/electronics-and-communication-engineering/syllabus/page.js"
-    ],
-    "/student-support/iedc/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/student-support/iedc/page.js"
-    ],
-    "/student-support/student-certificates/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/student-support/student-certificates/page.js"
-    ],
-    "/department/computer-science-and-engineering/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/page.js"
-    ],
-    "/department/computer-science-and-engineering/career-scope/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/career-scope/page.js"
-    ],
-    "/department/computer-science-and-engineering/facilities/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/facilities/page.js"
-    ],
-    "/department/computer-science-and-engineering/activities/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/activities/page.js"
-    ],
-    "/department/computer-science-and-engineering/achievements/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/achievements/page.js"
-    ],
-    "/department/computer-science-and-engineering/academic-excellence/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/academic-excellence/page.js"
-    ],
-    "/department/computer-science-and-engineering/association-activities/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/association-activities/page.js"
-    ],
-    "/department/computer-science-and-engineering/faculty-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/faculty-details/page.js"
-    ],
-    "/department/computer-science-and-engineering/digital-library/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/digital-library/page.js"
-    ],
-    "/department/computer-science-and-engineering/teaching-learning-process/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/teaching-learning-process/page.js"
-    ],
-    "/department/computer-science-and-engineering/syllabus/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/syllabus/page.js"
-    ],
-    "/department/computer-science-and-engineering/placement/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/computer-science-and-engineering/placement/page.js"
     ]
   }
 }

@@ -1,14 +1,14 @@
-import SiteHeader from '@/components/header/SiteHeader'
-import FooterSection from '@/components/home/FooterSection'
-import DepartmentNavigation from '../../DepartmentsNavigation/page'
-import React from 'react'
+import SiteHeader from '@/components/header/SiteHeader';
+import FooterSection from '@/components/home/FooterSection';
+import DepartmentNavigation from '../../DepartmentsNavigation/page';
+import React from 'react';
+import Image from 'next/image';
 import {
     ArrowRight,
     MonitorPlay,
     Presentation,
     Video,
     Wifi,
-    Zap,
 } from 'lucide-react'
 
 const smartRoomFeatures = [
@@ -203,9 +203,11 @@ const page = () => {
                                 </div>
 
                                 <div className="overflow-hidden">
-                                    <img
+                                    <Image
                                         src="https://ncerc.ac.in/images/dpt/mechatronics-engineering/SMART-ROOMS.jpg"
                                         alt="NCERC Smart Room"
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="aspect-[16/10] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                                     />
                                 </div>

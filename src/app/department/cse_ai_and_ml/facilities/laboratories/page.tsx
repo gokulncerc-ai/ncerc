@@ -21,7 +21,7 @@ import FooterSection from "@/components/home/FooterSection";
 import DepartmentNav from "../../DepartmentNav/page";
 
 
-const BASE_PATH = "/departments/ug/cse_ai_and_ml";
+const BASE_PATH = "/departments/cse_ai_and_ml";
 
 const laboratoryAreas = [
     {
@@ -545,7 +545,7 @@ const page = () => {
                                     </h2>
 
                                     <p className="mt-5 max-w-[650px] font-sans text-[13px] leading-[1.9] text-[#77736b]">
-                                        Explore the department's academic profile,
+                                        Explore the department&apos;s academic profile,
                                         career opportunities, faculty and other
                                         learning resources.
                                     </p>

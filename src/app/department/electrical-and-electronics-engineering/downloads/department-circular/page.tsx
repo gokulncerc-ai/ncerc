@@ -85,7 +85,7 @@ export default function DepartmentCircularPage() {
                             </a>
 
                             <Link
-                                href="/departments/electrical-and-electronics-engineering/downloads"
+                                href="/department/electrical-and-electronics-engineering/downloads"
                                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:border-[#D2B87C]/60 hover:text-[#D2B87C]"
                             >
                                 Back to Downloads
@@ -289,7 +289,7 @@ export default function DepartmentCircularPage() {
 
                                     <div className="mt-7 flex flex-wrap justify-center gap-3">
                                         <Link
-                                            href="/departments/electrical-and-electronics-engineering/downloads"
+                                            href="/department/electrical-and-electronics-engineering/downloads"
                                             className="inline-flex items-center gap-2 rounded-full bg-[#20235A] px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-[#D2B87C] hover:text-[#20235A]"
                                         >
                                             Back to Downloads
@@ -400,7 +400,7 @@ export default function DepartmentCircularPage() {
                             </div>
 
                             <Link
-                                href="/departments/electrical-and-electronics-engineering/downloads"
+                                href="/department/electrical-and-electronics-engineering/downloads"
                                 className="group inline-flex w-fit items-center gap-2 rounded-full bg-[#D2B87C] px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-[#20235A] transition-all duration-300 hover:bg-white"
                             >
                                 Back to Downloads

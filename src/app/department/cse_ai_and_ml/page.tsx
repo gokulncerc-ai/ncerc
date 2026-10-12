@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
     ArrowDown,
     ArrowRight,
@@ -137,7 +138,7 @@ const pos = [
         number: "PO 11",
         title: "Project Management and Finance",
         description:
-            "Demonstrate knowledge and understanding of the engineering and management principles and apply these to one's own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
+            "Demonstrate knowledge and understanding of the engineering and management principles and apply these to one&apos;s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
     },
     {
         number: "PO 12",
@@ -272,9 +273,11 @@ const page = () => {
 
                                 <div className="relative h-[360px] overflow-hidden border border-white/10 sm:h-[450px] lg:h-[500px] xl:h-[540px]">
 
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=2200&q=85"
                                         alt="Artificial intelligence and machine learning technology"
+                                        fill
+                                        sizes="(min-width: 768px) 40vw, 100vw"
                                         className="absolute inset-0 h-full w-full object-cover object-center"
                                     />
 
@@ -476,9 +479,11 @@ const page = () => {
 
                         <div className="grid overflow-hidden bg-white shadow-[0_20px_70px_rgba(32,35,90,0.06)] lg:grid-cols-[0.72fr_1.28fr]">
                             <div className="relative min-h-[380px] overflow-hidden bg-[#20235A] sm:min-h-[480px]">
-                                <img
+                                <Image
                                     src="/images/principal/ncercprinci.webp"
                                     alt="Dr. Anoop B K, Professor and Head of Department"
+                                    fill
+                                    sizes="(min-width: 768px) 40vw, 100vw"
                                     className="absolute inset-0 h-full w-full object-cover object-top"
                                 />
 
@@ -535,7 +540,7 @@ const page = () => {
                                         faculty of the best kind of the department ensure quality
                                         education through interaction among students, parents and
                                         staff, along with a Training and Placement Cell that
-                                        supports students' futures.
+                                        supports students futures.
                                     </p>
 
                                     <p>

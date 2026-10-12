@@ -1,7 +1,8 @@
-import SiteHeader from '@/components/header/SiteHeader'
-import FooterSection from '@/components/home/FooterSection'
-import DepartmentNavigation from '../../DepartmentsNavigation/page'
-import React from 'react'
+import SiteHeader from '@/components/header/SiteHeader';
+import FooterSection from '@/components/home/FooterSection';
+import DepartmentNavigation from '../../DepartmentsNavigation/page';
+import React from 'react';
+import Image from "next/image";
 import {
     ArrowRight,
     ArrowUpRight,
@@ -389,9 +390,11 @@ const page = () => {
                                         : 'h-[300px]'
                                         }`}
                                 >
-                                    <img
+                                    <Image
                                         src={image}
                                         alt={`Mechatronics university rank holder ${index + 1}`}
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
                                     />
 
@@ -625,9 +628,11 @@ const page = () => {
                         <div className="grid overflow-hidden bg-[#20235A] lg:grid-cols-[0.85fr_1.15fr]">
 
                             <div className="relative min-h-[360px] overflow-hidden lg:min-h-[500px]">
-                                <img
+                                <Image
                                     src="https://ncerc.ac.in/images/dpt/mechatronics-engineering/department-toppers/anas.jpg"
                                     alt="Mechatronics Engineering university rank holder"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="absolute inset-0 h-full w-full object-cover"
                                 />
 

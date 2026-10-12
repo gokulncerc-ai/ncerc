@@ -2,11 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
     ArrowDown,
-    ArrowLeft,
     ArrowRight,
-    ArrowUpRight,
     BookOpen,
     GraduationCap,
     Microscope,
@@ -119,9 +118,11 @@ export default function HODDeskPage() {
                                 <div className="absolute -bottom-4 -left-4 right-4 top-4 border border-[#D2B87C]/60 sm:-bottom-5 sm:-left-5 sm:right-5 sm:top-5" />
 
                                 <div className="relative aspect-[4/4.5] overflow-hidden bg-[#30336B]">
-                                    <img
+                                    <Image
                                         src={HOD_IMAGE}
                                         alt="Dr. Jalaja K, Associate Professor and Head of the Department of Applied Science and Humanities"
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-full w-full object-cover object-top"
                                         loading="eager"
                                     />

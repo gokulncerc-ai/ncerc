@@ -2,7 +2,6 @@
 
 import React from "react";
 import {
-    ArrowUpRight,
     BookOpen,
     BriefcaseBusiness,
     Code2,
@@ -11,6 +10,7 @@ import {
     Presentation,
     Trophy,
 } from "lucide-react";
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import McaNavigation from "../../mca/mcanavigation/page";
@@ -142,9 +142,11 @@ const Page = () => {
                     <div className="relative hidden lg:block">
                         <div className="relative ml-auto max-w-[450px] border border-white/10 bg-white/[0.03] p-5">
                             <div className="aspect-[5/4] overflow-hidden bg-[#181B4A]">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=85"
                                     alt="Students collaborating in an academic environment"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-full w-full object-cover"
                                 />
                             </div>
@@ -238,9 +240,11 @@ const Page = () => {
                             {/* Small supporting visual */}
                             <div className="relative mt-7 max-w-md overflow-hidden border border-[#20235A]/10 bg-white">
                                 <div className="aspect-[16/7] overflow-hidden">
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
                                         alt="Students collaborating together"
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
                                     />
                                 </div>
@@ -400,9 +404,11 @@ const Page = () => {
                 <div className="mx-auto max-w-[1440px] px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
                     <div className="grid overflow-hidden border border-[#20235A]/10 bg-white lg:grid-cols-[0.9fr_1.1fr]">
                         <div className="relative min-h-[280px] overflow-hidden bg-[#20235A] sm:min-h-[340px]">
-                            <img
+                            <Image
                                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=85"
                                 alt="Students working together"
+                                fill
+                                sizes="(min-width: 1024px) 330px, 100vw"
                                 className="h-full w-full object-cover opacity-85"
                             />
 
@@ -453,39 +459,7 @@ const Page = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-
-            {/* CLOSING */}
-            {/* <section className="bg-white">
-                <div className="mx-auto max-w-[1440px] px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
-                    <div className="grid gap-8 border-t border-[#20235A]/10 pt-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
-                        <div>
-                            <span className="text-[9px] font-medium uppercase tracking-[0.22em] text-[#8F7746]">
-                                MCA Association
-                            </span>
-                        </div>
-
-                        <div>
-                            <h2 className="max-w-3xl font-serif text-[36px] leading-[1.04] tracking-[-0.03em] text-[#20235A] sm:text-[46px]">
-                                Learning becomes stronger when it is shared.
-                            </h2>
-
-                            <div className="mt-6 flex items-center gap-3">
-                                <span className="h-px w-10 bg-[#D2B87C]" />
-                                <span className="text-[9px] uppercase tracking-[0.18em] text-[#1E1917]/45">
-                                    Department of Computer Applications
-                                </span>
-
-                                <ArrowUpRight
-                                    size={15}
-                                    strokeWidth={1.5}
-                                    className="text-[#8F7746]"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+            </section>            
             <Faq />
             <FooterSection />
         </main>

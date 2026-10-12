@@ -1,5 +1,7 @@
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
+import Image from "next/image";
+import Link from "next/link";
 import {
     ArrowRight,
     ArrowUpRight,
@@ -88,13 +90,13 @@ const page = () => {
                                 </p>
 
                                 <div className="mt-10 flex flex-wrap items-center gap-5">
-                                    <a
+                                    <Link
                                         href="#about"
                                         className="group inline-flex items-center gap-3 bg-[#D2B87C] px-6 py-4 text-sm font-semibold text-[#20235A] transition hover:bg-white"
                                     >
                                         Explore Programme
                                         <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                                    </a>
+                                    </Link>
 
                                     <div className="flex items-center gap-3 text-sm text-white/55">
                                         <span className="h-2 w-2 rounded-full bg-[#D2B87C]" />
@@ -105,7 +107,7 @@ const page = () => {
 
                             {/* Hero Image */}
                             <div className="relative min-h-[430px] overflow-hidden lg:min-h-full">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=90"
                                     alt="Advanced computer science and technology"
                                     className="absolute inset-0 h-full w-full object-cover"
@@ -423,13 +425,13 @@ const page = () => {
                                 </h2>
                             </div>
 
-                            <a
+                            <Link
                                 href="/"
                                 className="group flex w-fit items-center gap-4 bg-[#20235A] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#171946]"
                             >
                                 Explore NCERC
                                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>

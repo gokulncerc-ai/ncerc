@@ -1,12 +1,10 @@
 
 import Link from "next/link";
-
 import {
   ArrowLeft,
   ArrowDownToLine,
   ArrowUpRight,
   BookOpenCheck,
-  CheckCircle2,
   FileCheck2,
   ShieldCheck,
 } from "lucide-react";

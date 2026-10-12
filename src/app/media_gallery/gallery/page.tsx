@@ -10,7 +10,7 @@ import {
     Quote,
     Video,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 
@@ -295,9 +295,11 @@ const page = () => {
 
                                     {/* Image */}
                                     <div className="relative aspect-[16/10] overflow-hidden lg:aspect-auto lg:min-h-[500px]">
-                                        <img
+                                        <Image
                                             src={photoCollections[0].image}
                                             alt={photoCollections[0].title}
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
 
@@ -389,9 +391,11 @@ const page = () => {
                                         <div className="relative overflow-hidden bg-[#faf7f2]">
 
                                             <div className="aspect-[4/3] overflow-hidden">
-                                                <img
+                                                <Image
                                                     src={collection.image}
                                                     alt={collection.title}
+                                                    fill
+                                                    sizes="(min-width: 1024px) 330px, 100vw"
                                                     loading="lazy"
                                                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                                 />

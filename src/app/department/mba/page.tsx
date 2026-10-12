@@ -5,7 +5,6 @@ import {
     ArrowDownRight,
     ArrowRight,
     BedDouble,
-    BookOpen,
     BriefcaseBusiness,
     Building2,
     Bus,

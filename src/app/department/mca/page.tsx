@@ -21,27 +21,7 @@ import {
 } from "lucide-react";
 import McaNavigation from "../mca/mcanavigation/page";
 import Faq from "../mca/faq/page";
-
-const departmentLinks = [
-    { label: "About", href: "/mca" },
-    { label: "Career Scope", href: "/mca/career-scope" },
-    { label: "Facilities", href: "/mca/#facilities" },
-    { label: "Activities", href: "/mca/activities.php" },
-    { label: "Achievements", href: "/mca/achievements.php" },
-    { label: "Academic Excellence", href: "/mca/academic-excellence" },
-    { label: "Association", href: "/mca/#association" },
-    { label: "E-bulletin", href: "/mca/" },
-    { label: "Faculty Profile", href: "/mca/faculty-details" },
-    { label: "E-resources", href: "/mca/e-resources.php" },
-    {
-        label: "Teaching & Learning Process",
-        href: "/mca/#teaching-learning",
-    },
-    { label: "Syllabus", href: "/mca/syllabus" },
-    { label: "Placement", href: "/mca/placement-data.php" },
-    { label: "Industry Connect", href: "/mca/" },
-];
-
+import Image from "next/image";
 const quickFacts = [
     { number: "02", label: "Years Programme" },
     { number: "04", label: "Semesters" },
@@ -204,9 +184,11 @@ const Page = () => {
                     </div>
 
                     <div className="relative min-h-[390px] sm:min-h-[450px] lg:min-h-full">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=90"
                             alt="Students working with computers"
+                            fill
+                            sizes="(min-width: 1024px) 330px, 100vw"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
 
@@ -301,9 +283,11 @@ const Page = () => {
                             <div className="mt-5 h-px w-14 bg-[#D2B87C]" />
 
                             <div className="mt-7 overflow-hidden">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=90"
                                     alt="Software development and programming"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-[190px] w-full object-cover sm:h-[220px] lg:h-[205px]"
                                 />
                             </div>
@@ -379,9 +363,11 @@ const Page = () => {
                                     </div>
 
                                     <div className="relative overflow-hidden">
-                                        <img
+                                        <Image
                                             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=90"
                                             alt="Computer programming workspace"
+                                            fill
+                                            sizes="(min-width: 1024px) 330px, 100vw"
                                             className="h-[300px] w-full object-cover sm:h-[350px] lg:h-full"
                                         />
 
@@ -417,9 +403,11 @@ const Page = () => {
 
                             <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
                                 <div className="overflow-hidden">
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=90"
                                         alt="Students collaborating on technology"
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[180px] w-full object-cover"
                                     />
                                 </div>
@@ -479,9 +467,11 @@ const Page = () => {
                             </p>
 
                             <div className="mt-5 overflow-hidden bg-[#F2EFE8]">
-                                <img
+                                <Image
                                     src="https://ncerc.ac.in/images/dpt/mca/faculty/SSM.jpg"
                                     alt="Dr. Sudheer Sankara Marar"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="aspect-[4/4.5] w-full object-cover object-top"
                                 />
                             </div>
@@ -601,9 +591,11 @@ const Page = () => {
                             </p>
 
                             <div className="mt-7 overflow-hidden">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=90"
                                     alt="Modern technology and computing workspace"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-[210px] w-full object-cover"
                                 />
                             </div>
@@ -663,9 +655,11 @@ const Page = () => {
                             <div className="mt-5 h-px w-14 bg-[#D2B87C]" />
 
                             <div className="mt-7 overflow-hidden">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=90"
                                     alt="Students collaborating and learning"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-[190px] w-full object-cover sm:h-[220px]"
                                 />
                             </div>
@@ -781,9 +775,11 @@ const Page = () => {
 
                             <div className="mt-7 grid grid-cols-2 gap-3">
                                 <div className="overflow-hidden">
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=90"
                                         alt="Professional teamwork"
+                                        fill
+                                        sizes="(min-width: 1024px) 330px, 100vw"
                                         className="h-[160px] w-full object-cover"
                                     />
                                 </div>
@@ -908,9 +904,11 @@ const Page = () => {
                             </p>
 
                             <div className="mt-7 overflow-hidden">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=90"
                                     alt="Computer technology and hardware"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-[190px] w-full object-cover opacity-85"
                                 />
                             </div>
@@ -970,9 +968,11 @@ const Page = () => {
                             </div>
 
                             <div className="mt-7 overflow-hidden">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1000&q=90"
                                     alt="Students in an academic environment"
+                                    fill
+                                    sizes="(min-width: 1024px) 330px, 100vw"
                                     className="h-[200px] w-full object-cover"
                                 />
                             </div>
