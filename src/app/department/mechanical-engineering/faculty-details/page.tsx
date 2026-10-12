@@ -3,7 +3,7 @@ import { ArrowUpRight, GraduationCap, Users, Wrench } from "lucide-react";
 import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../DepartmentNav/page";
+import InnerHeader from "../DepartmentNav/DepartmentNav";
 
 type Member = {
   name: string;

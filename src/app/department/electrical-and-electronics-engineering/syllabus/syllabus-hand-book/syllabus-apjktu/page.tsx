@@ -8,7 +8,7 @@ import {
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../../../DepartmentNav/page";
+import InnerHeader from "../../../DepartmentNav/DepartmentNav";
 
 // Adjust this base to wherever the PDFs live inside /public
 const PDF_BASE =

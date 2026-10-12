@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../../DepartmentNav/page";
+import InnerHeader from "../../DepartmentNav/DepartmentNavigation";
 
 // Adjust this base to wherever the lab images live inside /public
 const LAB_BASE = "/images/dpt/computer-science-and-engineering/lab";

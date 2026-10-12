@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNavigation from "../departmentnavigation/page";
+import DepartmentNavigation from "../departmentnavigation/DepartmentNavigation";
 
 import {
     ArrowDownRight,

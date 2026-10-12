@@ -19,7 +19,7 @@ import {
     ShieldCheck,
     Target,
 } from "lucide-react";
-import McaNavigation from "../mca/mcanavigation/page";
+import McaNavigation from "./mcanavigation/mcanavigation";
 import Faq from "../mca/faq/page";
 import Image from "next/image";
 const quickFacts = [

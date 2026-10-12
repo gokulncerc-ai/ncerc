@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ChevronDown, Users } from "lucide-react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNavigation from "../DepartmentNav/page";
+import DepartmentNavigation from "../DepartmentNav/DepartmentNav";
 import FAQ from "../FAQ.tsx/page";
 type Row = [number, string, string, string]; // [Sl No, Name, Enrollment No., Employer]
 

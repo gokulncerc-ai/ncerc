@@ -4,7 +4,7 @@ import { MonitorPlay, Presentation, Wifi, Users } from "lucide-react";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../../DepartmentNav/page";
+import InnerHeader from "../../DepartmentNav/DepartmentNav";
 
 const SMART_ROOM_IMAGE =
   "/images/dpt/mechanical-engineering/facilities/smartclassroom/smartclassroom.png";

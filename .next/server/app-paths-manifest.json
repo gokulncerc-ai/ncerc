@@ -1,7 +1,7 @@
 {
-  "/department/mechanical-engineering/committee/page": "app/department/mechanical-engineering/committee/page.js",
-  "/academics/regulations-and-curriculum/page": "app/academics/regulations-and-curriculum/page.js",
-  "/academics/courses/page": "app/academics/courses/page.js",
-  "/academics/downloads/page": "app/academics/downloads/page.js",
-  "/academics/reputation-ranking/page": "app/academics/reputation-ranking/page.js"
+  "/department/appliedScience/facilities/page": "app/department/appliedScience/facilities/page.js",
+  "/department/appliedScience/hod_desk/page": "app/department/appliedScience/hod_desk/page.js",
+  "/department/appliedScience/activities/page": "app/department/appliedScience/activities/page.js",
+  "/department/appliedScience/faculty_profile/page": "app/department/appliedScience/faculty_profile/page.js",
+  "/department/appliedScience/syllabus/page": "app/department/appliedScience/syllabus/page.js"
 }

@@ -18,7 +18,7 @@ import React from "react";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNavigation from "./DepartmentNav/page";
+import DepartmentNavigation from "./DepartmentNav/DepartmentNav";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1800&q=90";

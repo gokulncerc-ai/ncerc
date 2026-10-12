@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNavigation from "../DepartmentNav/page";
+import DepartmentNavigation from "../DepartmentNav/DepartmentNav";
 import FAQ from "../FAQ.tsx/page";
 
 export const metadata: Metadata = {

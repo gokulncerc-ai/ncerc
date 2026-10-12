@@ -3,7 +3,7 @@ import { ArrowUpRight, FileText, Landmark } from "lucide-react";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../../../DepartmentNav/page";
+import InnerHeader from "../../../DepartmentNav/DepartmentNav";
 
 /* =========================================================
    PDF CONFIGURATION

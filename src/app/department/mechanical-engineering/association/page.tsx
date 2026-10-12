@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../DepartmentNav/page";
+import InnerHeader from "../DepartmentNav/DepartmentNav";
 
 const ASSOCIATION_BASE =
   "/images/dpt/mechanical-engineering/association";

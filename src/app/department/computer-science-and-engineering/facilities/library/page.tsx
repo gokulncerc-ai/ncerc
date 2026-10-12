@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNav from "../../DepartmentNav/page";
+import DepartmentNav from "../../DepartmentNav/DepartmentNavigation";
 export const metadata = {
   title:
     "Top Engineering Colleges in Thrissur | Computer Science and Engineering - NCERC",

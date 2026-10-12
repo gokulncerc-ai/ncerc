@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../DepartmentNav/page";
+import InnerHeader from "../DepartmentNav/DepartmentNav";
 
 // Adjust these bases to wherever you moved the images inside /public
 const LOCAL_BASE = "/images/dpt/electronics-and-communication-engineering/activities";

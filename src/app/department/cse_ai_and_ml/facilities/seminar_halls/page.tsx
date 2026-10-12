@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNav from "../../DepartmentNav/page";
+import DepartmentNav from "../../DepartmentNav/DepartmentNavigation";
 const BASE_PATH = "/departments/ug/cse_ai_and_ml";
 const seminarHalls = [
     {

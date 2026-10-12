@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../DepartmentNav/page";
+import InnerHeader from "../DepartmentNav/DepartmentNav";
 
 const LOCAL_ACTIVITY_BASE = "/images/dpt/mechanical-engineering/activities";
 const ROOT_ACTIVITY_BASE = "/images/dpt/mechanical-engineering/activities";

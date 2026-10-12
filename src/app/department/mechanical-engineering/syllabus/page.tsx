@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ArrowUpRight, Calendar, FileText } from "lucide-react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../DepartmentNav/page";
+import InnerHeader from "../DepartmentNav/DepartmentNav";
 interface SyllabusCard {
   title: string;
   description: string;

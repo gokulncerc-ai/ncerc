@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import McaNavigation from "../../mca/mcanavigation/page";
+import McaNavigation from "../mcanavigation/mcanavigation";
 import Faq from "../../mca/faq/page"
 
 const facilityHighlights = [

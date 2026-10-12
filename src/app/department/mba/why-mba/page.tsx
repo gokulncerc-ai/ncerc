@@ -14,7 +14,7 @@ import type { LucideIcon } from "lucide-react";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../DepartmentNav/page";
+import InnerHeader from "../DepartmentNav/DepartmentNav";
 import TourGallery from "./TourGallery/page";
 import FAQ from "../FAQ.tsx/page";
 

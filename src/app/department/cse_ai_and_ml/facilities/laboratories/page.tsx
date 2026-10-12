@@ -18,7 +18,7 @@ import {
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNav from "../../DepartmentNav/page";
+import DepartmentNav from "../../DepartmentNav/DepartmentNavigation";
 
 
 const BASE_PATH = "/departments/cse_ai_and_ml";

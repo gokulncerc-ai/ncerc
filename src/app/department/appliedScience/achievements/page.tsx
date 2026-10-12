@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useCallback, useEffect, useState } from "react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNavigation from "../departmentnavigation/page";
+import DepartmentNavigation from "../departmentnavigation/DepartmentNavigation";
 
 import {
     ArrowRight,

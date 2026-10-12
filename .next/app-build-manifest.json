@@ -6,30 +6,40 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/department/mechanical-engineering/committee/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/department/mechanical-engineering/committee/page.js"
-    ],
     "/academics/reputation-ranking/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/academics/reputation-ranking/page.js"
     ],
-    "/academics/courses/page": [
+    "/department/appliedScience/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/academics/courses/page.js"
+      "static/chunks/app/department/appliedScience/about/page.js"
     ],
-    "/academics/regulations-and-curriculum/page": [
+    "/department/appliedScience/hod_desk/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/academics/regulations-and-curriculum/page.js"
+      "static/chunks/app/department/appliedScience/hod_desk/page.js"
     ],
-    "/academics/downloads/page": [
+    "/department/appliedScience/facilities/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/academics/downloads/page.js"
+      "static/chunks/app/department/appliedScience/facilities/page.js"
+    ],
+    "/department/appliedScience/faculty_profile/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/faculty_profile/page.js"
+    ],
+    "/department/appliedScience/activities/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/activities/page.js"
+    ],
+    "/department/appliedScience/syllabus/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/department/appliedScience/syllabus/page.js"
     ]
   }
 }

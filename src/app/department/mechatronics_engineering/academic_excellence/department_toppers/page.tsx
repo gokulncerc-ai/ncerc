@@ -1,7 +1,7 @@
 import SiteHeader from '@/components/header/SiteHeader';
 import FooterSection from '@/components/home/FooterSection';
 import Image from 'next/image';
-import DepartmentNavigation from '../../DepartmentsNavigation/page';
+import DepartmentNavigation from '../../DepartmentsNavigation/DepartmentsNavigation';
 import React from 'react'
 import {
     ArrowRight,

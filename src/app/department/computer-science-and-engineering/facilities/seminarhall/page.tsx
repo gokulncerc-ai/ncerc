@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNav from "../../DepartmentNav/page";
+import DepartmentNav from "../../DepartmentNav/DepartmentNavigation";
 
 // The source PHP's <meta name="description"> and <meta name="keywords">
 // were both just a blank space (" ") - genuinely empty in the original

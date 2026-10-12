@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import InnerHeader from "../DepartmentNav/page";
+import InnerHeader from "../DepartmentNav/DepartmentNavigation";
 
 export const metadata = {
   title:

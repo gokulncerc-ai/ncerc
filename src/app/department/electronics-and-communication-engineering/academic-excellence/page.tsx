@@ -4,7 +4,7 @@ import { ArrowRight, Landmark, Trophy, type LucideIcon } from "lucide-react";
 
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
-import DepartmentNav from "../DepartmentNav/page";
+import DepartmentNav from "../DepartmentNav/DepartmentNav";
 
 export const metadata = {
   title:
