@@ -1,7 +1,7 @@
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../DepartmentNav/DepartmentNavigation";
-import PlacementGallery from "./PlacementGallery/page";
+import PlacementGallery from "./PlacementGallery/PlacementGallery";
 
 export const metadata = {
 title:

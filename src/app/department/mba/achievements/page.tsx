@@ -19,8 +19,8 @@ import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNavigation from "../DepartmentNav/DepartmentNav";
-import AchievementsGrid from "./AchievementsGrid/page";
-import type { Achievement } from "./AchievementsGrid/page";
+import AchievementsGrid from "./AchievementsGrid/AchievementsGrid";
+import type { Achievement } from "./AchievementsGrid/AchievementsGrid";
 import FAQ from "../FAQ.tsx/page";
 
 export const metadata: Metadata = {

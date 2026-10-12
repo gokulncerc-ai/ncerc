@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../DepartmentNav/DepartmentNavigation";
-import AcademicExcellenceGallery from "./AcademicExcellenceGallery/page";
+import AcademicExcellenceGallery from "./AcademicExcellenceGallery/AcademicExcellenceGallery";
 
 export const metadata = {
   title:

@@ -14,7 +14,7 @@ import {
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../DepartmentNav/DepartmentNav";
-import FacilitiesGallery from "./FacilitiesGallery/page";
+import FacilitiesGallery from "./FacilitiesGallery/FacilitiesGallery";
 import FAQ from "../FAQ.tsx/page";
 
 export const metadata: Metadata = {

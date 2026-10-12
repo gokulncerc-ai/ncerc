@@ -11,7 +11,7 @@ import {
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import DepartmentNavigation from "../DepartmentNav/DepartmentNav";
-import AssociationsShowcase from "./AssociationsShowcase/page";
+import AssociationsShowcase from "./AssociationsShowcase/AssociationsShowcase";
 import FAQ from "../FAQ.tsx/page";
 
 export const metadata: Metadata = {

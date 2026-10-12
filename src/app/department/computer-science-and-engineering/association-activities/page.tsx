@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../DepartmentNav/DepartmentNavigation";
-import AssociationActivitiesGallery from "./AssociationActivitiesGallery/page";
+import AssociationActivitiesGallery from "./AssociationActivitiesGallery/AssociationActivitiesGallery";
 
 export const metadata = {
   title: "Association Activities | Computer Science and Engineering - NCERC",
