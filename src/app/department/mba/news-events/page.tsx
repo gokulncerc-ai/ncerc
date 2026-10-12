@@ -8,7 +8,7 @@ import {
   CheckCircle2,
   Newspaper,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../DepartmentNav/page";
@@ -206,11 +206,12 @@ export default function MBANewsEventsPage() {
                 >
                   {/* Image */}
                   <div className="relative flex min-h-[260px] items-center justify-center overflow-hidden bg-[#FAF8F3] p-4 sm:min-h-[380px] sm:p-6 lg:min-h-[510px]">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={item.image}
                       alt={item.imageAlt}
                       loading="lazy"
+                      fill
+                      sizes="(min-width: 1024px) 330px, 100vw"
                       className="block h-auto max-h-[220px] w-full max-w-full object-contain transition-transform duration-500 group-hover:scale-[1.02] sm:max-h-[320px] lg:max-h-[430px]"
                     />
 

@@ -588,7 +588,6 @@ const page = () => {
 
                               {/* Supporting Image */}
                               <div className="mt-7 h-[260px] w-full max-w-xl overflow-hidden border border-[#d2b87c]/30 bg-[#20235a]/5 sm:h-[300px] lg:h-[340px]">
-                                  {/* eslint-disable-next-line @next/next/no-img-element */}
                                   <Image
                                       src="https://i.pinimg.com/736x/9e/05/e0/9e05e0eebb77b5448268ffd44250c246.jpg"
                                       alt="Students collaborating in a university campus environment"

@@ -7,7 +7,7 @@ type Facility = {
   src: string;
   label: string;
 };
-
+import Image from "next/image";
 const facilities: Facility[] = [
   { src: `https://ncerc.ac.in/images/dpt/mba/facilities/board-room.png`, label: "Board Room" },
   { src: `https://ncerc.ac.in/images/dpt/mba/facilities/canteen2.png`, label: "Canteen" },
@@ -74,10 +74,11 @@ export default function FacilitiesGallery() {
             aria-label={`View ${item.label}`}
             className="group relative block aspect-[16/9] overflow-hidden border border-slate-200 bg-slate-100 shadow-sm transition-shadow hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={encodeURI(item.src)}
               alt={item.label}
+              fill
+              sizes="(min-width: 1024px) 330px, 100vw"
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
@@ -121,10 +122,11 @@ export default function FacilitiesGallery() {
             className="flex max-h-full max-w-5xl flex-col items-center"
             onClick={(event) => event.stopPropagation()}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={encodeURI(activeItem.src)}
               alt={activeItem.label}
+              fill
+              sizes="(min-width: 1024px) 330px, 100vw"
               className="max-h-[80vh] w-auto max-w-full object-contain"
             />
             <figcaption className="mt-3 text-center text-sm text-slate-300">

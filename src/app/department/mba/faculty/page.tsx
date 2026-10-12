@@ -8,7 +8,7 @@ import {
   GraduationCap,
   Users,
 } from "lucide-react";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../DepartmentNav/page";
@@ -310,12 +310,12 @@ export default function MBAFacultyPage() {
                       }}
                     />
 
-                    {/* Faculty images are served from the public directory. */}
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={encodeURI(faculty.photo)}
                       alt={`Portrait of ${faculty.name}`}
                       loading={index < 4 ? "eager" : "lazy"}
+                      fill
+                      sizes="(min-width: 1024px) 330px, 100vw"
                       className="relative z-10 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                     />
 

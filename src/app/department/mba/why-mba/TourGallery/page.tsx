@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-
+import Image from "next/image";
 type TourImage = {
   src: string;
   caption: string;
@@ -89,10 +89,11 @@ export default function TourGallery() {
               {item.caption}
             </span>
             <span className="relative block aspect-[4/3] overflow-hidden bg-slate-100">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={item.src}
                 alt={item.caption}
+                fill
+                sizes="(min-width: 1024px) 330px, 100vw"
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -134,10 +135,11 @@ export default function TourGallery() {
             className="flex max-h-full max-w-5xl flex-col items-center"
             onClick={(event) => event.stopPropagation()}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={activeItem.src}
               alt={activeItem.caption}
+              fill
+              sizes="(min-width: 1024px) 330px, 100vw"
               className="max-h-[80vh] w-auto max-w-full object-contain"
             />
             <figcaption className="mt-3 text-center text-sm text-slate-300">

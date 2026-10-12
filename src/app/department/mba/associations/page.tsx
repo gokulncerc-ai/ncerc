@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
+import Image from "next/image";
 const HERO_IMAGE =
   "https://i.pinimg.com/736x/5e/4f/4f/5e4f4f30d09ff73035e8c415bc8ed257.jpg";
 
@@ -125,10 +125,11 @@ export default function MBAAssociationsPage() {
 
               {/* Hero visual */}
               <div className="relative -mx-5 min-h-[300px] overflow-hidden sm:-mx-8 sm:min-h-[380px] lg:mx-0 lg:min-h-[540px]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={HERO_IMAGE}
                   alt="Memorandum of understanding signing with KVVES Kulapully Unit"
+                  fill
+                  sizes="(min-width: 1024px) 330px, 100vw"
                   className="absolute inset-0 h-full w-full object-cover object-center"
                 />
 

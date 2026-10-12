@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
-
+import Image from "next/image";
 export type Achievement = {
   number: string;
   title?: string;
@@ -67,11 +67,12 @@ export default function AchievementsGrid({ items }: AchievementsGridProps) {
               aria-label={`View larger image: ${item.alt}`}
               className="relative block aspect-[4/3] w-full overflow-hidden border-b border-[#20235A]/10 bg-[#F2EFE8] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D2B87C]"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={item.image}
                 alt={item.alt}
                 loading="lazy"
+                fill
+                sizes="(min-width: 1024px) 330px, 100vw"
                 className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
               />
 
@@ -140,10 +141,11 @@ export default function AchievementsGrid({ items }: AchievementsGridProps) {
             className="flex max-h-full max-w-5xl flex-col items-center"
             onClick={(event) => event.stopPropagation()}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={activeItem.image}
               alt={activeItem.alt}
+              fill
+              sizes="(min-width: 1024px) 330px, 100vw"
               className="max-h-[80vh] w-auto max-w-full object-contain"
             />
             <figcaption className="mt-4 max-w-2xl text-center text-sm leading-6 text-white/65">

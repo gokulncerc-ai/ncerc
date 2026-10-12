@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import Image from "next/image";
 import SiteHeader from "@/components/header/SiteHeader";
 import FooterSection from "@/components/home/FooterSection";
 import InnerHeader from "../DepartmentNav/page";
@@ -248,10 +248,11 @@ export default function MBAHodDeskPage() {
                 <div className="group relative">
                   {/* Portrait */}
                   <div className="relative overflow-hidden bg-[#F2EFE8]">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={hod.photo}
                       alt={hod.name}
+                      fill
+                      sizes="(min-width: 1024px) 330px, 100vw"
                       className="aspect-[4/4.5] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
                     />
 
