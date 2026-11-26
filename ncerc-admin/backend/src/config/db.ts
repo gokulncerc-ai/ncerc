@@ -4,10 +4,29 @@ import { env } from './env';
 mongoose.set('strictQuery', true);
 
 export const connectDB = async (): Promise<void> => {
-  await mongoose.connect(env.MONGODB_URI);
-  console.log(`✅ MongoDB connected (${mongoose.connection.name})`);
+  const mongoUri = env.MONGODB_URI.trim();
+
+  if (!/^mongodb(?:\+srv)?:\/\//i.test(mongoUri)) {
+    throw new Error(
+      'Invalid MONGODB_URI. Expected mongodb:// or mongodb+srv://'
+    );
+  }
+
+  try {
+    await mongoose.connect(mongoUri, {
+      serverSelectionTimeoutMS: 15000,
+    });
+
+    console.log(
+      `✅ MongoDB connected (${mongoose.connection.name})`
+    );
+  } catch (error) {
+    console.error('❌ MongoDB connection failed:', error);
+    throw error;
+  }
 };
 
 export const disconnectDB = async (): Promise<void> => {
   await mongoose.disconnect();
+  console.log('MongoDB disconnected');
 };
