@@ -1,3 +1,4 @@
+
 import mongoose from 'mongoose';
 import { env } from './env';
 
@@ -13,13 +14,17 @@ export const connectDB = async (): Promise<void> => {
   }
 
   try {
+    console.log('Connecting to MongoDB Atlas...');
+
     await mongoose.connect(mongoUri, {
+      dbName: 'test',
       serverSelectionTimeoutMS: 15000,
     });
 
     console.log(
       `✅ MongoDB connected (${mongoose.connection.name})`
     );
+
   } catch (error) {
     console.error('❌ MongoDB connection failed:', error);
     throw error;
