@@ -31,6 +31,15 @@ const uniqueSlug = async (title: string): Promise<string> => {
   return slug;
 };
 
+type Img = { url: string; publicId?: string };
+
+/** No cover chosen? The first gallery image becomes the cover. */
+const withCover = <T extends { coverImage?: Img | null; gallery?: Img[] }>(v: T): T => {
+  if (v.coverImage?.url) return v;
+  const first = v.gallery?.[0];
+  return first ? ({ ...v, coverImage: { url: first.url, publicId: first.publicId } } as T) : v;
+};
+
 /** Shapes an event for the admin portal. Only super admin sees createdBy / updatedBy. */
 const toAdminDTO = (e: EventLean & { createdAt: Date; updatedAt: Date }, viewer: Viewer) => {
   const { _id, createdBy, updatedBy, __v, ...rest } = e as EventLean & { __v?: number; createdAt: Date; updatedAt: Date };
@@ -89,7 +98,7 @@ export const getEvent = async (id: string, viewer: Viewer) => {
 // ---------- commands ----------
 export const createEvent = async (viewer: Viewer, input: CreateEventInput) => {
   const event = await Event.create({
-    ...input,
+    ...withCover(input),
     slug: await uniqueSlug(input.title),
     createdBy: viewer.id,
     updatedBy: viewer.id,
@@ -117,11 +126,18 @@ export const updateEvent = async (id: string, viewer: Viewer, input: UpdateEvent
   const oldCover = event.coverImage?.publicId;
 
   event.set(fields); // slug is intentionally NOT regenerated, so published URLs never break
+  if (!event.coverImage?.url && event.gallery.length) {
+    const first = event.gallery[0];
+    event.coverImage = { url: first.url, publicId: first.publicId };
+  }
   if (status) applyStatus(event, status);
   event.updatedBy = new Types.ObjectId(viewer.id);
   await event.save(); // schema validators run here (event date required, end >= start)
 
-  if (oldCover && oldCover !== event.coverImage?.publicId) void deleteImage(oldCover);
+  // never delete a cover that is still the new cover or still in the gallery
+  const stillUsed =
+    !!oldCover && (oldCover === event.coverImage?.publicId || event.gallery.some((g) => g.publicId === oldCover));
+  if (oldCover && !stillUsed) void deleteImage(oldCover);
   return getEvent(event.id, viewer);
 };
 
@@ -135,7 +151,9 @@ export const updateEventStatus = async (id: string, viewer: Viewer, status: Even
 
 export const deleteEvent = async (id: string, viewer: Viewer) => {
   const event = await loadForModify(id, viewer);
-  const publicIds = [event.coverImage?.publicId, ...event.gallery.map((g) => g.publicId)];
+  const publicIds = [
+    ...new Set([event.coverImage?.publicId, ...event.gallery.map((g) => g.publicId)].filter(Boolean)),
+  ] as string[];
   await event.deleteOne();
   publicIds.forEach((p) => void deleteImage(p));
 };

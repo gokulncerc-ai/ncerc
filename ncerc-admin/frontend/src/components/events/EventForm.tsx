@@ -66,7 +66,7 @@ export function EventForm({ mode, event, defaultType = 'news' }: Props) {
       type,
       summary: summary.trim(),
       description,
-      coverImage,
+      coverImage: coverImage ?? gallery[0] ?? null, // no cover chosen: the first gallery image
       gallery,
       venue: isEvent ? venue.trim() : '',
       eventDate: isEvent ? fromLocalInput(eventDate) : null,
@@ -147,8 +147,7 @@ export function EventForm({ mode, event, defaultType = 'news' }: Props) {
               <TextField label="Registration link (optional)" type="url" value={registrationUrl} onChange={(e) => setRegistrationUrl(e.target.value)} error={errors.registrationUrl} placeholder="https://" />
             </div>
           )}
-
-          <GalleryUploader value={gallery} onChange={setGallery} disabled={readOnly} />
+          <GalleryUploader value={gallery} onChange={setGallery} cover={coverImage} onSetCover={setCoverImage} disabled={readOnly} />
         </fieldset>
       </div>
 

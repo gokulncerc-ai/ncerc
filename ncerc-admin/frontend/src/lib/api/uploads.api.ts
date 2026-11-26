@@ -7,7 +7,7 @@ export interface UploadedImage {
   height?: number;
 }
 
-export const ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
+export const ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/jpg'];
 export const MAX_IMAGE_MB = 5;
 
 /** Image upload (stored on Cloudinary by the backend). Backend: POST /api/uploads/image, field "image". */
