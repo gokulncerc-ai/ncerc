@@ -1,0 +1,25 @@
+# Local MongoDB + Redis
+#   everything:   docker compose up -d
+#   only Redis:   docker compose up -d redis
+services:
+  mongo:
+    image: mongo:7
+    container_name: ncerc-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - ncerc_mongo_data:/data/db
+
+  redis:
+    image: redis:7-alpine
+    container_name: ncerc-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - ncerc_redis_data:/data
+
+volumes:
+  ncerc_mongo_data:
+  ncerc_redis_data:
