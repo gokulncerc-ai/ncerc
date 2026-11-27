@@ -8,14 +8,6 @@ import { clearRefreshCookie, REFRESH_COOKIE, setRefreshCookie } from '../../util
 import { log, maskEmail } from '../../utils/logger';
 import { User } from '../users/user.model';
 import * as authService from './auth.service';
-
-/**
- * Pattern used in every handler:
- *   try   -> call the service, send the response
- *   catch -> log the failure ONCE (log.failure skips errors the service already logged), then re-throw.
- * Re-throwing matters: the global errorHandler turns the error into the right HTTP status (400/401/409/...).
- * Success messages are printed by the service, which knows the details (who, what).
- */
 const SCOPE = 'auth';
 
 const meta = (req: Request): authService.ClientMeta => ({ userAgent: req.get('user-agent'), ip: req.ip });

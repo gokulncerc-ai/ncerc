@@ -87,6 +87,12 @@ export const verifyMail = async (): Promise<void> => {
     }
     return;
   }
+  if (!useBrevoApi && isProd) {
+    console.warn(
+      '⚠️  BREVO_API_KEY is not set. Falling back to SMTP, which Render blocks (ports 25/465/587). ' +
+      'Set BREVO_API_KEY in the Render environment.',
+    );
+  }
   if (!transporter) {
     console.log('📧 Mail not configured: emails will be printed to the console');
     return;
