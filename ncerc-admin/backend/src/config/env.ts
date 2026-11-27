@@ -4,12 +4,12 @@ import { z } from 'zod';
 const schema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
   PORT: z.coerce.number().int().positive().default(5000),
-  BACKEND_URL: z.string().url().default('http://localhost:5000'),
+  BACKEND_URL: z.string().url().default('https://ncerc-1.onrender.com'),
 
   MONGODB_URI: z.string().min(1, 'MONGODB_URI is required'),
 
-  ADMIN_FRONTEND_URL: z.string().url().default('http://localhost:3001'),
-  NCERC_WEBSITE_URL: z.string().url().default('http://localhost:3000'),
+  ADMIN_FRONTEND_URL: z.string().url().default('https://ncerc-admin-portal.netlify.app'),
+  NCERC_WEBSITE_URL: z.string().url().default('https://ncerc.netlify.app'),
   EXTRA_ALLOWED_ORIGINS: z.string().default(''),
 
   JWT_ACCESS_SECRET: z.string().min(32, 'JWT_ACCESS_SECRET must be at least 32 characters'),
@@ -40,9 +40,10 @@ const schema = z.object({
   SMTP_PORT: z.coerce.number().int().positive().default(587),
   SMTP_USER: z.string().optional(),
   SMTP_PASS: z.string().optional(),
+  BREVO_API_KEY: z.string().optional(),
   MAIL_FROM: z.string().default('NCERC Admin <no-reply@ncerc.local>'),
   REDIS_URL: z.string().default('redis://127.0.0.1:6379'),
-  
+
   OTP_LENGTH: z.coerce.number().int().min(4).max(8).default(6),
   OTP_TTL_SECONDS: z.coerce.number().int().min(30).max(900).default(120),
   OTP_MAX_ATTEMPTS: z.coerce.number().int().min(1).max(10).default(5),
@@ -68,8 +69,7 @@ export const env = parsed.data;
 export const isProd = env.NODE_ENV === 'production';
 export const googleEnabled = Boolean(env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET);
 export const facebookEnabled = Boolean(env.FACEBOOK_APP_ID && env.FACEBOOK_APP_SECRET);
-export const mailEnabled = Boolean((env.SMTP_HOST && env.SMTP_USER && env.SMTP_PASS));
-/* Cloudinary configuration */
+export const mailEnabled = Boolean(env.BREVO_API_KEY || (env.SMTP_HOST && env.SMTP_USER && env.SMTP_PASS));/* Cloudinary configuration */
 export interface CloudinaryConfig {
   cloudName: string;
   apiKey: string;
@@ -104,10 +104,10 @@ if (env.CLOUDINARY_URL && !urlConfig) {
 const separateConfig: CloudinaryConfig | null =
   env.CLOUDINARY_CLOUD_NAME && env.CLOUDINARY_API_KEY && env.CLOUDINARY_API_SECRET
     ? {
-        cloudName: env.CLOUDINARY_CLOUD_NAME,
-        apiKey: env.CLOUDINARY_API_KEY,
-        apiSecret: env.CLOUDINARY_API_SECRET,
-      }
+      cloudName: env.CLOUDINARY_CLOUD_NAME,
+      apiKey: env.CLOUDINARY_API_KEY,
+      apiSecret: env.CLOUDINARY_API_SECRET,
+    }
     : null;
 
 if (urlConfig && separateConfig) {
@@ -117,7 +117,7 @@ if (urlConfig && separateConfig) {
   if (differing.length > 0) {
     console.warn(
       `⚠️ CLOUDINARY_URL and the separate CLOUDINARY_* variables disagree on: ${differing.join(', ')}. ` +
-        'Using CLOUDINARY_URL. Remove the separate variables to avoid confusion.',
+      'Using CLOUDINARY_URL. Remove the separate variables to avoid confusion.',
     );
   }
 }
