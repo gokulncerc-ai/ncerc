@@ -18,9 +18,17 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Nehru College of Engineering and Research Centre",
+  title: "Best Engineering Colleges in Kerala | Top B.Tech Engineering Colleges in Thrissur",
   description:
-    "NCERC, Pampady - an autonomous engineering institution affiliated to APJ Abdul Kalam Technological University.",
+    "Nehru College of Engineering & Research Centre, a NAAC accredited autonomous college, ranks among Kerala’s Best engineering colleges, offering B.Tech, M.Tech, MCA and MBA admissions.",
+  keywords: ["Private engineering colleges in kerala",
+    "Best engineering colleges in kerala",
+    "B.Tech Colleges in Kerala",
+    "Best Engineering Colleges in Kerala",
+    "Engineering College in Kerala",
+    "Top B.Tech Colleges in Kerala",
+    "Engineering Colleges in thrissur",
+    "Autonomous Engineering Colleges in Kerala"],
 };
 
 export default function RootLayout({

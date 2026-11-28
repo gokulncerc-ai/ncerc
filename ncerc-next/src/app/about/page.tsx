@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import {
     Award,
     BadgeCheck,
@@ -14,6 +15,21 @@ import {
 import SiteHeader from "@/components/header/SiteHeader";
 import collegeImage from "../../../public/images/collegeone.jpg";
 import FooterSection from "@/components/home/FooterSection";
+
+export const metadata: Metadata = {
+    title: "Autonomous Engineering Colleges in Kerala |  Private Engineering Colleges in Kerala",
+    description:
+        "NCERC is an NAAC-accredited autonomous engineering college among Kerala’s top 10 private engineering colleges, offering industry-focused B.Tech programs.",
+    keywords: ["Private engineering colleges in kerala",
+        "Best engineering colleges in Thrissur",
+        "Naac Accredited Colleges in Kerala",
+        "Engineering Colleges in Kerala",
+        "Top Engineering Colleges in Kerala",
+        "Engineering Colleges in thrissur",
+        "Autonomous Engineering Colleges in Kerala",
+        "NAAC Accredited Engineering Colleges in Kerala",
+        "Autonomous Engineering Colleges in Kerala"],
+};
 
 const accreditations = [
     {

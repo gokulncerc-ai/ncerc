@@ -15,6 +15,7 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -34,33 +35,38 @@ body {
     animation: none;
   }
 }
+
 html,
 body {
   overflow-x: hidden;
 }
 
 @keyframes recruiter-scroll {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(-50%);
-    }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-recruiter-scroll {
-    animation: recruiter-scroll var(--scroll-duration, 35s) linear infinite;
+  animation: recruiter-scroll var(--scroll-duration, 35s) linear infinite;
 }
 
 @media (hover: hover) {
-    .group:hover .animate-recruiter-scroll {
-        animation-play-state: paused;
-    }
+  .group:hover .animate-recruiter-scroll {
+    animation-play-state: paused;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .animate-recruiter-scroll {
-        animation: none;
-    }
+  .animate-recruiter-scroll {
+    animation: none;
+  }
+}
+
+p {
+  text-align: justify;
 }
